@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="cn">
+<html lang="en">
     <head hexo-theme='https://github.com/volantis-x/hexo-theme-volantis/#5.8.0'>
   <meta name="generator" content="Hexo 6.3.0">
   <meta name="Volantis" content="5.8.0">
   <meta charset="utf-8">
   <!-- SEO相关 -->
   
-  <link rel="canonical" href="https://xinonria.github.io/project/2023/08/10/hello-world/"/>
+  <link rel="canonical" href="https://xinonria.github.io/project/2023/08/11/hexo配置成功/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -21,6 +21,21 @@
   <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style">
   <meta content="telephone=no" name="format-detection">
   <!-- import head_begin begin -->
+      <meta name="msapplication-TileColor" content="#ffffff">
+      <meta name="msapplication-config" content="https://unpkg.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/browserconfig.xml">
+      <meta name="theme-color" content="#ffffff">
+      <link rel="apple-touch-icon" sizes="180x180" href="https://unpkg.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="https://unpkg.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="https://unpkg.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/favicon-16x16.png">
+      <link rel="manifest" href="https://unpkg.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/site.webmanifest">
+      <link rel="mask-icon" href="https://unpkg.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/safari-pinned-tab.svg" color="#5bbad5">
+      <link rel="shortcut icon" href="https://unpkg.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/favicon.ico">
+      <meta name="apple-mobile-web-app-title" content="Volantis">
+      <meta name="application-name" content="Volantis">
+      <meta name="msapplication-TileColor" content="#f4f4f4">
+      <meta name="msapplication-TileImage" content="https://unpkg.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/favicon-32x32.png">
+      <meta name="theme-color" content="#f4f4f4" media="(prefers-color-scheme: light)">
+      <meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)">
   <!-- import head_begin end -->
   <!-- Custom Files headBegin begin-->
   
@@ -33,20 +48,21 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>Hello World - Xinon's Blog</title>
-  <meta name="keywords" content="null">
+  <title>hexo配置成功 - Xinon's Blog</title>
+  <meta name="keywords" content="hexo, website,null">
   <meta desc name="description" content="Xinon's Blog - Xinon Zhang - Xinon's Blog">
   
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="https://xinonria.github.io/project/2023/08/10/hello-world/index.html">
+<meta property="og:title" content="hexo配置成功">
+<meta property="og:url" content="https://xinonria.github.io/project/2023/08/11/hexo%E9%85%8D%E7%BD%AE%E6%88%90%E5%8A%9F/index.html">
 <meta property="og:site_name" content="Xinon&#39;s Blog">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
-<meta property="og:locale">
+<meta property="og:description" content="花了两天时间终于成功把hexo+github托管的个人博客网站做完了。 中途遇到了好多问题和障碍(哭  npm install安装时一直卡住参考了CSDN的解决办法，发现没用。后来发现淘宝源停止对该域名解析了，遂换成官方源https:&#x2F;&#x2F;registry.npmjs.org解决问题。  虚拟服务器无法配置白嫖了腾讯云虚拟服务器一个月。宝塔登陆不上去，1Panel安装不上。打算直接配置VanBlog">
+<meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-<meta property="article:published_time" content="2023-08-10T15:02:48.787Z">
-<meta property="article:modified_time" content="2023-08-10T15:02:48.787Z">
+<meta property="article:published_time" content="2023-08-11T05:49:14.000Z">
+<meta property="article:modified_time" content="2023-08-11T06:30:22.218Z">
 <meta property="article:author" content="Xinon Zhang">
+<meta property="article:tag" content="hexo, website">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
   <style>
@@ -1697,9 +1713,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 		'}'+
 	'</style>'+
     '<div class="kill-ie">'+
-        `<span class="kill-t"><b>抱歉，您的浏览器无法访问本站</b></span><br/>`+
-        `<span class="kill-c">微软已经于2016年终止了对 Internet Explorer (IE) 10 及更早版本的支持，<br/>继续使用存在极大的安全隐患，请使用当代主流的浏览器进行访问。</span><br/>`+
-        `<a target="_blank" rel="noopener" href="https://blogs.windows.com/windowsexperience/2021/05/19/the-future-of-internet-explorer-on-windows-10-is-in-microsoft-edge/"><strong>了解详情 ></strong></a>`+
+        `<span class="kill-t"><b>Sorry, your browser cannot access this site</b></span><br/>`+
+        `<span class="kill-c">Microsoft has terminated support for Internet Explorer (IE) 10 and earlier versions in 2016. <br/>There are great security risks to continue using it. Please use contemporary mainstream browsers to access.</span><br/>`+
+        `<a target="_blank" rel="noopener" href="https://blogs.windows.com/windowsexperience/2021/05/19/the-future-of-internet-explorer-on-windows-10-is-in-microsoft-edge/"><strong>Learn more ></strong></a>`+
     '</div>');
 </script>
 
@@ -1727,9 +1743,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 		}
 	</style>
     <div class="kill-noscript">
-        <span class="kill-t"><b>抱歉，您的浏览器无法访问本站</b></span><br/>
-        <span class="kill-c">本页面需要浏览器支持（启用）JavaScript</span><br/>
-        <a target="_blank" rel="noopener" href="https://www.baidu.com/s?wd=启用JavaScript"><strong>了解详情 ></strong></a>
+        <span class="kill-t"><b>Sorry, your browser cannot access this site</b></span><br/>
+        <span class="kill-c">This page requires browser support (enable) JavaScript</span><br/>
+        <a target="_blank" rel="noopener" href="https://www.baidu.com/s?wd=启用JavaScript"><strong>Learn more ></strong></a>
     </div>
 </noscript>
 
@@ -1737,14 +1753,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <script>
   /************这个文件存放不需要重载的全局变量和全局函数*********/
   window.volantis = {}; // volantis 全局变量
-  volantis.debug = "env"; // 调试模式
+  volantis.debug = "false"; // 调试模式
   volantis.dom = {}; // 页面Dom see: /source/js/app.js etc.
 
   volantis.GLOBAL_CONFIG ={
-    debug: "env",
+    debug: false,
     cdn: {"js":{"app":"/xinonria.github.io/js/app.js","parallax":"/xinonria.github.io/js/plugins/parallax.js","rightMenu":"/xinonria.github.io/js/plugins/rightMenu.js","rightMenus":"/xinonria.github.io/js/plugins/rightMenus.js","sites":"/xinonria.github.io/js/plugins/tags/sites.js","friends":"/xinonria.github.io/js/plugins/tags/friends.js","contributors":"/xinonria.github.io/js/plugins/tags/contributors.js","search":"/xinonria.github.io/js/search/hexo.js"},"css":{"style":"/xinonria.github.io/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1691729751645),
+    lastupdate: new Date(1691735429618),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate"],
       for_post: ["toc"],
@@ -2449,7 +2465,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div class='top'>
     
     
-      <p class="title">Volantis</p>
+      <p class="title">Xinon</p>
     
     
   </div>
@@ -2517,7 +2533,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
 <div id="l_main" class=''>
   <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
-  <link itemprop="mainEntityOfPage" href="https://xinonria.github.io/project/2023/08/10/hello-world/">
+  <link itemprop="mainEntityOfPage" href="https://xinonria.github.io/project/2023/08/11/hexo配置成功/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Xinon's Blog">
   </span>
@@ -2538,7 +2554,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       <h1 class="title" itemprop="name headline">
-        Hello World
+        hexo配置成功
       </h1>
       <div class='new-meta-box'>
         
@@ -2559,10 +2575,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
         
           
-            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2023-08-10T23:02:48+08:00">
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2023-08-11T13:49:14+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
-    <p>发布于：Aug 10, 2023</p>
+    <p>发布于：Aug 11, 2023</p>
   </a>
 </div>
 
@@ -2585,19 +2601,23 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
-    <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+    <p>花了两天时间终于成功把hexo+github托管的个人博客网站做完了。</p>
+<p>中途遇到了好多问题和障碍(哭</p>
+<ol>
+<li><p>npm install安装时一直卡住<br>参考了<a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_42250644/article/details/127507408">CSDN</a>的解决办法，发现没用。后来发现淘宝源停止对该域名解析了，遂换成官方源<a target="_blank" rel="noopener" href="https://registry.npmjs.org解决问题./">https://registry.npmjs.org解决问题。</a></p>
+</li>
+<li><p>虚拟服务器无法配置<br>白嫖了腾讯云虚拟服务器一个月。宝塔登陆不上去，1Panel安装不上。打算直接配置VanBlog。感觉可能因为网速太慢了，无法正常进入博客后台登陆。点了登陆没反应，有时候甚至加载不出来。遂放弃虚拟服务器方案，决定使用github page来托管。</p>
+</li>
+<li><p>hexo无法部署<br>运行<code>hexo d</code>后提示<code>ERROR Deployer not found: git</code>搜索后发现有个插件没装，安装后就正常了。<code>npm install hexo-deployer-git --save</code></p>
+</li>
+<li><p>托管网站无法登陆<br>跟着教程用Vercel托管，但就是注册不了。Github登陆上去直接说已被封禁，邮箱注册又无法处理登录请求。发邮件给<a href="mailto:&#x72;&#x65;&#103;&#x69;&#115;&#x74;&#x72;&#97;&#116;&#105;&#111;&#x6e;&#x40;&#x76;&#101;&#x72;&#x63;&#x65;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;">&#x72;&#x65;&#103;&#x69;&#115;&#x74;&#x72;&#97;&#116;&#105;&#111;&#x6e;&#x40;&#x76;&#101;&#x72;&#x63;&#x65;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;</a>，回复已经帮我解除了，但再次登陆还是不行。感觉可能是挂了梯子的原因，又发了邮件再解除一下。关掉梯子总算登录上去了。(Gmail点验证邮件开梯子，Vercel网站不能开梯子，累死了)。然而感觉它的网站托管太慢了，还是用回Github Page了。</p>
+</li>
+<li><p>更换主题css不生效<br>这个问题折磨了最久。本地部署显示正常，但一放到线上css就不生效了。在网上找了各种办法都没用。<a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues/1574">Github上的issue</a>隐隐感觉有用，但不知道在哪设置网址。又看到<a target="_blank" rel="noopener" href="https://blog.csdn.net/Wlittlestar/article/details/123964059">CSDN</a>上的文章，这解决方案就离谱到家了。最后还好刷到了<a target="_blank" rel="noopener" href="https://blog.csdn.net/Nathan1987_/article/details/50322493">这篇文章</a>，把<code>root: /xinonria.github.io</code>设置一下就好了。刚设置完也是不报太大希望的，吃了个饭回来发现真的成功了！</p>
+</li>
+</ol>
+<p>这仅仅只是这个网站的一个开始，现在这个网站还有很多功能没有实现。图床配置，评论功能，分类系统，搜索引擎什么的还要慢慢实现。</p>
+<p>在这过程中虽然很多时候自己都不知道怎么解决的，但也从中获得了一些经验，学到了一些东西。</p>
+<p><em><strong>Things are always difficult at the start. Just keep going.</strong></em></p>
 
   </div>
   
@@ -2622,10 +2642,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-08-10T23:02:48+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-08-11T14:30:22+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：Aug 10, 2023</p>
+    <p>更新于：Aug 11, 2023</p>
   </a>
 </div>
 
@@ -2633,6 +2653,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         
           
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/xinonria.github.io/tags/hexo-website/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>hexo, website</p></a></div>
+  <span hidden itemprop="keywords">hexo, website</span>
+
 
         
       
@@ -2644,7 +2668,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://xinonria.github.io/project/2023/08/10/hello-world/&title=Hello World - Xinon's Blog&summary="
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://xinonria.github.io/project/2023/08/11/hexo%E9%85%8D%E7%BD%AE%E6%88%90%E5%8A%9F/&title=hexo配置成功 - Xinon's Blog&summary="
           
           >
           
@@ -2656,7 +2680,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://xinonria.github.io/project/2023/08/10/hello-world/&title=Hello World - Xinon's Blog&summary="
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://xinonria.github.io/project/2023/08/11/hexo%E9%85%8D%E7%BD%AE%E6%88%90%E5%8A%9F/&title=hexo配置成功 - Xinon's Blog&summary="
           
           >
           
@@ -2668,7 +2692,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://service.weibo.com/share/share.php?url=https://xinonria.github.io/project/2023/08/10/hello-world/&title=Hello World - Xinon's Blog&summary="
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://xinonria.github.io/project/2023/08/11/hexo%E9%85%8D%E7%BD%AE%E6%88%90%E5%8A%9F/&title=hexo配置成功 - Xinon's Blog&summary="
           
           >
           
@@ -2699,17 +2723,6 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
 
   
-    <div class="prev-next">
-      
-        <a class='prev' href='/xinonria.github.io/2023/08/11/Hello/'>
-          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>Hello</p>
-          <p class='content'>Hello
-</p>
-        </a>
-      
-      
-    </div>
-  
   <!-- Custom Files postEnd begin-->
   
   <!-- Custom Files postEnd end-->
@@ -2721,7 +2734,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <article class="post white-box shadow floatable blur" id="comments">
     <span hidden>
-      <meta itemprop="discussionUrl" content="/xinonria.github.io/2023/08/10/hello-world/index.html#comments">
+      <meta itemprop="discussionUrl" content="/xinonria.github.io/2023/08/11/hexo%E9%85%8D%E7%BD%AE%E6%88%90%E5%8A%9F/index.html#comments">
     </span>
     <p ct><i class='fa-solid fa-comments'></i> 评论</p>
     
@@ -2753,19 +2766,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
 
 
-  <section class="widget toc-wrapper desktop mobile " id="toc-div" >
-    
-  <header>
-    
-      <i class="fa-solid fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
-    
-  </header>
-
-
-    <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick-Start"><span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create-a-new-post"><span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run-server"><span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate-static-files"><span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy-to-remote-sites"><span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
-    </div>
-  </section>
+  <div class="">
+    <!-- pjax占位 -->
+  </div>
 
   
 
@@ -2869,7 +2872,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
     
       
-        <div><p>博客内容遵循 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</a></p>
+        <div><p>Blog content follows the <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en">Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) License</a></p>
 </div>
       
     
@@ -2881,9 +2884,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
     
       
-        本站使用
+        Use
         <a href="https://github.com/volantis-x/hexo-theme-volantis/#5.8.0" target="_blank" class="codename">Volantis</a>
-        作为主题
+        as theme
       
     
       
@@ -3333,7 +3336,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Xinon's Blog","url":"https://xinonria.github.io/project/xinonria.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Xinon Zhang","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://xinonria.github.io/project/xinonria.github.io/","sameAs":["https://github.com/volantis-x"],"description":""},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://xinonria.github.io/project/xinonria.github.io/","name":"Xinon's Blog"}},{"@type":"ListItem","position":3,"item":{"@id":"https://xinonria.github.io/project/xinonria.github.io/2023/08/10/hello-world/","name":"Hello World"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Xinon's Blog","url":"https://xinonria.github.io/project/xinonria.github.io/","keywords":null,"description":"","author":{"@type":"Person","name":"Xinon Zhang","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://xinonria.github.io/project/xinonria.github.io/","description":""},"publisher":{"@type":"Organization","name":"Xinon's Blog","url":"https://xinonria.github.io/project/xinonria.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://xinonria.github.io/project?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Hello World","description":"","inLanguage":"cn","mainEntityOfPage":{"@type":"WebPage","@id":"https://xinonria.github.io/project/2023/08/10/hello-world/"},"author":{"@type":"Person","name":"Xinon Zhang","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://xinonria.github.io/project/xinonria.github.io/"},"publisher":{"@type":"Organization","name":"Xinon's Blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://xinonria.github.io/project/2023/08/10/hello-world/","wordCount":0,"datePublished":"2023-08-10T15:02:48.787Z","dateModified":"2023-08-10T15:02:48.787Z","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Xinon's Blog","url":"https://xinonria.github.io/project/xinonria.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Xinon Zhang","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://xinonria.github.io/project/xinonria.github.io/","sameAs":["https://github.com/volantis-x"],"description":""},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://xinonria.github.io/project/xinonria.github.io/","name":"Xinon's Blog"}},{"@type":"ListItem","position":3,"item":{"@id":"https://xinonria.github.io/project/xinonria.github.io/2023/08/11/hexo配置成功/","name":"hexo配置成功"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Xinon's Blog","url":"https://xinonria.github.io/project/xinonria.github.io/","keywords":null,"description":"","author":{"@type":"Person","name":"Xinon Zhang","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://xinonria.github.io/project/xinonria.github.io/","description":""},"publisher":{"@type":"Organization","name":"Xinon's Blog","url":"https://xinonria.github.io/project/xinonria.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://xinonria.github.io/project?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"hexo配置成功","description":"","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https://xinonria.github.io/project/2023/08/11/hexo%E9%85%8D%E7%BD%AE%E6%88%90%E5%8A%9F/"},"author":{"@type":"Person","name":"Xinon Zhang","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://xinonria.github.io/project/xinonria.github.io/"},"publisher":{"@type":"Organization","name":"Xinon's Blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://xinonria.github.io/project/2023/08/11/hexo%E9%85%8D%E7%BD%AE%E6%88%90%E5%8A%9F/","wordCount":0,"datePublished":"2023-08-11T05:49:14.000Z","dateModified":"2023-08-11T06:30:22.218Z","keywords":"hexo, website","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
