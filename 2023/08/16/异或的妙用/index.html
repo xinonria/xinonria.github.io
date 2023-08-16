@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <!-- SEO相关 -->
   
-  <link rel="canonical" href="https://xinonria.github.io/project/2023/08/13/判断相同二叉树/"/>
+  <link rel="canonical" href="https://xinonria.github.io/project/2023/08/16/异或的妙用/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -48,19 +48,19 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>判断相同二叉树 - Xinon's Blog</title>
+  <title>异或的妙用 - Xinon's Blog</title>
   <meta name="keywords" content="Leetcode,null">
   <meta desc name="description" content="Xinon's Blog - Xinon Zhang - Xinon's Blog">
   
 <meta property="og:type" content="article">
-<meta property="og:title" content="判断相同二叉树">
-<meta property="og:url" content="https://xinonria.github.io/project/2023/08/13/%E5%88%A4%E6%96%AD%E7%9B%B8%E5%90%8C%E4%BA%8C%E5%8F%89%E6%A0%91/index.html">
+<meta property="og:title" content="异或的妙用">
+<meta property="og:url" content="https://xinonria.github.io/project/2023/08/16/%E5%BC%82%E6%88%96%E7%9A%84%E5%A6%99%E7%94%A8/index.html">
 <meta property="og:site_name" content="Xinon&#39;s Blog">
-<meta property="og:description" content="一道较简单的Leetcode题，判断两个二叉树是否相同。 原题链接 数据范围 两棵树上的节点数目都在范围 [0, 100] 内 -104 &lt;&#x3D; Node.val &lt;&#x3D; 104  思路既然要判断是否相同，那么就要遍历树的每一个节点了。 注意到数据范围节点数在100以内，不算太大。考虑用递归的方法（太大会爆栈）深度优先搜索的思路来解决。  如果两个树都能成功到达边界，那">
+<meta property="og:description" content="本来觉得这题很简单的。但看了条件之后发现还真挺难想（压根想不到位操作）   原题链接 注意条件!! 线性时间 &amp; 常量额外空间 思考1. 暴力解法。取一个数记为 cur ，然后从剩下的数中查找，如果找不到，则 cur 即为要找的那个数。 双层循环，时间复杂度O(n^2)。 不满足线性时间。 2. 哈希表直接用unordered_set&lt;int, int&gt;作哈希表。 第一次遇到这">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-<meta property="article:published_time" content="2023-08-13T12:22:03.000Z">
-<meta property="article:modified_time" content="2023-08-13T12:34:36.352Z">
+<meta property="article:published_time" content="2023-08-16T14:38:11.000Z">
+<meta property="article:modified_time" content="2023-08-16T15:09:05.568Z">
 <meta property="article:author" content="Xinon Zhang">
 <meta property="article:tag" content="Leetcode">
 <meta name="twitter:card" content="summary">
@@ -2456,7 +2456,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
 <div id="l_main" class=''>
   <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
-  <link itemprop="mainEntityOfPage" href="https://xinonria.github.io/project/2023/08/13/判断相同二叉树/">
+  <link itemprop="mainEntityOfPage" href="https://xinonria.github.io/project/2023/08/16/异或的妙用/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Xinon's Blog">
   </span>
@@ -2477,7 +2477,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       <h1 class="title" itemprop="name headline">
-        判断相同二叉树
+        异或的妙用
       </h1>
       <div class='new-meta-box'>
         
@@ -2498,10 +2498,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
         
           
-            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2023-08-13T20:22:03+08:00">
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2023-08-16T22:38:11+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
-    <p>发布于：Aug 13, 2023</p>
+    <p>发布于：Aug 16, 2023</p>
   </a>
 </div>
 
@@ -2516,7 +2516,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <p>
       <i class="fa-solid fa-eye fa-fw" aria-hidden="true"></i>
       
-      <span id="lc-pv" data-title="判断相同二叉树" data-path="/xinonria.github.io/2023/08/13/%E5%88%A4%E6%96%AD%E7%9B%B8%E5%90%8C%E4%BA%8C%E5%8F%89%E6%A0%91/">
+      <span id="lc-pv" data-title="异或的妙用" data-path="/xinonria.github.io/2023/08/16/%E5%BC%82%E6%88%96%E7%9A%84%E5%A6%99%E7%94%A8/">
         <span id='number'><i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i></span>
       </span>
       
@@ -2538,22 +2538,62 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
-    <p>一道较简单的Leetcode题，判断两个二叉树是否相同。</p>
-<h4 id="原题链接"><a href="#原题链接" class="headerlink" title="原题链接"></a><a target="_blank" rel="noopener" href="https://leetcode.cn/problems/same-tree/solutions/363636/xiang-tong-de-shu-by-leetcode-solution/">原题链接</a></h4><p><img src="https://www.z4a.net/images/2023/08/13/imagefe314b64b16aa615.png" class="lazyload" data-srcset="https://www.z4a.net/images/2023/08/13/imagefe314b64b16aa615.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image.pmg"></p>
-<h5 id="数据范围"><a href="#数据范围" class="headerlink" title="数据范围"></a>数据范围</h5><ul>
-<li>两棵树上的节点数目都在范围 [0, 100] 内</li>
-<li>-104 &lt;&#x3D; Node.val &lt;&#x3D; 104</li>
-</ul>
-<h4 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h4><p>既然要判断是否相同，那么就要遍历树的每一个节点了。</p>
-<p>注意到数据范围节点数在100以内，不算太大。考虑用递归的方法（太大会爆栈）深度优先搜索的思路来解决。</p>
-<ul>
-<li>如果两个树都能成功到达边界，那么说明这一路上都是匹配的，可以直接<code>return true</code>了。</li>
-<li>如果一个到了边界另一个没到，说明这两个树绝对不是相同的，就<code>return false</code></li>
-<li>如果两个储存的值对不上的话，那么也是说明树不相同。<code>return false</code></li>
-<li>此外没到边界的话就递归下去。</li>
-</ul>
-<h4 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h4><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span></span><br><span class="line">&#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="type">bool</span> <span class="title">isSameTree</span><span class="params">(TreeNode *p, TreeNode *q)</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (!p &amp;&amp; !q)          <span class="comment">//两节点都到达边界</span></span><br><span class="line">            <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">        <span class="keyword">if</span> (!p || !q)          <span class="comment">//只有一个节点到达边界 （结合上个if语句想想之间的逻辑关系，为什么能这样写）</span></span><br><span class="line">            <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">        <span class="keyword">if</span> (p-&gt;val != q-&gt;val)  <span class="comment">//数值不同</span></span><br><span class="line">            <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">        <span class="keyword">return</span> <span class="built_in">isSameTree</span>(p-&gt;left, q-&gt;left) &amp;&amp; <span class="built_in">isSameTree</span>(p-&gt;right, q-&gt;right);       <span class="comment">//递归左右节点，&amp;&amp;保证左右子节点都满足条件</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+    <p>本来觉得这题很简单的。但看了条件之后发现还真挺难想（压根想不到位操作）</p>
+<hr></hr>
 
+<h4 id="原题链接"><a href="#原题链接" class="headerlink" title="原题链接"></a><a target="_blank" rel="noopener" href="https://leetcode.cn/problems/single-number/description/">原题链接</a></h4><p><img src="https://s1.ax1x.com/2023/08/16/pPlwAz9.png" class="lazyload" data-srcset="https://s1.ax1x.com/2023/08/16/pPlwAz9.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p>注意条件!!</p>
+<p><strong>线性时间 &amp; 常量额外空间</strong></p>
+<h4 id="思考"><a href="#思考" class="headerlink" title="思考"></a>思考</h4><h5 id="1-暴力解法。"><a href="#1-暴力解法。" class="headerlink" title="1. 暴力解法。"></a>1. 暴力解法。</h5><p>取一个数记为 cur ，然后从剩下的数中查找，如果找不到，则 cur 即为要找的那个数。</p>
+<p>双层循环，时间复杂度O(n^2)。</p>
+<p>不满足线性时间。</p>
+<h5 id="2-哈希表"><a href="#2-哈希表" class="headerlink" title="2. 哈希表"></a>2. 哈希表</h5><p>直接用<code>unordered_set&lt;int, int&gt;</code>作哈希表。</p>
+<p>第一次遇到这个数时放进去，同时记录个数。</p>
+<p>最后循环一遍看谁的个数是1。</p>
+<p>然而这个解法不满足常量额外空间。</p>
+<h5 id="3-排序"><a href="#3-排序" class="headerlink" title="3. 排序"></a>3. 排序</h5><p>排序完之后看谁的值只出现一次。</p>
+<p>使用快速排序时间复杂度O(nlogn)，还是不够快。</p>
+<h5 id="4-异或"><a href="#4-异或" class="headerlink" title="4. 异或"></a>4. 异或</h5><p><em><strong>重量级登场</strong></em></p>
+<p>首先了解什么是异或。</p>
+<p>异或运算符在C++里是<code>^</code>。</p>
+<p>两个输入相同时为0，不同则为1。</p>
+<table>
+<thead>
+<tr>
+<th>a</th>
+<th>b</th>
+<th>a⊕b</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+</tr>
+</tbody></table>
+<p>我们只需要使用它这几个性质。</p>
+<ul>
+<li>任何数和 0 做异或运算，结果仍然是原来的数，即 a ⊕ 0 &#x3D; a。</li>
+<li>任何数和其自身做异或运算，结果是 0，即 a ⊕ a &#x3D; 0。</li>
+<li><strong>满足交换律和结合律</strong> （也就是说无论一对相同的ta相隔天涯海角，中途经历了多少事情，异或都能让它们匹配在一起为0）</li>
+</ul>
+<p>(a1⊕a1)⊕(a2⊕a2)⊕⋯⊕(an⊕an)⊕am+1最后结果是<br>0⊕0⊕⋯⊕0⊕am+1&#x3D;am+1</p>
+<h4 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h4><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span></span><br><span class="line">&#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">singleNumber</span><span class="params">(vector&lt;<span class="type">int</span>&gt; &amp;nums)</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="type">int</span> len = nums.<span class="built_in">size</span>();</span><br><span class="line">        <span class="keyword">if</span> (len == <span class="number">1</span>)              <span class="comment">//只有一个数就直接返回咯</span></span><br><span class="line">            <span class="keyword">return</span> nums[<span class="number">0</span>];</span><br><span class="line">        <span class="type">int</span> ans = <span class="number">0</span>;               <span class="comment">//第一个条件:任何数和 0 做异或运算，结果仍然是原来的数</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> num : nums)</span><br><span class="line">            ans = ans ^ num;</span><br><span class="line">        <span class="keyword">return</span> ans;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
   </div>
   
   
@@ -2577,10 +2617,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-08-13T20:34:36+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-08-16T23:09:05+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：Aug 13, 2023</p>
+    <p>更新于：Aug 16, 2023</p>
   </a>
 </div>
 
@@ -2603,7 +2643,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://xinonria.github.io/project/2023/08/13/%E5%88%A4%E6%96%AD%E7%9B%B8%E5%90%8C%E4%BA%8C%E5%8F%89%E6%A0%91/&title=判断相同二叉树 - Xinon's Blog&summary="
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://xinonria.github.io/project/2023/08/16/%E5%BC%82%E6%88%96%E7%9A%84%E5%A6%99%E7%94%A8/&title=异或的妙用 - Xinon's Blog&summary="
           
           >
           
@@ -2615,7 +2655,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://xinonria.github.io/project/2023/08/13/%E5%88%A4%E6%96%AD%E7%9B%B8%E5%90%8C%E4%BA%8C%E5%8F%89%E6%A0%91/&title=判断相同二叉树 - Xinon's Blog&summary="
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://xinonria.github.io/project/2023/08/16/%E5%BC%82%E6%88%96%E7%9A%84%E5%A6%99%E7%94%A8/&title=异或的妙用 - Xinon's Blog&summary="
           
           >
           
@@ -2627,7 +2667,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://service.weibo.com/share/share.php?url=https://xinonria.github.io/project/2023/08/13/%E5%88%A4%E6%96%AD%E7%9B%B8%E5%90%8C%E4%BA%8C%E5%8F%89%E6%A0%91/&title=判断相同二叉树 - Xinon's Blog&summary="
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://xinonria.github.io/project/2023/08/16/%E5%BC%82%E6%88%96%E7%9A%84%E5%A6%99%E7%94%A8/&title=异或的妙用 - Xinon's Blog&summary="
           
           >
           
@@ -2660,23 +2700,16 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     <div class="prev-next">
       
-        <a class='prev' href='/xinonria.github.io/2023/08/14/%E4%BA%8C%E5%8F%89%E6%A0%91%E4%B8%8E%E9%80%92%E5%BD%92/'>
-          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>二叉树与递归</p>
-          <p class='content'>最近经常做到关于二叉树的Easy题。
-二叉树的遍历总是和递归绑在一起。
-如下题寻找二叉树的最大深度。
-原题原题链接
-
-思路用递推的思路来想，从某一个节点出发，它的最大深度就是max(左子节点最大...</p>
-        </a>
       
-      
-        <a class='next' href='/xinonria.github.io/2023/08/12/%E5%85%B3%E4%BA%8E%E4%BA%8C%E5%8F%89%E6%A0%91%E4%B8%AD%E5%BA%8F%E9%81%8D%E5%8E%86/'>
-          <p class='title'>关于二叉树中序遍历<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>今天日常刷Leetcode刷到了一个二叉树中序遍历的题。原题链接
+        <a class='next' href='/xinonria.github.io/2023/08/16/%E5%85%B3%E4%BA%8E%E4%BA%8C%E5%8F%89%E6%A0%91(%E4%B8%AD)/'>
+          <p class='title'>关于二叉树（中）<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>构造
 
-通过示例可以很明显了解到何为中序遍历，同时打算用栈结构来实现。
-中序遍历可以看作将节点投影到一个水平坐标轴上，从原点开始向右遍...</p>
+前序和中序可以唯一确定一棵二叉树。
+后序和中序可以唯一确定一棵二叉树。
+前序和后序不能唯一确定一棵二叉树！
+没中序遍历就无法分割了。
+前序遍历&amp;中序遍历构造分析首先要牢记各个遍历...</p>
         </a>
       
     </div>
@@ -2692,7 +2725,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <article class="post white-box shadow floatable blur" id="comments">
     <span hidden>
-      <meta itemprop="discussionUrl" content="/xinonria.github.io/2023/08/13/%E5%88%A4%E6%96%AD%E7%9B%B8%E5%90%8C%E4%BA%8C%E5%8F%89%E6%A0%91/index.html#comments">
+      <meta itemprop="discussionUrl" content="/xinonria.github.io/2023/08/16/%E5%BC%82%E6%88%96%E7%9A%84%E5%A6%99%E7%94%A8/index.html#comments">
     </span>
     <p ct><i class='fa-solid fa-comments'></i> 评论</p>
     
@@ -2734,7 +2767,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
     <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8E%9F%E9%A2%98%E9%93%BE%E6%8E%A5"><span class="toc-text">原题链接</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E8%8C%83%E5%9B%B4"><span class="toc-text">数据范围</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%80%9D%E8%B7%AF"><span class="toc-text">思路</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81"><span class="toc-text">代码</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8E%9F%E9%A2%98%E9%93%BE%E6%8E%A5"><span class="toc-text">原题链接</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%80%9D%E8%80%83"><span class="toc-text">思考</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-%E6%9A%B4%E5%8A%9B%E8%A7%A3%E6%B3%95%E3%80%82"><span class="toc-text">1. 暴力解法。</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-%E5%93%88%E5%B8%8C%E8%A1%A8"><span class="toc-text">2. 哈希表</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3-%E6%8E%92%E5%BA%8F"><span class="toc-text">3. 排序</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#4-%E5%BC%82%E6%88%96"><span class="toc-text">4. 异或</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81"><span class="toc-text">代码</span></a></li></ol>
     </div>
   </section>
 
@@ -3841,7 +3874,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Xinon's Blog","url":"https://xinonria.github.io/project/xinonria.github.io/","logo":{"@type":"ImageObject","url":"/images/logo.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Xinon Zhang","image":{"@type":"ImageObject","url":"/images/logo.png"},"url":"https://xinonria.github.io/project/xinonria.github.io/","sameAs":["https://github.com/volantis-x"],"description":""},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://xinonria.github.io/project/xinonria.github.io/","name":"Xinon's Blog"}},{"@type":"ListItem","position":3,"item":{"@id":"https://xinonria.github.io/project/xinonria.github.io/2023/08/13/判断相同二叉树/","name":"判断相同二叉树"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Xinon's Blog","url":"https://xinonria.github.io/project/xinonria.github.io/","keywords":null,"description":"","author":{"@type":"Person","name":"Xinon Zhang","image":{"@type":"ImageObject","url":"/images/logo.png"},"url":"https://xinonria.github.io/project/xinonria.github.io/","description":""},"publisher":{"@type":"Organization","name":"Xinon's Blog","url":"https://xinonria.github.io/project/xinonria.github.io/","logo":{"@type":"ImageObject","url":"/images/logo.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://xinonria.github.io/project?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"判断相同二叉树","description":"","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https://xinonria.github.io/project/2023/08/13/%E5%88%A4%E6%96%AD%E7%9B%B8%E5%90%8C%E4%BA%8C%E5%8F%89%E6%A0%91/"},"author":{"@type":"Person","name":"Xinon Zhang","image":{"@type":"ImageObject","url":"/images/logo.png"},"url":"https://xinonria.github.io/project/xinonria.github.io/"},"publisher":{"@type":"Organization","name":"Xinon's Blog","logo":{"@type":"ImageObject","url":"/images/logo.png","width":192,"height":192}},"url":"https://xinonria.github.io/project/2023/08/13/%E5%88%A4%E6%96%AD%E7%9B%B8%E5%90%8C%E4%BA%8C%E5%8F%89%E6%A0%91/","wordCount":0,"datePublished":"2023-08-13T12:22:03.000Z","dateModified":"2023-08-13T12:34:36.352Z","keywords":"Leetcode","image":{"@type":"ImageObject","url":"/images/logo.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Xinon's Blog","url":"https://xinonria.github.io/project/xinonria.github.io/","logo":{"@type":"ImageObject","url":"/images/logo.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Xinon Zhang","image":{"@type":"ImageObject","url":"/images/logo.png"},"url":"https://xinonria.github.io/project/xinonria.github.io/","sameAs":["https://github.com/volantis-x"],"description":""},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://xinonria.github.io/project/xinonria.github.io/","name":"Xinon's Blog"}},{"@type":"ListItem","position":3,"item":{"@id":"https://xinonria.github.io/project/xinonria.github.io/2023/08/16/异或的妙用/","name":"异或的妙用"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Xinon's Blog","url":"https://xinonria.github.io/project/xinonria.github.io/","keywords":null,"description":"","author":{"@type":"Person","name":"Xinon Zhang","image":{"@type":"ImageObject","url":"/images/logo.png"},"url":"https://xinonria.github.io/project/xinonria.github.io/","description":""},"publisher":{"@type":"Organization","name":"Xinon's Blog","url":"https://xinonria.github.io/project/xinonria.github.io/","logo":{"@type":"ImageObject","url":"/images/logo.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://xinonria.github.io/project?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"异或的妙用","description":"","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https://xinonria.github.io/project/2023/08/16/%E5%BC%82%E6%88%96%E7%9A%84%E5%A6%99%E7%94%A8/"},"author":{"@type":"Person","name":"Xinon Zhang","image":{"@type":"ImageObject","url":"/images/logo.png"},"url":"https://xinonria.github.io/project/xinonria.github.io/"},"publisher":{"@type":"Organization","name":"Xinon's Blog","logo":{"@type":"ImageObject","url":"/images/logo.png","width":192,"height":192}},"url":"https://xinonria.github.io/project/2023/08/16/%E5%BC%82%E6%88%96%E7%9A%84%E5%A6%99%E7%94%A8/","wordCount":0,"datePublished":"2023-08-16T14:38:11.000Z","dateModified":"2023-08-16T15:09:05.568Z","keywords":"Leetcode","image":{"@type":"ImageObject","url":"/images/logo.png","width":192,"height":192}}]</script>
 
 
 
