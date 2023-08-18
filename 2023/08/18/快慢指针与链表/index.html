@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <!-- SEO相关 -->
   
-  <link rel="canonical" href="https://xinonria.github.io/project/2023/08/15/关于二叉树(上)/"/>
+  <link rel="canonical" href="https://xinonria.github.io/project/2023/08/18/快慢指针与链表/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -48,19 +48,19 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>关于二叉树（上） - Xinon's Blog</title>
+  <title>快慢指针与链表 - Xinon's Blog</title>
   <meta name="keywords" content="数据结构,null">
   <meta desc name="description" content="Xinon's Blog - Xinon Zhang - Xinon's Blog">
   
 <meta property="og:type" content="article">
-<meta property="og:title" content="关于二叉树（上）">
-<meta property="og:url" content="https://xinonria.github.io/project/2023/08/15/%E5%85%B3%E4%BA%8E%E4%BA%8C%E5%8F%89%E6%A0%91(%E4%B8%8A)/index.html">
+<meta property="og:title" content="快慢指针与链表">
+<meta property="og:url" content="https://xinonria.github.io/project/2023/08/18/%E5%BF%AB%E6%85%A2%E6%8C%87%E9%92%88%E4%B8%8E%E9%93%BE%E8%A1%A8/index.html">
 <meta property="og:site_name" content="Xinon&#39;s Blog">
-<meta property="og:description" content="前言  最近经常刷到二叉树的题，那么好好把二叉树的相关知识点都过一下吧。  本文参考了代码随想录关于二叉树的介绍。原文链接  分类  满二叉树一个二叉树除了叶节点外每个节点都有两个子节点，且叶节点在同一层的二叉树。就是看上去都是满的。 深度为$k$。节点数量就是$2^k-1$个。  完全二叉树除了最底层节点没填满外，其他节点都是满的。且最底层节点必须从左到右连续！  所以，满二叉树同时也是一个完全">
+<meta property="og:description" content="当要求空间复杂度为O(1)，即只使用常量额外空间时，快慢指针对于处理链表中删除重复值和判断是否有环尤为重要。 快慢指针也可称为龟兔赛跑算法。 定义一个快指针，一个慢指针，它们的移动速度是不同的，根据这个速度差，我们就能完成一些工作了。 删除重复值  例题给定一个已排序的链表的头 head ， 删除所有重复的元素，使每个元素只出现一次 。返回 已排序的链表 。  思考首先这个链表是有序链表。 也就是">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-<meta property="article:published_time" content="2023-08-15T05:35:35.000Z">
-<meta property="article:modified_time" content="2023-08-15T06:55:29.478Z">
+<meta property="article:published_time" content="2023-08-18T11:55:35.000Z">
+<meta property="article:modified_time" content="2023-08-18T12:40:14.067Z">
 <meta property="article:author" content="Xinon Zhang">
 <meta property="article:tag" content="数据结构">
 <meta name="twitter:card" content="summary">
@@ -2456,7 +2456,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
 <div id="l_main" class=''>
   <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
-  <link itemprop="mainEntityOfPage" href="https://xinonria.github.io/project/2023/08/15/关于二叉树(上)/">
+  <link itemprop="mainEntityOfPage" href="https://xinonria.github.io/project/2023/08/18/快慢指针与链表/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Xinon's Blog">
   </span>
@@ -2477,7 +2477,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       <h1 class="title" itemprop="name headline">
-        关于二叉树（上）
+        快慢指针与链表
       </h1>
       <div class='new-meta-box'>
         
@@ -2498,10 +2498,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
         
           
-            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2023-08-15T13:35:35+08:00">
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2023-08-18T19:55:35+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
-    <p>发布于：Aug 15, 2023</p>
+    <p>发布于：Aug 18, 2023</p>
   </a>
 </div>
 
@@ -2516,7 +2516,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <p>
       <i class="fa-solid fa-eye fa-fw" aria-hidden="true"></i>
       
-      <span id="lc-pv" data-title="关于二叉树（上）" data-path="/xinonria.github.io/2023/08/15/%E5%85%B3%E4%BA%8E%E4%BA%8C%E5%8F%89%E6%A0%91(%E4%B8%8A)/">
+      <span id="lc-pv" data-title="快慢指针与链表" data-path="/xinonria.github.io/2023/08/18/%E5%BF%AB%E6%85%A2%E6%8C%87%E9%92%88%E4%B8%8E%E9%93%BE%E8%A1%A8/">
         <span id='number'><i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i></span>
       </span>
       
@@ -2538,67 +2538,38 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
-    <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><hr></hr>
+    <p>当要求空间复杂度为O(1)，即只使用常量额外空间时，快慢指针对于处理链表中删除重复值和判断是否有环尤为重要。</p>
+<p>快慢指针也可称为龟兔赛跑算法。</p>
+<p>定义一个快指针，一个慢指针，它们的移动速度是不同的，根据这个速度差，我们就能完成一些工作了。</p>
+<h3 id="删除重复值"><a href="#删除重复值" class="headerlink" title="删除重复值"></a>删除重复值</h3><hr></hr>
 
-<p>最近经常刷到二叉树的题，那么好好把二叉树的相关知识点都过一下吧。</p>
-<blockquote>
-<p>本文参考了代码随想录关于二叉树的介绍。<a target="_blank" rel="noopener" href="https://programmercarl.com/%E4%BA%8C%E5%8F%89%E6%A0%91%E7%90%86%E8%AE%BA%E5%9F%BA%E7%A1%80.html">原文链接</a></p>
-</blockquote>
-<h3 id="分类"><a href="#分类" class="headerlink" title="分类"></a>分类</h3><hr></hr>
+<h4 id="例题"><a href="#例题" class="headerlink" title="例题"></a>例题</h4><p>给定一个已排序的链表的头 head ， 删除所有重复的元素，使每个元素只出现一次 。返回 已排序的链表 。</p>
+<p><img src="https://s1.ax1x.com/2023/08/18/pP3JfK0.png" class="lazyload" data-srcset="https://s1.ax1x.com/2023/08/18/pP3JfK0.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<h4 id="思考"><a href="#思考" class="headerlink" title="思考"></a>思考</h4><p>首先这个链表是有序链表。</p>
+<p>也就是说，重复值是连续出现的。</p>
+<p>定义两个指针，<code>cur</code>和<code>i</code>。</p>
+<p>当发现当前节点和下个节点值相同时，即<code>i-&gt;val == i-&gt;next-&gt;val</code>。</p>
+<p><code>i</code>就不动了，启动<code>cur</code>指针。</p>
+<p><code>cur</code>一直移动到一个新的值为止。</p>
+<p>然后再让<code>i</code>跟<code>cur</code>连上，即<code>i-&gt;next = cur</code>。</p>
+<h4 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h4><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//链表定义</span></span><br><span class="line"><span class="keyword">struct</span> <span class="title class_">ListNode</span> &#123;</span><br><span class="line">	<span class="type">int</span> val;</span><br><span class="line">	ListNode* next;</span><br><span class="line">	<span class="built_in">ListNode</span>(<span class="type">int</span> x) : <span class="built_in">val</span>(x), <span class="built_in">next</span>(<span class="literal">NULL</span>) &#123;&#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="function">ListNode* <span class="title">deleteDuplicates</span><span class="params">(ListNode* head)</span></span></span><br><span class="line"><span class="function">	</span>&#123;</span><br><span class="line">		<span class="keyword">if</span> (!head) <span class="keyword">return</span> <span class="literal">nullptr</span>;</span><br><span class="line">		ListNode* i = head;         <span class="comment">//慢指针</span></span><br><span class="line">		ListNode* cur = head;       <span class="comment">//快指针</span></span><br><span class="line">		<span class="keyword">while</span> (i)</span><br><span class="line">		&#123;</span><br><span class="line">      <span class="comment">//&amp;&amp;逻辑运算符是先判断左边，如果不满足的话就不看右边直接返回false了。</span></span><br><span class="line">			<span class="keyword">if</span> (i-&gt;next &amp;&amp; i-&gt;val == i-&gt;next-&gt;val)  <span class="comment">//防止访问出界，先判断i-&gt;next是否有值</span></span><br><span class="line">			&#123;</span><br><span class="line">				<span class="keyword">while</span> (cur &amp;&amp; cur-&gt;val == i-&gt;val) cur = cur-&gt;next;     <span class="comment">//防止cur访问出界，先判断cur是不是空指针了 </span></span><br><span class="line">        <span class="comment">//上面这句while循环已经把cur移动到一个新的值处了</span></span><br><span class="line">				i-&gt;next = cur;    <span class="comment">//将i-&gt;next直接连接到cur处。（没释放中间元素）</span></span><br><span class="line">			&#125;</span><br><span class="line">			i = i-&gt;next;</span><br><span class="line">			cur = i;     <span class="comment">//正常走的话cur跟着i一起走</span></span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">return</span> head;     <span class="comment">//返回头指针，此时cur和i已经指向链表尾了</span></span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
 
-<h4 id="满二叉树"><a href="#满二叉树" class="headerlink" title="满二叉树"></a>满二叉树</h4><p>一个二叉树除了叶节点外每个节点都有两个子节点，且叶节点在同一层的二叉树。就是看上去都是满的。</p>
-<p>深度为$k$。节点数量就是$2^k-1$个。</p>
-<p><img src="https://www.z4a.net/images/2023/08/15/20200806185805576.png" class="lazyload" data-srcset="https://www.z4a.net/images/2023/08/15/20200806185805576.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image.png"></p>
-<h4 id="完全二叉树"><a href="#完全二叉树" class="headerlink" title="完全二叉树"></a>完全二叉树</h4><p>除了最底层节点没填满外，其他节点都是满的。<strong>且最底层节点必须从左到右连续！</strong></p>
-<p><img src="https://www.z4a.net/images/2023/08/15/20200920221638903.png" class="lazyload" data-srcset="https://www.z4a.net/images/2023/08/15/20200920221638903.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
-<p>所以，满二叉树同时也是一个完全二叉树。</p>
-<h4 id="二叉搜索树"><a href="#二叉搜索树" class="headerlink" title="二叉搜索树"></a>二叉搜索树</h4><p>二叉搜索树是有数值且有序的。</p>
-<p>它的子节点的位置要满足三个条件。</p>
-<ul>
-<li>左子树上所有节点都小于根节点</li>
-<li>右子树上所有节点都大于根节点</li>
-<li>左右子树都满足二叉搜索树</li>
-</ul>
-<p><img src="https://www.z4a.net/images/2023/08/15/20200806190304693.png" class="lazyload" data-srcset="https://www.z4a.net/images/2023/08/15/20200806190304693.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
-<p>如图：</p>
-<p>以根节点10为例，左子节点$6&lt;10$，右子节点$16&gt;10$。</p>
-<p>节点6同理，节点16也同理。</p>
-<h4 id="平衡二叉搜索树"><a href="#平衡二叉搜索树" class="headerlink" title="平衡二叉搜索树"></a>平衡二叉搜索树</h4><p>平衡二叉搜索树也是有序树，但它跟二叉搜索树的区别在于<strong>它的左右两个子树的高度差的绝对值不超过1，并且左右两个子树都是一棵平衡二叉树。</strong></p>
-<p><img src="https://www.z4a.net/images/2023/08/15/20200806190511967.png" class="lazyload" data-srcset="https://www.z4a.net/images/2023/08/15/20200806190511967.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
-<p>为什么要专门有个平衡二叉树呢？</p>
-<p>因为一个二叉搜索树极端情况下退化为链表结构，根节点在尾部或头部。这样一来搜索的效率就低了。</p>
-<h3 id="存储"><a href="#存储" class="headerlink" title="存储"></a>存储</h3><hr></hr>
-二叉树存储有两种方式，链式存储（指针实现）和顺序存储（数组实现）。
+<h3 id="判断是否有环"><a href="#判断是否有环" class="headerlink" title="判断是否有环"></a>判断是否有环</h3><hr></hr>
 
-<h4 id="链式存储"><a href="#链式存储" class="headerlink" title="链式存储"></a>链式存储</h4><p>一般链式存储较多，例如（Leetcode默认构造的二叉树）:</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">struct</span> <span class="title class_">TreeNode</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="type">int</span> val;          <span class="comment">//当前节点存放的数据</span></span><br><span class="line">	TreeNode* left;   <span class="comment">//指向左子节点</span></span><br><span class="line">	TreeNode* right;  <span class="comment">//指向右子节点</span></span><br><span class="line">  <span class="comment">//构造函数</span></span><br><span class="line">  <span class="built_in">TreeNode</span>() : <span class="built_in">val</span>(<span class="number">0</span>), <span class="built_in">left</span>(<span class="literal">nullptr</span>), <span class="built_in">right</span>(<span class="literal">nullptr</span>) &#123;&#125;</span><br><span class="line">	<span class="built_in">TreeNode</span>(<span class="type">int</span> x) : <span class="built_in">val</span>(x), <span class="built_in">left</span>(<span class="literal">nullptr</span>), <span class="built_in">right</span>(<span class="literal">nullptr</span>) &#123;&#125;</span><br><span class="line">	<span class="built_in">TreeNode</span>(<span class="type">int</span> x, TreeNode* left, TreeNode* right) : <span class="built_in">val</span>(x), <span class="built_in">left</span>(left), <span class="built_in">right</span>(right) &#123;&#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-<h4 id="顺序存储"><a href="#顺序存储" class="headerlink" title="顺序存储"></a>顺序存储</h4><p>而顺序存储则是使用下标来存储节点。</p>
-<p><img src="https://www.z4a.net/images/2023/08/15/20200920200429452.png" class="lazyload" data-srcset="https://www.z4a.net/images/2023/08/15/20200920200429452.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
-<p>通过观察可以知道第$i$个节点的左子结点下标为$i<em>2+1$，右子节点下标为$i</em>2+2$。</p>
-<h3 id="遍历"><a href="#遍历" class="headerlink" title="遍历"></a>遍历</h3><hr></hr>
-
-<p>二叉树有四种遍历方法。</p>
-<h4 id="深度优先搜索"><a href="#深度优先搜索" class="headerlink" title="深度优先搜索"></a>深度优先搜索</h4><p>其中使用深度优先搜索的遍历方法有：</p>
-<ul>
-<li>前序遍历 (中左右)</li>
-<li>中序遍历 (左中右)</li>
-<li>后序遍历 (左右中)</li>
-</ul>
-<p>(中在哪个位置就叫什么遍历，左或右不是左右子节点的意思，是左右子树的意思)</p>
-<p><img src="https://www.z4a.net/images/2023/08/15/20200806191109896.png" class="lazyload" data-srcset="https://www.z4a.net/images/2023/08/15/20200806191109896.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
-<p>遍历可以用递归写，也可以用迭代的方法写。</p>
-<p>由于递归底层实现也是用栈，所以可以直接用栈来代替。</p>
-<p>如前面一篇二叉树中序遍历的实现。<a target="_blank" rel="noopener" href="https://xinonria.top/2023/08/12/%E5%85%B3%E4%BA%8E%E4%BA%8C%E5%8F%89%E6%A0%91%E4%B8%AD%E5%BA%8F%E9%81%8D%E5%8E%86/">原文</a></p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">vector&lt;<span class="type">int</span>&gt; <span class="title">inorderTraversal</span><span class="params">(TreeNode* root)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">  stack&lt;TreeNode*&gt; s;</span><br><span class="line">  unordered_map&lt;TreeNode*, <span class="type">bool</span>&gt; umap&#123;&#123;<span class="literal">nullptr</span>, <span class="literal">false</span>&#125;&#125;;</span><br><span class="line">  vector&lt;<span class="type">int</span>&gt; res;</span><br><span class="line">  s.<span class="built_in">push</span>(root);</span><br><span class="line">  TreeNode* temp;</span><br><span class="line">  <span class="keyword">while</span> (!s.<span class="built_in">empty</span>())</span><br><span class="line">  &#123;</span><br><span class="line">  	temp = s.<span class="built_in">top</span>();</span><br><span class="line">  	s.<span class="built_in">pop</span>();</span><br><span class="line">  	<span class="keyword">if</span> (!temp)</span><br><span class="line">  		<span class="keyword">continue</span>;</span><br><span class="line">  	<span class="keyword">if</span> (umap[temp])</span><br><span class="line">  		res.<span class="built_in">push_back</span>(temp-&gt;val);</span><br><span class="line">  	<span class="keyword">else</span></span><br><span class="line">  	&#123;</span><br><span class="line">  		umap[temp] = <span class="literal">true</span>;</span><br><span class="line">      <span class="comment">//由于是栈，反过来看就是左中右</span></span><br><span class="line">  		s.<span class="built_in">push</span>(temp-&gt;right);</span><br><span class="line">  		s.<span class="built_in">push</span>(temp);</span><br><span class="line">  		s.<span class="built_in">push</span>(temp-&gt;left);</span><br><span class="line">  	&#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> res;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-<p>该方法只需更改<code>s.push()</code>的位置就可直接实现前中后序遍历。</p>
-<h4 id="广度优先搜索"><a href="#广度优先搜索" class="headerlink" title="广度优先搜索"></a>广度优先搜索</h4><p>使用广度优先搜索实现的遍历方法为层序遍历。</p>
-<p><img src="https://www.z4a.net/images/2023/08/15/20210203144842988.png" class="lazyload" data-srcset="https://www.z4a.net/images/2023/08/15/20210203144842988.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
-<p>使用队列来实现层序遍历。因为队列<strong>先进先出</strong>的特点可以实现广度优先搜索。</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">vector&lt;<span class="type">int</span>&gt; <span class="title">inorderTraversal</span><span class="params">(TreeNode* root)</span></span></span><br><span class="line"><span class="function">	</span>&#123;</span><br><span class="line">		queue&lt;TreeNode*&gt; q;</span><br><span class="line">		vector&lt;<span class="type">int</span>&gt; res;</span><br><span class="line">		<span class="keyword">if</span> (root) q.<span class="built_in">push</span>(root);</span><br><span class="line">		<span class="type">int</span> len = q.<span class="built_in">size</span>();</span><br><span class="line">		<span class="keyword">while</span> (!q.<span class="built_in">empty</span>())</span><br><span class="line">		&#123;</span><br><span class="line">			len = q.<span class="built_in">size</span>();</span><br><span class="line">			<span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i != len; ++i)  <span class="comment">//这里不能写i!=q.size()。因为len在循环体内会发生变化，会导致出错。</span></span><br><span class="line">			&#123;</span><br><span class="line">				TreeNode* node = q.<span class="built_in">front</span>();</span><br><span class="line">				q.<span class="built_in">pop</span>();</span><br><span class="line">				res.<span class="built_in">push_back</span>(node-&gt;val);</span><br><span class="line">				<span class="keyword">if</span> (node-&gt;left) q.<span class="built_in">push</span>(node-&gt;left);</span><br><span class="line">				<span class="keyword">if</span> (node-&gt;right) q.<span class="built_in">push</span>(node-&gt;right);</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">return</span> res;</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
-
-<p>未完待续……</p>
-
+<h4 id="例题-1"><a href="#例题-1" class="headerlink" title="例题"></a>例题</h4><p>给你一个链表的头节点 head ，判断链表中是否有环。</p>
+<p>如果链表中有某个节点，可以通过连续跟踪 next 指针再次到达，则链表中存在环。 为了表示给定链表中的环，评测系统内部使用整数 pos 来表示链表尾连接到链表中的位置（索引从 0 开始）。注意：pos 不作为参数进行传递 。仅仅是为了标识链表的实际情况。</p>
+<p>如果链表中存在环 ，则返回 true 。 否则，返回 false 。</p>
+<p><img src="https://s1.ax1x.com/2023/08/18/pP3tW7T.png" class="lazyload" data-srcset="https://s1.ax1x.com/2023/08/18/pP3tW7T.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<h4 id="思考-1"><a href="#思考-1" class="headerlink" title="思考"></a>思考</h4><p>本题比较符合快慢指针的本质。</p>
+<p>利用快慢指针的速度差可以判断链表内是否有环。</p>
+<p>首先我们知道，如果没环的话，最终是能走到空节点的。</p>
+<p>但如果有环的话，指针会回到原来的某个位置。</p>
+<p>我们设定快指针速度为2，即一次走两个节点。</p>
+<p>慢指针速度为1，即一次走一个节点。</p>
+<p>如果有环的情况下，快指针会先到达环处。</p>
+<p>快指针会回到慢指针的背后，往前追赶。</p>
+<p>那么最终快指针会追上慢指针，两个指针相遇。说明这个链表中有环。</p>
+<h4 id="代码-1"><a href="#代码-1" class="headerlink" title="代码"></a>代码</h4><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">bool</span> <span class="title">hasCycle</span><span class="params">(ListNode* head)</span> </span>&#123;</span><br><span class="line">	ListNode* fastCur = head;</span><br><span class="line">	ListNode* slowCur = head;</span><br><span class="line">	<span class="keyword">while</span> (fastCur != <span class="literal">nullptr</span>) <span class="comment">//快指针到达空节点说明没有环</span></span><br><span class="line">	&#123;</span><br><span class="line">		fastCur = fastCur-&gt;next;   <span class="comment">//快指针先走</span></span><br><span class="line">		<span class="keyword">if</span> (fastCur) fastCur = fastCur-&gt;next;  <span class="comment">//如果现在还没到尾巴的话再走一步</span></span><br><span class="line">		<span class="keyword">if</span> (fastCur == slowCur) <span class="keyword">return</span> <span class="literal">true</span>;  <span class="comment">//此时fastCur追上了slowCur，说明有环</span></span><br><span class="line">		slowCur = slowCur-&gt;next;   <span class="comment">//慢指针走一步</span></span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
   </div>
   
   
@@ -2622,10 +2593,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-08-15T14:55:29+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-08-18T20:40:14+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：Aug 15, 2023</p>
+    <p>更新于：Aug 18, 2023</p>
   </a>
 </div>
 
@@ -2648,7 +2619,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://xinonria.github.io/project/2023/08/15/%E5%85%B3%E4%BA%8E%E4%BA%8C%E5%8F%89%E6%A0%91(%E4%B8%8A)/&title=关于二叉树（上） - Xinon's Blog&summary="
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://xinonria.github.io/project/2023/08/18/%E5%BF%AB%E6%85%A2%E6%8C%87%E9%92%88%E4%B8%8E%E9%93%BE%E8%A1%A8/&title=快慢指针与链表 - Xinon's Blog&summary="
           
           >
           
@@ -2660,7 +2631,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://xinonria.github.io/project/2023/08/15/%E5%85%B3%E4%BA%8E%E4%BA%8C%E5%8F%89%E6%A0%91(%E4%B8%8A)/&title=关于二叉树（上） - Xinon's Blog&summary="
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://xinonria.github.io/project/2023/08/18/%E5%BF%AB%E6%85%A2%E6%8C%87%E9%92%88%E4%B8%8E%E9%93%BE%E8%A1%A8/&title=快慢指针与链表 - Xinon's Blog&summary="
           
           >
           
@@ -2672,7 +2643,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://service.weibo.com/share/share.php?url=https://xinonria.github.io/project/2023/08/15/%E5%85%B3%E4%BA%8E%E4%BA%8C%E5%8F%89%E6%A0%91(%E4%B8%8A)/&title=关于二叉树（上） - Xinon's Blog&summary="
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://xinonria.github.io/project/2023/08/18/%E5%BF%AB%E6%85%A2%E6%8C%87%E9%92%88%E4%B8%8E%E9%93%BE%E8%A1%A8/&title=快慢指针与链表 - Xinon's Blog&summary="
           
           >
           
@@ -2705,26 +2676,16 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     <div class="prev-next">
       
-        <a class='prev' href='/xinonria.github.io/2023/08/16/%E5%85%B3%E4%BA%8E%E4%BA%8C%E5%8F%89%E6%A0%91(%E4%B8%AD)/'>
-          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>关于二叉树（中）</p>
-          <p class='content'>构造
-
-前序和中序可以唯一确定一棵二叉树。
-后序和中序可以唯一确定一棵二叉树。
-前序和后序不能唯一确定一棵二叉树！
-没中序遍历就无法分割了。
-前序遍历&amp;中序遍历构造分析首先要牢记各个遍历...</p>
-        </a>
       
-      
-        <a class='next' href='/xinonria.github.io/2023/08/14/%E4%BA%8C%E5%8F%89%E6%A0%91%E4%B8%8E%E9%80%92%E5%BD%92/'>
-          <p class='title'>二叉树与递归<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>最近经常做到关于二叉树的Easy题。
-二叉树的遍历总是和递归绑在一起。
-如下题寻找二叉树的最大深度。
-原题原题链接
+        <a class='next' href='/xinonria.github.io/2023/08/17/%E5%85%B3%E4%BA%8E%E4%BA%8C%E5%8F%89%E6%A0%91-%E4%B8%8B/'>
+          <p class='title'>关于二叉树(下)<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>二叉搜索树是有序的。
+它可以完成搜索，插入以及删除等操作。
+搜索例题
+思考因为二叉搜索树有以下几个性质。
 
-思路用递推的思路来想，从某一个节点出发，它的最大深度就是max(左子节点最大...</p>
+若它的左子树不空，则左子树上所有结点的值均小于它的根结点的值；
+若它的右子树不空，则右...</p>
         </a>
       
     </div>
@@ -2740,7 +2701,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <article class="post white-box shadow floatable blur" id="comments">
     <span hidden>
-      <meta itemprop="discussionUrl" content="/xinonria.github.io/2023/08/15/%E5%85%B3%E4%BA%8E%E4%BA%8C%E5%8F%89%E6%A0%91(%E4%B8%8A)/index.html#comments">
+      <meta itemprop="discussionUrl" content="/xinonria.github.io/2023/08/18/%E5%BF%AB%E6%85%A2%E6%8C%87%E9%92%88%E4%B8%8E%E9%93%BE%E8%A1%A8/index.html#comments">
     </span>
     <p ct><i class='fa-solid fa-comments'></i> 评论</p>
     
@@ -2782,7 +2743,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
     <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-text">前言</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%86%E7%B1%BB"><span class="toc-text">分类</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%BB%A1%E4%BA%8C%E5%8F%89%E6%A0%91"><span class="toc-text">满二叉树</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%8C%E5%85%A8%E4%BA%8C%E5%8F%89%E6%A0%91"><span class="toc-text">完全二叉树</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91"><span class="toc-text">二叉搜索树</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%B9%B3%E8%A1%A1%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91"><span class="toc-text">平衡二叉搜索树</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AD%98%E5%82%A8"><span class="toc-text">存储</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%93%BE%E5%BC%8F%E5%AD%98%E5%82%A8"><span class="toc-text">链式存储</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%A1%BA%E5%BA%8F%E5%AD%98%E5%82%A8"><span class="toc-text">顺序存储</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%81%8D%E5%8E%86"><span class="toc-text">遍历</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B7%B1%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2"><span class="toc-text">深度优先搜索</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%B9%BF%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2"><span class="toc-text">广度优先搜索</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%A0%E9%99%A4%E9%87%8D%E5%A4%8D%E5%80%BC"><span class="toc-text">删除重复值</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BE%8B%E9%A2%98"><span class="toc-text">例题</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%80%9D%E8%80%83"><span class="toc-text">思考</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81"><span class="toc-text">代码</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%A4%E6%96%AD%E6%98%AF%E5%90%A6%E6%9C%89%E7%8E%AF"><span class="toc-text">判断是否有环</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BE%8B%E9%A2%98-1"><span class="toc-text">例题</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%80%9D%E8%80%83-1"><span class="toc-text">思考</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81-1"><span class="toc-text">代码</span></a></li></ol></li></ol>
     </div>
   </section>
 
@@ -3889,7 +3850,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Xinon's Blog","url":"https://xinonria.github.io/project/xinonria.github.io/","logo":{"@type":"ImageObject","url":"/images/logo.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Xinon Zhang","image":{"@type":"ImageObject","url":"/images/logo.png"},"url":"https://xinonria.github.io/project/xinonria.github.io/","sameAs":["https://github.com/volantis-x"],"description":""},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://xinonria.github.io/project/xinonria.github.io/","name":"Xinon's Blog"}},{"@type":"ListItem","position":3,"item":{"@id":"https://xinonria.github.io/project/xinonria.github.io/2023/08/15/关于二叉树(上)/","name":"关于二叉树（上）"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Xinon's Blog","url":"https://xinonria.github.io/project/xinonria.github.io/","keywords":null,"description":"","author":{"@type":"Person","name":"Xinon Zhang","image":{"@type":"ImageObject","url":"/images/logo.png"},"url":"https://xinonria.github.io/project/xinonria.github.io/","description":""},"publisher":{"@type":"Organization","name":"Xinon's Blog","url":"https://xinonria.github.io/project/xinonria.github.io/","logo":{"@type":"ImageObject","url":"/images/logo.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://xinonria.github.io/project?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"关于二叉树（上）","description":"","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https://xinonria.github.io/project/2023/08/15/%E5%85%B3%E4%BA%8E%E4%BA%8C%E5%8F%89%E6%A0%91(%E4%B8%8A)/"},"author":{"@type":"Person","name":"Xinon Zhang","image":{"@type":"ImageObject","url":"/images/logo.png"},"url":"https://xinonria.github.io/project/xinonria.github.io/"},"publisher":{"@type":"Organization","name":"Xinon's Blog","logo":{"@type":"ImageObject","url":"/images/logo.png","width":192,"height":192}},"url":"https://xinonria.github.io/project/2023/08/15/%E5%85%B3%E4%BA%8E%E4%BA%8C%E5%8F%89%E6%A0%91(%E4%B8%8A)/","wordCount":0,"datePublished":"2023-08-15T05:35:35.000Z","dateModified":"2023-08-15T06:55:29.478Z","keywords":"数据结构","image":{"@type":"ImageObject","url":"/images/logo.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Xinon's Blog","url":"https://xinonria.github.io/project/xinonria.github.io/","logo":{"@type":"ImageObject","url":"/images/logo.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Xinon Zhang","image":{"@type":"ImageObject","url":"/images/logo.png"},"url":"https://xinonria.github.io/project/xinonria.github.io/","sameAs":["https://github.com/volantis-x"],"description":""},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://xinonria.github.io/project/xinonria.github.io/","name":"Xinon's Blog"}},{"@type":"ListItem","position":3,"item":{"@id":"https://xinonria.github.io/project/xinonria.github.io/2023/08/18/快慢指针与链表/","name":"快慢指针与链表"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Xinon's Blog","url":"https://xinonria.github.io/project/xinonria.github.io/","keywords":null,"description":"","author":{"@type":"Person","name":"Xinon Zhang","image":{"@type":"ImageObject","url":"/images/logo.png"},"url":"https://xinonria.github.io/project/xinonria.github.io/","description":""},"publisher":{"@type":"Organization","name":"Xinon's Blog","url":"https://xinonria.github.io/project/xinonria.github.io/","logo":{"@type":"ImageObject","url":"/images/logo.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://xinonria.github.io/project?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"快慢指针与链表","description":"","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https://xinonria.github.io/project/2023/08/18/%E5%BF%AB%E6%85%A2%E6%8C%87%E9%92%88%E4%B8%8E%E9%93%BE%E8%A1%A8/"},"author":{"@type":"Person","name":"Xinon Zhang","image":{"@type":"ImageObject","url":"/images/logo.png"},"url":"https://xinonria.github.io/project/xinonria.github.io/"},"publisher":{"@type":"Organization","name":"Xinon's Blog","logo":{"@type":"ImageObject","url":"/images/logo.png","width":192,"height":192}},"url":"https://xinonria.github.io/project/2023/08/18/%E5%BF%AB%E6%85%A2%E6%8C%87%E9%92%88%E4%B8%8E%E9%93%BE%E8%A1%A8/","wordCount":0,"datePublished":"2023-08-18T11:55:35.000Z","dateModified":"2023-08-18T12:40:14.067Z","keywords":"数据结构","image":{"@type":"ImageObject","url":"/images/logo.png","width":192,"height":192}}]</script>
 
 
 
