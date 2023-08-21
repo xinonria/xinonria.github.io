@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <!-- SEO相关 -->
   
-  <link rel="canonical" href="https://xinonria.github.io/project/2023/08/18/快慢指针与链表/"/>
+  <link rel="canonical" href="https://xinonria.github.io/project/2023/08/21/数组与指针/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -33,19 +33,19 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>快慢指针与链表 - Xinon's Blog</title>
+  <title>数组与指针 - Xinon's Blog</title>
   <meta name="keywords" content="数据结构,null">
   <meta desc name="description" content="一个兴趣使然的博客 - Xinon Zhang - Xinon's Blog">
   
 <meta property="og:type" content="article">
-<meta property="og:title" content="快慢指针与链表">
-<meta property="og:url" content="https://xinonria.github.io/project/2023/08/18/%E5%BF%AB%E6%85%A2%E6%8C%87%E9%92%88%E4%B8%8E%E9%93%BE%E8%A1%A8/index.html">
+<meta property="og:title" content="数组与指针">
+<meta property="og:url" content="https://xinonria.github.io/project/2023/08/21/%E6%95%B0%E7%BB%84%E4%B8%8E%E6%8C%87%E9%92%88/index.html">
 <meta property="og:site_name" content="Xinon&#39;s Blog">
-<meta property="og:description" content="当要求空间复杂度为O(1)，即只使用常量额外空间时，快慢指针对于处理链表中删除重复值和判断是否有环尤为重要。 快慢指针也可称为龟兔赛跑算法。 定义一个快指针，一个慢指针，它们的移动速度是不同的，根据这个速度差，我们就能完成一些工作了。 删除重复值  例题给定一个已排序的链表的头 head ， 删除所有重复的元素，使每个元素只出现一次 。返回 已排序的链表 。  思考首先这个链表是有序链表。 也就是">
+<meta property="og:description" content="数组  我们都知道访问数组的一个元素可以通过下标访问。 例如 123456int a[5] &#x3D; &amp;#123; 1,2,3,4,5 &amp;#125;; &#x2F;&#x2F;初始化printf(&quot;%d %d&quot;, a[0], a[1]);-----output:1 2 通过下标我们访问了数组a的第0个和第1个元素。 但是数组的下标访问本质是编程语言的一个语法糖。 数组的本质是开辟一串连续的空间用于存储数">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-<meta property="article:published_time" content="2023-08-18T11:55:35.000Z">
-<meta property="article:modified_time" content="2023-08-18T12:40:14.067Z">
+<meta property="article:published_time" content="2023-08-21T15:40:58.000Z">
+<meta property="article:modified_time" content="2023-08-21T16:15:45.435Z">
 <meta property="article:author" content="Xinon Zhang">
 <meta property="article:tag" content="数据结构">
 <meta name="twitter:card" content="summary">
@@ -2441,7 +2441,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
 <div id="l_main" class=''>
   <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
-  <link itemprop="mainEntityOfPage" href="https://xinonria.github.io/project/2023/08/18/快慢指针与链表/">
+  <link itemprop="mainEntityOfPage" href="https://xinonria.github.io/project/2023/08/21/数组与指针/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Xinon's Blog">
   </span>
@@ -2462,7 +2462,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       <h1 class="title" itemprop="name headline">
-        快慢指针与链表
+        数组与指针
       </h1>
       <div class='new-meta-box'>
         
@@ -2483,10 +2483,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
         
           
-            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2023-08-18T19:55:35+08:00">
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2023-08-21T23:40:58+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
-    <p>发布于：2023年8月18日</p>
+    <p>发布于：2023年8月21日</p>
   </a>
 </div>
 
@@ -2501,7 +2501,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <p>
       <i class="fa-solid fa-eye fa-fw" aria-hidden="true"></i>
       
-      <span id="lc-pv" data-title="快慢指针与链表" data-path="/xinonria.github.io/2023/08/18/%E5%BF%AB%E6%85%A2%E6%8C%87%E9%92%88%E4%B8%8E%E9%93%BE%E8%A1%A8/">
+      <span id="lc-pv" data-title="数组与指针" data-path="/xinonria.github.io/2023/08/21/%E6%95%B0%E7%BB%84%E4%B8%8E%E6%8C%87%E9%92%88/">
         <span id='number'><i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i></span>
       </span>
       
@@ -2523,38 +2523,46 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
-    <p>当要求空间复杂度为O(1)，即只使用常量额外空间时，快慢指针对于处理链表中删除重复值和判断是否有环尤为重要。</p>
-<p>快慢指针也可称为龟兔赛跑算法。</p>
-<p>定义一个快指针，一个慢指针，它们的移动速度是不同的，根据这个速度差，我们就能完成一些工作了。</p>
-<h3 id="删除重复值"><a href="#删除重复值" class="headerlink" title="删除重复值"></a>删除重复值</h3><hr></hr>
+    <h3 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h3><hr></hr>
 
-<h4 id="例题"><a href="#例题" class="headerlink" title="例题"></a>例题</h4><p>给定一个已排序的链表的头 head ， 删除所有重复的元素，使每个元素只出现一次 。返回 已排序的链表 。</p>
-<p><img src="https://s1.ax1x.com/2023/08/18/pP3JfK0.png" class="lazyload" data-srcset="https://s1.ax1x.com/2023/08/18/pP3JfK0.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
-<h4 id="思考"><a href="#思考" class="headerlink" title="思考"></a>思考</h4><p>首先这个链表是有序链表。</p>
-<p>也就是说，重复值是连续出现的。</p>
-<p>定义两个指针，<code>cur</code>和<code>i</code>。</p>
-<p>当发现当前节点和下个节点值相同时，即<code>i-&gt;val == i-&gt;next-&gt;val</code>。</p>
-<p><code>i</code>就不动了，启动<code>cur</code>指针。</p>
-<p><code>cur</code>一直移动到一个新的值为止。</p>
-<p>然后再让<code>i</code>跟<code>cur</code>连上，即<code>i-&gt;next = cur</code>。</p>
-<h4 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h4><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//链表定义</span></span><br><span class="line"><span class="keyword">struct</span> <span class="title class_">ListNode</span> &#123;</span><br><span class="line">	<span class="type">int</span> val;</span><br><span class="line">	ListNode* next;</span><br><span class="line">	<span class="built_in">ListNode</span>(<span class="type">int</span> x) : <span class="built_in">val</span>(x), <span class="built_in">next</span>(<span class="literal">NULL</span>) &#123;&#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="function">ListNode* <span class="title">deleteDuplicates</span><span class="params">(ListNode* head)</span></span></span><br><span class="line"><span class="function">	</span>&#123;</span><br><span class="line">		<span class="keyword">if</span> (!head) <span class="keyword">return</span> <span class="literal">nullptr</span>;</span><br><span class="line">		ListNode* i = head;         <span class="comment">//慢指针</span></span><br><span class="line">		ListNode* cur = head;       <span class="comment">//快指针</span></span><br><span class="line">		<span class="keyword">while</span> (i)</span><br><span class="line">		&#123;</span><br><span class="line">      <span class="comment">//&amp;&amp;逻辑运算符是先判断左边，如果不满足的话就不看右边直接返回false了。</span></span><br><span class="line">			<span class="keyword">if</span> (i-&gt;next &amp;&amp; i-&gt;val == i-&gt;next-&gt;val)  <span class="comment">//防止访问出界，先判断i-&gt;next是否有值</span></span><br><span class="line">			&#123;</span><br><span class="line">				<span class="keyword">while</span> (cur &amp;&amp; cur-&gt;val == i-&gt;val) cur = cur-&gt;next;     <span class="comment">//防止cur访问出界，先判断cur是不是空指针了 </span></span><br><span class="line">        <span class="comment">//上面这句while循环已经把cur移动到一个新的值处了</span></span><br><span class="line">				i-&gt;next = cur;    <span class="comment">//将i-&gt;next直接连接到cur处。（没释放中间元素）</span></span><br><span class="line">			&#125;</span><br><span class="line">			i = i-&gt;next;</span><br><span class="line">			cur = i;     <span class="comment">//正常走的话cur跟着i一起走</span></span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">return</span> head;     <span class="comment">//返回头指针，此时cur和i已经指向链表尾了</span></span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
+<p>我们都知道访问数组的一个元素可以通过下标访问。</p>
+<p>例如</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> a[<span class="number">5</span>] = &#123; <span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span> &#125;; <span class="comment">//初始化</span></span><br><span class="line"><span class="built_in">printf</span>(<span class="string">&quot;%d %d&quot;</span>, a[<span class="number">0</span>], a[<span class="number">1</span>]);</span><br><span class="line"></span><br><span class="line">-----</span><br><span class="line">output:</span><br><span class="line"><span class="number">1</span> <span class="number">2</span></span><br></pre></td></tr></table></figure>
+<p>通过下标我们访问了数组<code>a</code>的第<code>0</code>个和第<code>1</code>个元素。</p>
+<p>但是数组的下标访问本质是编程语言的一个语法糖。</p>
+<p>数组的本质是开辟一串<strong>连续</strong>的空间用于存储数据。</p>
+<h3 id="指针"><a href="#指针" class="headerlink" title="指针"></a>指针</h3><hr></hr>
 
-<h3 id="判断是否有环"><a href="#判断是否有环" class="headerlink" title="判断是否有环"></a>判断是否有环</h3><hr></hr>
+<p>数组名其实是指向数组头的一个指针。</p>
+<p>例如：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> a[<span class="number">5</span>] = &#123; <span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span> &#125;;</span><br><span class="line"><span class="built_in">printf</span>(<span class="string">&quot;a的地址为%p，a+1地址为%p&quot;</span>, <span class="built_in">typeid</span>(a).<span class="built_in">name</span>(), a, a + <span class="number">1</span>);  <span class="comment">//%p输出</span></span><br><span class="line"></span><br><span class="line">-----</span><br><span class="line">output:</span><br><span class="line">a的地址为<span class="number">0000009</span>A7DD8FD08，a+<span class="number">1</span>地址为<span class="number">0000009</span>A7DD8FD0C</span><br></pre></td></tr></table></figure>
 
-<h4 id="例题-1"><a href="#例题-1" class="headerlink" title="例题"></a>例题</h4><p>给你一个链表的头节点 head ，判断链表中是否有环。</p>
-<p>如果链表中有某个节点，可以通过连续跟踪 next 指针再次到达，则链表中存在环。 为了表示给定链表中的环，评测系统内部使用整数 pos 来表示链表尾连接到链表中的位置（索引从 0 开始）。注意：pos 不作为参数进行传递 。仅仅是为了标识链表的实际情况。</p>
-<p>如果链表中存在环 ，则返回 true 。 否则，返回 false 。</p>
-<p><img src="https://s1.ax1x.com/2023/08/18/pP3tW7T.png" class="lazyload" data-srcset="https://s1.ax1x.com/2023/08/18/pP3tW7T.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
-<h4 id="思考-1"><a href="#思考-1" class="headerlink" title="思考"></a>思考</h4><p>本题比较符合快慢指针的本质。</p>
-<p>利用快慢指针的速度差可以判断链表内是否有环。</p>
-<p>首先我们知道，如果没环的话，最终是能走到空节点的。</p>
-<p>但如果有环的话，指针会回到原来的某个位置。</p>
-<p>我们设定快指针速度为2，即一次走两个节点。</p>
-<p>慢指针速度为1，即一次走一个节点。</p>
-<p>如果有环的情况下，快指针会先到达环处。</p>
-<p>快指针会回到慢指针的背后，往前追赶。</p>
-<p>那么最终快指针会追上慢指针，两个指针相遇。说明这个链表中有环。</p>
-<h4 id="代码-1"><a href="#代码-1" class="headerlink" title="代码"></a>代码</h4><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">bool</span> <span class="title">hasCycle</span><span class="params">(ListNode* head)</span> </span>&#123;</span><br><span class="line">	ListNode* fastCur = head;</span><br><span class="line">	ListNode* slowCur = head;</span><br><span class="line">	<span class="keyword">while</span> (fastCur != <span class="literal">nullptr</span>) <span class="comment">//快指针到达空节点说明没有环</span></span><br><span class="line">	&#123;</span><br><span class="line">		fastCur = fastCur-&gt;next;   <span class="comment">//快指针先走</span></span><br><span class="line">		<span class="keyword">if</span> (fastCur) fastCur = fastCur-&gt;next;  <span class="comment">//如果现在还没到尾巴的话再走一步</span></span><br><span class="line">		<span class="keyword">if</span> (fastCur == slowCur) <span class="keyword">return</span> <span class="literal">true</span>;  <span class="comment">//此时fastCur追上了slowCur，说明有环</span></span><br><span class="line">		slowCur = slowCur-&gt;next;   <span class="comment">//慢指针走一步</span></span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>将<code>a+1</code>地址0000009A7DD8FD0C与<code>a</code>地址0000009A7DD8FD08相减，可以得到结果为4。</p>
+<p><img src="https://www.z4a.net/images/2023/08/21/image2a55ee4bfd6c91d9.png" class="lazyload" data-srcset="https://www.z4a.net/images/2023/08/21/image2a55ee4bfd6c91d9.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p>根据int类型的占用空间</p>
+<blockquote>
+<p>int类型在内存中占用了4个字节</p>
+</blockquote>
+<p>我们可以知道<code>a</code>对应的是<code>a[0]</code>的地址，<code>a+1</code>对应的就是<code>a[1]</code>的地址。</p>
+<p>使用<code>*</code>取值符(解引用操作符)，可以访问这个地址的数据。</p>
+<p>例如:</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> a[<span class="number">5</span>] = &#123; <span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span> &#125;;</span><br><span class="line"><span class="built_in">printf</span>(<span class="string">&quot;%d %d&quot;</span>, *a, *(a+<span class="number">1</span>));</span><br><span class="line"></span><br><span class="line">-----</span><br><span class="line">output:</span><br><span class="line"><span class="number">1</span> <span class="number">2</span></span><br></pre></td></tr></table></figure>
+
+<p>跟使用<code>a[0]</code>和<code>a[1]</code>访问效果一样。</p>
+<p>通过这个例子可以看出，<code>a[n]</code>的本质其实就是<code>*(a+n)</code>。</p>
+<p>这也解答了为什么数组是从0开始而不是从1开始。</p>
+<p>因为数字对应了指针的偏移量。</p>
+<p>第一个元素是头元素，偏移量为0，所以从数组是从0开始的。</p>
+<h3 id="最后的话"><a href="#最后的话" class="headerlink" title="最后的话"></a>最后的话</h3><hr></hr>
+
+<p>在C语言里指针是一个很重要的概念。</p>
+<p>初学时总觉得很复杂，很麻烦，是一个难点。</p>
+<p>学习指针时还是要多结合实际对指针的利用来学，这样才能尽快搞懂。</p>
+<p>指针应是跟变量绑定在一起开始学的，任何一个变量都包括地址和数据。</p>
+<p>正常赋值是对数据操作的，而指针是对地址操作的。</p>
+<p>不知道为什么许多教程可能认为这是个难点，所以就都独立出来讲。</p>
+<p>导致学的时候迷迷糊糊一下子就过去，也不知道什么时候派上用场。</p>
+
   </div>
   
   
@@ -2578,10 +2586,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-08-18T20:40:14+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-08-22T00:15:45+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2023年8月18日</p>
+    <p>更新于：2023年8月22日</p>
   </a>
 </div>
 
@@ -2604,7 +2612,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://xinonria.github.io/project/2023/08/18/%E5%BF%AB%E6%85%A2%E6%8C%87%E9%92%88%E4%B8%8E%E9%93%BE%E8%A1%A8/&title=快慢指针与链表 - Xinon's Blog&summary="
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://xinonria.github.io/project/2023/08/21/%E6%95%B0%E7%BB%84%E4%B8%8E%E6%8C%87%E9%92%88/&title=数组与指针 - Xinon's Blog&summary="
           
           >
           
@@ -2616,7 +2624,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://xinonria.github.io/project/2023/08/18/%E5%BF%AB%E6%85%A2%E6%8C%87%E9%92%88%E4%B8%8E%E9%93%BE%E8%A1%A8/&title=快慢指针与链表 - Xinon's Blog&summary="
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://xinonria.github.io/project/2023/08/21/%E6%95%B0%E7%BB%84%E4%B8%8E%E6%8C%87%E9%92%88/&title=数组与指针 - Xinon's Blog&summary="
           
           >
           
@@ -2628,7 +2636,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://service.weibo.com/share/share.php?url=https://xinonria.github.io/project/2023/08/18/%E5%BF%AB%E6%85%A2%E6%8C%87%E9%92%88%E4%B8%8E%E9%93%BE%E8%A1%A8/&title=快慢指针与链表 - Xinon's Blog&summary="
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://xinonria.github.io/project/2023/08/21/%E6%95%B0%E7%BB%84%E4%B8%8E%E6%8C%87%E9%92%88/&title=数组与指针 - Xinon's Blog&summary="
           
           >
           
@@ -2661,25 +2669,13 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     <div class="prev-next">
       
-        <a class='prev' href='/xinonria.github.io/2023/08/19/%E6%A3%80%E6%B5%8Bword%E6%8D%9F%E5%9D%8F%E5%B0%8F%E5%B7%A5%E5%85%B7/'>
-          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>检测受损word文档</p>
-          <p class='content'>开始
-
-前几天使用数据恢复软件恢复了一批word文档(大概2k个)，但是有些文档已经被损坏了，完全打不开。
-用word修复工具能修复吗？抱着这样的想法尝试了市面上大部分的修复工具。
-结果都修复失...</p>
-        </a>
       
-      
-        <a class='next' href='/xinonria.github.io/2023/08/17/%E5%85%B3%E4%BA%8E%E4%BA%8C%E5%8F%89%E6%A0%91-%E4%B8%8B/'>
-          <p class='title'>关于二叉树(下)<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>二叉搜索树是有序的。
-它可以完成搜索，插入以及删除等操作。
-搜索例题
-思考因为二叉搜索树有以下几个性质。
-
-若它的左子树不空，则左子树上所有结点的值均小于它的根结点的值；
-若它的右子树不空，则右...</p>
+        <a class='next' href='/xinonria.github.io/2023/08/20/%E5%B0%9D%E8%AF%95%E8%BF%81%E7%A7%BB%E5%8D%9A%E5%AE%A2/'>
+          <p class='title'>尝试迁移博客<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>主题问题最近使用hexo的volantis主题。
+好看是好看，但它的资源cdn都在unpkg上。
+最近发现unpkg国内无法访问了，导致图标、图片什么的都都失效。qwq
+设置了使用jsdeliv...</p>
         </a>
       
     </div>
@@ -2695,7 +2691,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <article class="post white-box shadow floatable blur" id="comments">
     <span hidden>
-      <meta itemprop="discussionUrl" content="/xinonria.github.io/2023/08/18/%E5%BF%AB%E6%85%A2%E6%8C%87%E9%92%88%E4%B8%8E%E9%93%BE%E8%A1%A8/index.html#comments">
+      <meta itemprop="discussionUrl" content="/xinonria.github.io/2023/08/21/%E6%95%B0%E7%BB%84%E4%B8%8E%E6%8C%87%E9%92%88/index.html#comments">
     </span>
     <p ct><i class='fa-solid fa-comments'></i> 评论</p>
     
@@ -2737,7 +2733,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
     <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%A0%E9%99%A4%E9%87%8D%E5%A4%8D%E5%80%BC"><span class="toc-text">删除重复值</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BE%8B%E9%A2%98"><span class="toc-text">例题</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%80%9D%E8%80%83"><span class="toc-text">思考</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81"><span class="toc-text">代码</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%A4%E6%96%AD%E6%98%AF%E5%90%A6%E6%9C%89%E7%8E%AF"><span class="toc-text">判断是否有环</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BE%8B%E9%A2%98-1"><span class="toc-text">例题</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%80%9D%E8%80%83-1"><span class="toc-text">思考</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81-1"><span class="toc-text">代码</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E7%BB%84"><span class="toc-text">数组</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8C%87%E9%92%88"><span class="toc-text">指针</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9C%80%E5%90%8E%E7%9A%84%E8%AF%9D"><span class="toc-text">最后的话</span></a></li></ol>
     </div>
   </section>
 
@@ -3844,7 +3840,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Xinon's Blog","url":"https://xinonria.github.io/project/xinonria.github.io/","logo":{"@type":"ImageObject","url":"/images/logo.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Xinon Zhang","image":{"@type":"ImageObject","url":"/images/logo.png"},"url":"https://xinonria.github.io/project/xinonria.github.io/","sameAs":["https://github.com/volantis-x"],"description":"一个兴趣使然的博客"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://xinonria.github.io/project/xinonria.github.io/","name":"Xinon's Blog"}},{"@type":"ListItem","position":3,"item":{"@id":"https://xinonria.github.io/project/xinonria.github.io/2023/08/18/快慢指针与链表/","name":"快慢指针与链表"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Xinon's Blog","url":"https://xinonria.github.io/project/xinonria.github.io/","keywords":null,"description":"一个兴趣使然的博客","author":{"@type":"Person","name":"Xinon Zhang","image":{"@type":"ImageObject","url":"/images/logo.png"},"url":"https://xinonria.github.io/project/xinonria.github.io/","description":"一个兴趣使然的博客"},"publisher":{"@type":"Organization","name":"Xinon's Blog","url":"https://xinonria.github.io/project/xinonria.github.io/","logo":{"@type":"ImageObject","url":"/images/logo.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://xinonria.github.io/project?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"快慢指针与链表","description":"一个兴趣使然的博客","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://xinonria.github.io/project/2023/08/18/%E5%BF%AB%E6%85%A2%E6%8C%87%E9%92%88%E4%B8%8E%E9%93%BE%E8%A1%A8/"},"author":{"@type":"Person","name":"Xinon Zhang","image":{"@type":"ImageObject","url":"/images/logo.png"},"url":"https://xinonria.github.io/project/xinonria.github.io/"},"publisher":{"@type":"Organization","name":"Xinon's Blog","logo":{"@type":"ImageObject","url":"/images/logo.png","width":192,"height":192}},"url":"https://xinonria.github.io/project/2023/08/18/%E5%BF%AB%E6%85%A2%E6%8C%87%E9%92%88%E4%B8%8E%E9%93%BE%E8%A1%A8/","wordCount":0,"datePublished":"2023-08-18T11:55:35.000Z","dateModified":"2023-08-18T12:40:14.067Z","keywords":"数据结构","image":{"@type":"ImageObject","url":"/images/logo.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Xinon's Blog","url":"https://xinonria.github.io/project/xinonria.github.io/","logo":{"@type":"ImageObject","url":"/images/logo.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Xinon Zhang","image":{"@type":"ImageObject","url":"/images/logo.png"},"url":"https://xinonria.github.io/project/xinonria.github.io/","sameAs":["https://github.com/volantis-x"],"description":"一个兴趣使然的博客"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://xinonria.github.io/project/xinonria.github.io/","name":"Xinon's Blog"}},{"@type":"ListItem","position":3,"item":{"@id":"https://xinonria.github.io/project/xinonria.github.io/2023/08/21/数组与指针/","name":"数组与指针"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Xinon's Blog","url":"https://xinonria.github.io/project/xinonria.github.io/","keywords":null,"description":"一个兴趣使然的博客","author":{"@type":"Person","name":"Xinon Zhang","image":{"@type":"ImageObject","url":"/images/logo.png"},"url":"https://xinonria.github.io/project/xinonria.github.io/","description":"一个兴趣使然的博客"},"publisher":{"@type":"Organization","name":"Xinon's Blog","url":"https://xinonria.github.io/project/xinonria.github.io/","logo":{"@type":"ImageObject","url":"/images/logo.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://xinonria.github.io/project?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"数组与指针","description":"一个兴趣使然的博客","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://xinonria.github.io/project/2023/08/21/%E6%95%B0%E7%BB%84%E4%B8%8E%E6%8C%87%E9%92%88/"},"author":{"@type":"Person","name":"Xinon Zhang","image":{"@type":"ImageObject","url":"/images/logo.png"},"url":"https://xinonria.github.io/project/xinonria.github.io/"},"publisher":{"@type":"Organization","name":"Xinon's Blog","logo":{"@type":"ImageObject","url":"/images/logo.png","width":192,"height":192}},"url":"https://xinonria.github.io/project/2023/08/21/%E6%95%B0%E7%BB%84%E4%B8%8E%E6%8C%87%E9%92%88/","wordCount":0,"datePublished":"2023-08-21T15:40:58.000Z","dateModified":"2023-08-21T16:15:45.435Z","keywords":"数据结构","image":{"@type":"ImageObject","url":"/images/logo.png","width":192,"height":192}}]</script>
 
 
 
