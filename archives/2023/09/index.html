@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <!-- SEO相关 -->
   <meta name="robots" content="noindex,follow">
-  <link rel="canonical" href="https://xinonria.github.io/project/archives/2023/page/2/"/>
+  <link rel="canonical" href="https://xinonria.github.io/project/archives/2023/09/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -33,13 +33,13 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>归档：2023 - Xinon's Blog</title>
+  <title>归档：2023/9 - Xinon's Blog</title>
   <meta name="keywords" content="null">
   <meta desc name="description" content="一个兴趣使然的博客 - Xinon Zhang - Xinon's Blog">
   
 <meta property="og:type" content="website">
 <meta property="og:title" content="Xinon&#39;s Blog">
-<meta property="og:url" content="https://xinonria.github.io/project/archives/2023/page/2/index.html">
+<meta property="og:url" content="https://xinonria.github.io/project/archives/2023/09/index.html">
 <meta property="og:site_name" content="Xinon&#39;s Blog">
 <meta property="og:description" content="一个兴趣使然的博客">
 <meta property="og:locale" content="zh_CN">
@@ -2609,12 +2609,18 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 		
   <section class="post-list">
     
+      
+        
+          
+        
+      
+    
     
       
         
           <div class='post-wrapper'>
             <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://xinonria.github.io/project/2023/08/16/异或的妙用/">
+  <link itemprop="mainEntityOfPage" href="https://xinonria.github.io/project/2023/09/04/快速幂/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Xinon's Blog">
   </span>
@@ -2632,25 +2638,18 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
     <h2 class="article-title"  itemprop="name headline">
-      <a href="/xinonria.github.io/2023/08/16/%E5%BC%82%E6%88%96%E7%9A%84%E5%A6%99%E7%94%A8/"  itemprop="url">
-        异或的妙用
+      <a href="/xinonria.github.io/2023/09/04/%E5%BF%AB%E9%80%9F%E5%B9%82/"  itemprop="url">
+        快速幂
       </a>
     </h2>
   
   <div class='md article-desc' itemprop="articleBody">
     
       
-        本来觉得这题很简单的。但看了条件之后发现还真挺难想（压根想不到位操作）
-
-
-原题链接
-注意条件!!
-线性时间 &amp; 常量额外空间
-思考1. 暴力解法。取一个数记为 cur ，然后从剩下的数中查找，如果找不到，则 cur 即为要找的那个数。
-双层循环，时间复杂度O(n^2)。
-不满足线性时间。
-2. 哈希表直接用unordered_set&lt;int, int&gt;作哈希表。
-第一次...
+        昨天来大学报道了，很期待将来的学习生活。
+在刷学校OJ新生题时刷到几题要用幂运算（虽然都是二次幂三次幂），正好复习一下快速幂这个算法。
+朴素做法按照定义，要多少次幂就乘以多少次数字呗。
+123456long long myPow(int x, int n)&#123;  long long ans = 1;  for (int i = 1; i &lt;= n; ++i) ans *= n;...
       
     
   </div>
@@ -2658,389 +2657,12 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='meta-v3' line_style='solid'>
       <div>
         
-        <time itemprop="dateCreated datePublished" datetime="2023-08-16T22:38:11+08:00">2023-08-16</time>
+        <time itemprop="dateCreated datePublished" datetime="2023-09-04T11:45:54+08:00">2023-09-04</time>
         
       </div>
       
         <div>
-          <a class='readmore' href='/xinonria.github.io/2023/08/16/%E5%BC%82%E6%88%96%E7%9A%84%E5%A6%99%E7%94%A8/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://xinonria.github.io/project/2023/08/16/关于二叉树(中)/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Xinon's Blog">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Xinon's Blog">
-    <meta itemprop="description" content="一个兴趣使然的博客">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="/images/logo.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/xinonria.github.io/2023/08/16/%E5%85%B3%E4%BA%8E%E4%BA%8C%E5%8F%89%E6%A0%91(%E4%B8%AD)/"  itemprop="url">
-        关于二叉树（中）
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        构造
-
-前序和中序可以唯一确定一棵二叉树。
-后序和中序可以唯一确定一棵二叉树。
-前序和后序不能唯一确定一棵二叉树！
-没中序遍历就无法分割了。
-前序遍历&amp;中序遍历构造分析首先要牢记各个遍历方法的顺序。
-前序遍历是：根节点-&gt;左子树-&gt;右子树中序遍历是：左子树-&gt;根节点-&gt;右子树
-所以前序遍历的第一个元素就是整个二叉树的根节点。同理，在中序遍历中找到这个元素，它的...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2023-08-16T12:12:44+08:00">2023-08-16</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/xinonria.github.io/2023/08/16/%E5%85%B3%E4%BA%8E%E4%BA%8C%E5%8F%89%E6%A0%91(%E4%B8%AD)/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://xinonria.github.io/project/2023/08/15/关于二叉树(上)/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Xinon's Blog">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Xinon's Blog">
-    <meta itemprop="description" content="一个兴趣使然的博客">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="/images/logo.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/xinonria.github.io/2023/08/15/%E5%85%B3%E4%BA%8E%E4%BA%8C%E5%8F%89%E6%A0%91(%E4%B8%8A)/"  itemprop="url">
-        关于二叉树（上）
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        前言
-
-最近经常刷到二叉树的题，那么好好把二叉树的相关知识点都过一下吧。
-
-本文参考了代码随想录关于二叉树的介绍。原文链接
-
-分类
-
-满二叉树一个二叉树除了叶节点外每个节点都有两个子节点，且叶节点在同一层的二叉树。就是看上去都是满的。
-深度为$k$。节点数量就是$2^k-1$个。
-
-完全二叉树除了最底层节点没填满外，其他节点都是满的。且最底层节点必须从左到右连续！
-
-所以，满二叉树同时也是一...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2023-08-15T13:35:35+08:00">2023-08-15</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/xinonria.github.io/2023/08/15/%E5%85%B3%E4%BA%8E%E4%BA%8C%E5%8F%89%E6%A0%91(%E4%B8%8A)/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://xinonria.github.io/project/2023/08/14/二叉树与递归/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Xinon's Blog">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Xinon's Blog">
-    <meta itemprop="description" content="一个兴趣使然的博客">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="/images/logo.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/xinonria.github.io/2023/08/14/%E4%BA%8C%E5%8F%89%E6%A0%91%E4%B8%8E%E9%80%92%E5%BD%92/"  itemprop="url">
-        二叉树与递归
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        最近经常做到关于二叉树的Easy题。
-二叉树的遍历总是和递归绑在一起。
-如下题寻找二叉树的最大深度。
-原题原题链接
-
-思路用递推的思路来想，从某一个节点出发，它的最大深度就是max(左子节点最大深度，右子节点最大深度) + 1。对于每一个节点来说都是这样的，那么就可以用递归的办法来解决了。(长度也短)，所以主要是思路问题。
-代码12345678910class Solution&#123;p...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2023-08-14T12:57:41+08:00">2023-08-14</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/xinonria.github.io/2023/08/14/%E4%BA%8C%E5%8F%89%E6%A0%91%E4%B8%8E%E9%80%92%E5%BD%92/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://xinonria.github.io/project/2023/08/13/判断相同二叉树/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Xinon's Blog">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Xinon's Blog">
-    <meta itemprop="description" content="一个兴趣使然的博客">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="/images/logo.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/xinonria.github.io/2023/08/13/%E5%88%A4%E6%96%AD%E7%9B%B8%E5%90%8C%E4%BA%8C%E5%8F%89%E6%A0%91/"  itemprop="url">
-        判断相同二叉树
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        一道较简单的Leetcode题，判断两个二叉树是否相同。
-原题链接
-数据范围
-两棵树上的节点数目都在范围 [0, 100] 内
--104 &lt;&#x3D; Node.val &lt;&#x3D; 104
-
-思路既然要判断是否相同，那么就要遍历树的每一个节点了。
-注意到数据范围节点数在100以内，不算太大。考虑用递归的方法（太大会爆栈）深度优先搜索的思路来解决。
-
-如果两个树都能成功到达边...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2023-08-13T20:22:03+08:00">2023-08-13</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/xinonria.github.io/2023/08/13/%E5%88%A4%E6%96%AD%E7%9B%B8%E5%90%8C%E4%BA%8C%E5%8F%89%E6%A0%91/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://xinonria.github.io/project/2023/08/12/关于二叉树中序遍历/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Xinon's Blog">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Xinon's Blog">
-    <meta itemprop="description" content="一个兴趣使然的博客">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="/images/logo.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/xinonria.github.io/2023/08/12/%E5%85%B3%E4%BA%8E%E4%BA%8C%E5%8F%89%E6%A0%91%E4%B8%AD%E5%BA%8F%E9%81%8D%E5%8E%86/"  itemprop="url">
-        关于二叉树中序遍历
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        今天日常刷Leetcode刷到了一个二叉树中序遍历的题。原题链接
-
-通过示例可以很明显了解到何为中序遍历，同时打算用栈结构来实现。
-中序遍历可以看作将节点投影到一个水平坐标轴上，从原点开始向右遍历。如图顺序为:H-&gt;D-&gt;I-&gt;B-&gt;E-&gt;J-&gt;A-&gt;F-&gt;K-&gt;C-&gt;G
-栈
-栈遵循先进后出的原则。
-把栈想象成一个桶：a1先入栈，被...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2023-08-12T18:27:49+08:00">2023-08-12</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/xinonria.github.io/2023/08/12/%E5%85%B3%E4%BA%8E%E4%BA%8C%E5%8F%89%E6%A0%91%E4%B8%AD%E5%BA%8F%E9%81%8D%E5%8E%86/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://xinonria.github.io/project/2023/08/11/hexo配置成功/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Xinon's Blog">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Xinon's Blog">
-    <meta itemprop="description" content="一个兴趣使然的博客">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="/images/logo.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/xinonria.github.io/2023/08/11/hexo%E9%85%8D%E7%BD%AE%E6%88%90%E5%8A%9F/"  itemprop="url">
-        hexo配置成功
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        花了两天时间终于成功把hexo+github托管的个人博客网站做完了。
-中途遇到了好多问题和障碍(哭
-
-npm install安装时一直卡住参考了CSDN的解决办法，发现没用。后来发现淘宝源停止对该域名解析了，遂换成官方源https://registry.npmjs.org解决问题。
-
-虚拟服务器无法配置白嫖了腾讯云虚拟服务器一个月。宝塔登陆不上去，1Panel安装不上。打算直接配置VanB...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2023-08-11T13:49:14+08:00">2023-08-11</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/xinonria.github.io/2023/08/11/hexo%E9%85%8D%E7%BD%AE%E6%88%90%E5%8A%9F/' itemprop="url">
+          <a class='readmore' href='/xinonria.github.io/2023/09/04/%E5%BF%AB%E9%80%9F%E5%B9%82/' itemprop="url">
             阅读全文
           </a>
         </div>
@@ -3056,21 +2678,6 @@ npm install安装时一直卡住参考了CSDN的解决办法，发现没用。�
     
   </section>
   
-    
-      <br>
-      <div class="prev-next">
-        
-          <a class="prev" rel="prev" href="/xinonria.github.io/archives/2023/">
-            <section class="post prev white-box shadow floatable blur" >
-              <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>&nbsp;上一页&nbsp;
-            </section>
-          </a>
-        
-        <p class="current">
-          2 / 2
-        </p>
-        
-      </div>
     
   
 
@@ -4473,7 +4080,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Xinon's Blog","url":"https://xinonria.github.io/project/xinonria.github.io/","logo":{"@type":"ImageObject","url":"/images/logo.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Xinon Zhang","image":{"@type":"ImageObject","url":"/images/logo.png"},"url":"https://xinonria.github.io/project/xinonria.github.io/","sameAs":["https://github.com/volantis-x"],"description":"一个兴趣使然的博客"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://xinonria.github.io/project/xinonria.github.io/","name":"Xinon's Blog"}},{"@type":"ListItem","position":2,"item":{"@id":"https://xinonria.github.io/project/xinonria.github.io/archives/","name":"Archive"}},{"@type":"ListItem","position":3,"item":{"@id":"https://xinonria.github.io/project/xinonria.github.io/archives/2023/","name":"2023年"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Xinon's Blog","url":"https://xinonria.github.io/project/xinonria.github.io/","keywords":null,"description":"一个兴趣使然的博客","author":{"@type":"Person","name":"Xinon Zhang","image":{"@type":"ImageObject","url":"/images/logo.png"},"url":"https://xinonria.github.io/project/xinonria.github.io/","description":"一个兴趣使然的博客"},"publisher":{"@type":"Organization","name":"Xinon's Blog","url":"https://xinonria.github.io/project/xinonria.github.io/","logo":{"@type":"ImageObject","url":"/images/logo.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://xinonria.github.io/project?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"一个兴趣使然的博客","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"Xinon Zhang","image":{"@type":"ImageObject","url":"/images/logo.png"},"url":"https://xinonria.github.io/project/xinonria.github.io/"},"publisher":{"@type":"Organization","name":"Xinon's Blog","logo":{"@type":"ImageObject","url":"/images/logo.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"/images/logo.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Xinon's Blog","url":"https://xinonria.github.io/project/xinonria.github.io/","logo":{"@type":"ImageObject","url":"/images/logo.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Xinon Zhang","image":{"@type":"ImageObject","url":"/images/logo.png"},"url":"https://xinonria.github.io/project/xinonria.github.io/","sameAs":["https://github.com/volantis-x"],"description":"一个兴趣使然的博客"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://xinonria.github.io/project/xinonria.github.io/","name":"Xinon's Blog"}},{"@type":"ListItem","position":2,"item":{"@id":"https://xinonria.github.io/project/xinonria.github.io/archives/","name":"Archive"}},{"@type":"ListItem","position":3,"item":{"@id":"https://xinonria.github.io/project/xinonria.github.io/archives/2023/","name":"2023年"}},{"@type":"ListItem","position":4,"item":{"@id":"https://xinonria.github.io/project/xinonria.github.io/archives/2023/9/","name":"9月"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Xinon's Blog","url":"https://xinonria.github.io/project/xinonria.github.io/","keywords":null,"description":"一个兴趣使然的博客","author":{"@type":"Person","name":"Xinon Zhang","image":{"@type":"ImageObject","url":"/images/logo.png"},"url":"https://xinonria.github.io/project/xinonria.github.io/","description":"一个兴趣使然的博客"},"publisher":{"@type":"Organization","name":"Xinon's Blog","url":"https://xinonria.github.io/project/xinonria.github.io/","logo":{"@type":"ImageObject","url":"/images/logo.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://xinonria.github.io/project?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"一个兴趣使然的博客","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"Xinon Zhang","image":{"@type":"ImageObject","url":"/images/logo.png"},"url":"https://xinonria.github.io/project/xinonria.github.io/"},"publisher":{"@type":"Organization","name":"Xinon's Blog","logo":{"@type":"ImageObject","url":"/images/logo.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"/images/logo.png","width":192,"height":192}}]</script>
 
 
 
