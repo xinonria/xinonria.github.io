@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <!-- SEO相关 -->
   
-  <link rel="canonical" href="https://xinonria.github.io/project/2023/08/17/关于二叉树-下/"/>
+  <link rel="canonical" href="https://xinonria.github.io/project/2023/09/07/2至36进制的高精度加法/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -33,22 +33,21 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>关于二叉树(下) - Xinon's Blog</title>
-  <meta name="keywords" content="数据结构,二叉树,null">
+  <title>2至36进制的高精度加法 - Xinon's Blog</title>
+  <meta name="keywords" content="高精度,null">
   <meta desc name="description" content="一个兴趣使然的博客 - Xinon Zhang - Xinon's Blog">
   
 <meta property="og:type" content="article">
-<meta property="og:title" content="关于二叉树(下)">
-<meta property="og:url" content="https://xinonria.github.io/project/2023/08/17/%E5%85%B3%E4%BA%8E%E4%BA%8C%E5%8F%89%E6%A0%91-%E4%B8%8B/index.html">
+<meta property="og:title" content="2至36进制的高精度加法">
+<meta property="og:url" content="https://xinonria.github.io/project/2023/09/07/2%E8%87%B336%E8%BF%9B%E5%88%B6%E7%9A%84%E9%AB%98%E7%B2%BE%E5%BA%A6%E5%8A%A0%E6%B3%95/index.html">
 <meta property="og:site_name" content="Xinon&#39;s Blog">
-<meta property="og:description" content="二叉搜索树是有序的。 它可以完成搜索，插入以及删除等操作。 搜索例题 思考因为二叉搜索树有以下几个性质。  若它的左子树不空，则左子树上所有结点的值均小于它的根结点的值； 若它的右子树不空，则右子树上所有结点的值均大于它的根结点的值； 它的左、右子树也分别为二叉搜索树。  所以它的搜索效率就跟二分搜索一样很快。 使用迭代法很快就能写出来。 代码12345678910TreeNode* search">
+<meta property="og:description" content="原题今天第一次刷CodeForces，随便找了个难度2000的题。 原题链接  要求实现2到36进制的累加，输出与输入进制相同。 第一行输入数字个数n 第二行输入进制。 后面n行输入累加的数字。 思考这道题核心是实现两个数任意进制的加法。 因为带有字母，所以用string存储数字是个不错选择。 既然都用string存储了，干脆用高精度加法的思路做题吧。 假设我们要将a和b相加。 首先将a和b倒序存">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://cdn.jsdelivr.net/npm/volantis-static/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-<meta property="article:published_time" content="2023-08-17T08:55:46.000Z">
-<meta property="article:modified_time" content="2023-08-23T13:24:14.459Z">
+<meta property="article:published_time" content="2023-09-06T16:34:14.000Z">
+<meta property="article:modified_time" content="2023-09-06T16:52:58.833Z">
 <meta property="article:author" content="Xinon Zhang">
-<meta property="article:tag" content="数据结构">
-<meta property="article:tag" content="二叉树">
+<meta property="article:tag" content="高精度">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://cdn.jsdelivr.net/npm/volantis-static/media/org.volantis/blog/favicon/android-chrome-192x192.png">
   <style>
@@ -2610,7 +2609,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
 <div id="l_main" class=''>
   <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
-  <link itemprop="mainEntityOfPage" href="https://xinonria.github.io/project/2023/08/17/关于二叉树-下/">
+  <link itemprop="mainEntityOfPage" href="https://xinonria.github.io/project/2023/09/07/2至36进制的高精度加法/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Xinon's Blog">
   </span>
@@ -2631,7 +2630,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       <h1 class="title" itemprop="name headline">
-        关于二叉树(下)
+        2至36进制的高精度加法
       </h1>
       <div class='new-meta-box'>
         
@@ -2652,10 +2651,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
         
           
-            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2023-08-17T16:55:46+08:00">
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2023-09-07T00:34:14+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
-    <p>发布于：2023年8月17日</p>
+    <p>发布于：2023年9月7日</p>
   </a>
 </div>
 
@@ -2670,7 +2669,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <p>
       <i class="fa-solid fa-eye fa-fw" aria-hidden="true"></i>
       
-      <span id="lc-pv" data-title="关于二叉树(下)" data-path="/xinonria.github.io/2023/08/17/%E5%85%B3%E4%BA%8E%E4%BA%8C%E5%8F%89%E6%A0%91-%E4%B8%8B/">
+      <span id="lc-pv" data-title="2至36进制的高精度加法" data-path="/xinonria.github.io/2023/09/07/2%E8%87%B336%E8%BF%9B%E5%88%B6%E7%9A%84%E9%AB%98%E7%B2%BE%E5%BA%A6%E5%8A%A0%E6%B3%95/">
         <span id='number'><i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i></span>
       </span>
       
@@ -2692,45 +2691,28 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
-    <p>二叉搜索树是有序的。</p>
-<p>它可以完成<strong>搜索</strong>，<strong>插入</strong>以及<strong>删除</strong>等操作。</p>
-<h3 id="搜索"><a href="#搜索" class="headerlink" title="搜索"></a>搜索</h3><h4 id="例题"><a href="#例题" class="headerlink" title="例题"></a>例题</h4><p><img src="https://code-thinking-1253855093.file.myqcloud.com/pics/20210204155522476.png" class="lazyload" data-srcset="https://code-thinking-1253855093.file.myqcloud.com/pics/20210204155522476.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
-<h4 id="思考"><a href="#思考" class="headerlink" title="思考"></a>思考</h4><p>因为二叉搜索树有以下几个性质。</p>
-<ul>
-<li>若它的左子树不空，则左子树上所有结点的值均小于它的根结点的值；</li>
-<li>若它的右子树不空，则右子树上所有结点的值均大于它的根结点的值；</li>
-<li>它的左、右子树也分别为二叉搜索树。</li>
-</ul>
-<p>所以它的搜索效率就跟二分搜索一样很快。</p>
-<p>使用迭代法很快就能写出来。</p>
-<h4 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h4><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">TreeNode* <span class="title">searchNode</span><span class="params">(TreeNode* root, <span class="type">int</span> target)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">while</span> (root)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">if</span> (target == root-&gt;val) <span class="keyword">return</span> root; <span class="comment">//找到对应值</span></span><br><span class="line">		<span class="keyword">if</span> (target &lt; root-&gt;val) root = root-&gt;left; <span class="comment">//目标值比当前节点小，说明目标值可能在左子树</span></span><br><span class="line">		<span class="keyword">if</span> (target &gt; root-&gt;val) root = root-&gt;right; <span class="comment">//目标值比当前节点大，说明目标值可能在右子树</span></span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="literal">nullptr</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+    <h3 id="原题"><a href="#原题" class="headerlink" title="原题"></a>原题</h3><p>今天第一次刷CodeForces，随便找了个难度2000的题。</p>
+<p><a target="_blank" rel="noopener" href="https://codeforces.com/problemset/problem/162/G">原题链接</a></p>
+<p><img src="https://www.z4a.net/images/2023/09/07/image.png" class="lazyload" data-srcset="https://www.z4a.net/images/2023/09/07/image.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p>要求实现2到36进制的累加，输出与输入进制相同。</p>
+<p>第一行输入数字个数n</p>
+<p>第二行输入进制。</p>
+<p>后面n行输入累加的数字。</p>
+<h3 id="思考"><a href="#思考" class="headerlink" title="思考"></a>思考</h3><p>这道题核心是实现两个数任意进制的加法。</p>
+<p>因为带有字母，所以用<code>string</code>存储数字是个不错选择。</p>
+<p>既然都用<code>string</code>存储了，干脆用高精度加法的思路做题吧。</p>
+<p>假设我们要将<code>a</code>和<code>b</code>相加。</p>
+<p>首先将<code>a</code>和<code>b</code>倒序存储，方便进位。</p>
+<p>然后判断<code>a</code>和<code>b</code>哪个长度较短，避免越界。</p>
+<p>每一位都转换为数字加在一起，看需不需要进位。</p>
+<p>如果需要进位用flag标记一下。</p>
+<p>因为加法中进位只可能进1位，所以flag可以是bool节省一点点空间。</p>
+<p>具体见注释吧。</p>
+<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;string&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;vector&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;algorithm&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line">string baseChar = <span class="string">&quot;0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ&quot;</span>;  <span class="comment">//便于将数字直接转成进制的字符</span></span><br><span class="line"><span class="type">int</span> base;  <span class="comment">//进制</span></span><br><span class="line"></span><br><span class="line"><span class="function">string <span class="title">addString</span><span class="params">(string a, string b)</span>  <span class="comment">//高精度加法</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	string res;</span><br><span class="line">	<span class="type">int</span> alen = a.<span class="built_in">size</span>(), blen = b.<span class="built_in">size</span>();</span><br><span class="line">	<span class="keyword">if</span> (alen &gt; blen) <span class="built_in">swap</span>(a, b), <span class="built_in">swap</span>(alen, blen);  <span class="comment">//保证a长度一定小于b</span></span><br><span class="line">	<span class="type">int</span> i = <span class="number">0</span>;</span><br><span class="line">	<span class="type">int</span> sum;</span><br><span class="line">	<span class="type">int</span> numa, numb;</span><br><span class="line">	<span class="type">bool</span> flag = <span class="literal">false</span>;</span><br><span class="line">	<span class="keyword">while</span> (i != alen) &#123;  <span class="comment">//先一直操作直到a的末尾</span></span><br><span class="line">		<span class="comment">//将a,b对应位上的数字或字符转成数字</span></span><br><span class="line">    numa = <span class="built_in">isalpha</span>(a[i]) ? a[i] - <span class="string">&#x27;A&#x27;</span> + <span class="number">10</span> : a[i] - <span class="string">&#x27;0&#x27;</span>;</span><br><span class="line">		numb = <span class="built_in">isalpha</span>(b[i]) ? b[i] - <span class="string">&#x27;A&#x27;</span> + <span class="number">10</span> : b[i] - <span class="string">&#x27;0&#x27;</span>;</span><br><span class="line">    <span class="comment">//sum存储当前位相加结果</span></span><br><span class="line">		sum = numa + numb + flag;</span><br><span class="line">    <span class="comment">//进位结束了，恢复flag状态</span></span><br><span class="line">		flag = <span class="literal">false</span>;</span><br><span class="line">		res.<span class="built_in">push_back</span>(baseChar[sum % base]);  <span class="comment">//将结果存进res中</span></span><br><span class="line">		<span class="keyword">if</span> (sum &gt;= base) &#123; <span class="comment">//需要进位</span></span><br><span class="line">			flag = <span class="literal">true</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		++i;</span><br><span class="line">	&#125;</span><br><span class="line">  <span class="comment">//把剩下b的数字加进去</span></span><br><span class="line">	<span class="keyword">while</span> (i != blen) &#123;</span><br><span class="line">		numb = <span class="built_in">isalpha</span>(b[i]) ? b[i] - <span class="string">&#x27;A&#x27;</span> + <span class="number">10</span> : b[i] - <span class="string">&#x27;0&#x27;</span>;</span><br><span class="line">    <span class="comment">//记得处理可能出现的进位</span></span><br><span class="line">		sum = numb + flag;</span><br><span class="line">		flag = <span class="literal">false</span>;</span><br><span class="line">		res.<span class="built_in">push_back</span>(baseChar[sum % base]);</span><br><span class="line">		<span class="keyword">if</span> (sum &gt;= base) flag = <span class="literal">true</span>;</span><br><span class="line">		++i;</span><br><span class="line">	&#125;</span><br><span class="line">  <span class="comment">//b也结束了，但还需要进一位的话就进</span></span><br><span class="line">	<span class="keyword">if</span> (flag) res.<span class="built_in">push_back</span>(<span class="string">&#x27;1&#x27;</span>);</span><br><span class="line">	<span class="keyword">return</span> res;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function">string <span class="title">addFunc</span><span class="params">(vector&lt;string&gt;&amp; a)</span>  <span class="comment">//实现累加</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	string res = a[<span class="number">0</span>];</span><br><span class="line">	<span class="type">int</span> len = a.<span class="built_in">size</span>();</span><br><span class="line">	<span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt; len; i++) &#123;</span><br><span class="line">		res = <span class="built_in">addString</span>(res, a[i]);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">reverse</span>(res.<span class="built_in">begin</span>(), res.<span class="built_in">end</span>());   <span class="comment">//res是倒序的，反转一下</span></span><br><span class="line">	<span class="keyword">return</span> res;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	ios::<span class="built_in">sync_with_stdio</span>(<span class="literal">false</span>);  <span class="comment">//关闭流同步大大提高cin效率</span></span><br><span class="line">	<span class="type">int</span> w;</span><br><span class="line">  cin &gt;&gt; w;</span><br><span class="line">	cin &gt;&gt; base;</span><br><span class="line">	string str;</span><br><span class="line">	vector&lt;string&gt; a;</span><br><span class="line">	<span class="type">int</span> i = <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">while</span> (w--) &#123;</span><br><span class="line">		cin &gt;&gt; str;</span><br><span class="line">		<span class="keyword">while</span> (str[i] == <span class="string">&#x27;0&#x27;</span>) ++i;  <span class="comment">//删去前导零</span></span><br><span class="line">		<span class="keyword">if</span> (i) str.<span class="built_in">substr</span>(i);</span><br><span class="line">		i = <span class="number">0</span>;</span><br><span class="line">		<span class="built_in">reverse</span>(str.<span class="built_in">begin</span>(), str.<span class="built_in">end</span>());  <span class="comment">//倒序存储</span></span><br><span class="line">		a.<span class="built_in">push_back</span>(str);</span><br><span class="line">	&#125;</span><br><span class="line">	cout &lt;&lt; <span class="built_in">addFunc</span>(a);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<h3 id="插入"><a href="#插入" class="headerlink" title="插入"></a>插入</h3><h4 id="例题-1"><a href="#例题-1" class="headerlink" title="例题"></a>例题</h4><p><img src="https://code-thinking-1253855093.file.myqcloud.com/pics/20201019173259554.png" class="lazyload" data-srcset="https://code-thinking-1253855093.file.myqcloud.com/pics/20201019173259554.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
-<h4 id="思考-1"><a href="#思考-1" class="headerlink" title="思考"></a>思考</h4><p>插入就是在搜索的基础上，如果找不到这个节点，那么找个空的位置插入进去。</p>
-<p>但在实现上，我们需要记录当前节点以及它的父节点。</p>
-<p>否则会发现当前节点是空的之后，丢失了父节点的指针，导致无法建立起联系。</p>
-<h4 id="代码-1"><a href="#代码-1" class="headerlink" title="代码"></a>代码</h4><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">TreeNode* <span class="title">insertNode</span><span class="params">(TreeNode* root, <span class="type">int</span> num)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">  <span class="keyword">if</span> (!root)</span><br><span class="line">  &#123;</span><br><span class="line">    TreeNode* node = <span class="keyword">new</span> <span class="built_in">TreeNode</span>(num);</span><br><span class="line">    <span class="keyword">return</span> node;</span><br><span class="line">  &#125;</span><br><span class="line">  TreeNode* cur = root;</span><br><span class="line">  TreeNode* parent = root;</span><br><span class="line">  <span class="comment">//寻找插入位置</span></span><br><span class="line">  <span class="keyword">while</span> (cur)</span><br><span class="line">  &#123;</span><br><span class="line">    parent = cur;      <span class="comment">//当cur是空节点时会直接跳出循环，parent不会更新，为cur的父节点。</span></span><br><span class="line">    <span class="keyword">if</span> (num &lt; cur-&gt;val) cur = cur-&gt;left;</span><br><span class="line">    <span class="keyword">else</span> cur = cur-&gt;right;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">//插入节点</span></span><br><span class="line">  TreeNode* node = <span class="keyword">new</span> <span class="built_in">TreeNode</span>(num);</span><br><span class="line">  <span class="keyword">if</span> (num &lt; parent-&gt;val) parent-&gt;left = node;</span><br><span class="line">  <span class="keyword">if</span> (num &gt; parent-&gt;val) parent-&gt;right = node;</span><br><span class="line">  <span class="keyword">return</span> root;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="删除"><a href="#删除" class="headerlink" title="删除"></a>删除</h3><h4 id="例题-2"><a href="#例题-2" class="headerlink" title="例题"></a>例题</h4><p><img src="https://code-thinking-1253855093.file.myqcloud.com/pics/20201020171048265.png" class="lazyload" data-srcset="https://code-thinking-1253855093.file.myqcloud.com/pics/20201020171048265.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
-<h4 id="思考-2"><a href="#思考-2" class="headerlink" title="思考"></a>思考</h4><p>首先要找到删除的节点，<del>这个用前面的<code>searchNode()</code>函数就可以</del>。</p>
-<p>因为要将删除节点的子树连接回去，所以我们要找到的是匹配节点的父节点（就像插入函数那样），直接用搜索函数不行。</p>
-<p>麻烦在于删除后结构的调整。</p>
-<p>删除一个节点有几种情况呢？</p>
-<ol>
-<li>没找到删除节点，直接返回原来的树</li>
-<li>找到删除节点，没有子节点，直接把他变成<code>NULL</code>删除</li>
-<li>找到删除节点，有左子节点或右子节点，删去自己，把左子节点或右子节点变成根节点。</li>
-<li>找到删除节点，同时拥有左右子节点，删去自己，左子树移到右子树的最左边左孩子上，右子节点成为根节点。</li>
-</ol>
-<p>第四种情况有些难理解。</p>
-<p>因为要保证树的有序，左子树上所有节点肯定是小于右子树任一一个节点的。</p>
-<p>把它整个移到右子树的左叶子节点上就不会破坏有序。</p>
-<h4 id="代码-2"><a href="#代码-2" class="headerlink" title="代码"></a>代码</h4><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">TreeNode* <span class="title">deleteNode</span><span class="params">(TreeNode* root, <span class="type">int</span> target)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	TreeNode* node = root;</span><br><span class="line">	TreeNode* parent = <span class="literal">nullptr</span>;</span><br><span class="line">	<span class="comment">//寻找插入位置</span></span><br><span class="line">	<span class="keyword">while</span> (node)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">if</span> (node-&gt;val == target) <span class="keyword">break</span>;</span><br><span class="line">		parent = node;      <span class="comment">//当cur是空节点时会直接跳出循环，parent不会更新，为cur的父节点。</span></span><br><span class="line">		<span class="keyword">if</span> (target &lt; node-&gt;val) node = node-&gt;left;</span><br><span class="line">		<span class="keyword">else</span> node = node-&gt;right;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">if</span> (!node) <span class="keyword">return</span> root;  <span class="comment">//情况一，没找到删除节点</span></span><br><span class="line">	<span class="keyword">if</span> (!node-&gt;left &amp;&amp; !node-&gt;right)  <span class="comment">//情况二，没有左子节点和右子节点</span></span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">if</span> (parent-&gt;left-&gt;val == target) parent-&gt;left = <span class="literal">nullptr</span>;</span><br><span class="line">		<span class="keyword">if</span> (parent-&gt;right-&gt;val == target) parent-&gt;right = <span class="literal">nullptr</span>;</span><br><span class="line">		<span class="keyword">return</span> root;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">if</span> (node-&gt;left &amp;&amp; node-&gt;right)   <span class="comment">//情况四，左子结点和右子节点都有</span></span><br><span class="line">	&#123;</span><br><span class="line">		TreeNode* cur = node-&gt;right;</span><br><span class="line">		<span class="keyword">while</span> (cur-&gt;left) cur = cur-&gt;left;  <span class="comment">//前往右子树的最左边</span></span><br><span class="line">		cur-&gt;left = node-&gt;left;          <span class="comment">//左子树连接上右子树的最左边</span></span><br><span class="line">		<span class="keyword">if</span> (parent-&gt;left &amp;&amp; parent-&gt;left-&gt;val == target)  <span class="comment">//删除节点是父节点的左子结点</span></span><br><span class="line">			parent-&gt;left = node-&gt;right;</span><br><span class="line">		<span class="keyword">if</span> (parent-&gt;right &amp;&amp; parent-&gt;right-&gt;val == target) <span class="comment">//删除节点是父节点的右子结点</span></span><br><span class="line">			parent-&gt;right = node-&gt;right;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="comment">//情况三，仅有一个子节点</span></span><br><span class="line">	<span class="keyword">if</span> (parent-&gt;left-&gt;val == target)  <span class="comment">//删除节点是父节点的左子结点</span></span><br><span class="line">		parent-&gt;left = node-&gt;left ? node-&gt;left : node-&gt;right;    <span class="comment">//删除节点有的是左子结点还是右子节点</span></span><br><span class="line">	<span class="keyword">if</span> (parent-&gt;right-&gt;val == target) <span class="comment">//删除节点是父节点的右子结点</span></span><br><span class="line">		parent-&gt;right = node-&gt;left ? node-&gt;left : node-&gt;right;   <span class="comment">//删除节点有的是左子结点还是右子节点</span></span><br><span class="line">	<span class="keyword">return</span> root;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h3><p>至此二叉树的一些基础操作就结束了。其他变形题都可以根据这几种基础操作的思想。</p>
-<p>可以发现需要改变二叉树的结构往往都会复杂许多。</p>
-<p>如构造，删除等操作。</p>
-<p>不过在写这几篇博文的过程中也确实学到许多东西啦。对递归和指针的理解加深了许多。</p>
+<h3 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h3><p>感觉<code>string</code>在函数间拷贝来拷贝去的有点占用时间，还能继续优化一下。</p>
+<p>不懂语言Factor是什么，最后没能提交上去，没测试能不能AC。</p>
+<p><img src="https://www.z4a.net/images/2023/09/07/image208587a89247f0aa.png" class="lazyload" data-srcset="https://www.z4a.net/images/2023/09/07/image208587a89247f0aa.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
 
   </div>
   
@@ -2755,10 +2737,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-08-23T21:24:14+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-09-07T00:52:58+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2023年8月23日</p>
+    <p>更新于：2023年9月7日</p>
   </a>
 </div>
 
@@ -2767,8 +2749,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           
   
-  <div class="new-meta-item meta-tags"><a class="tag" href="/xinonria.github.io/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>数据结构</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/xinonria.github.io/tags/%E4%BA%8C%E5%8F%89%E6%A0%91/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>二叉树</p></a></div>
-  <span hidden itemprop="keywords">数据结构 二叉树</span>
+  <div class="new-meta-item meta-tags"><a class="tag" href="/xinonria.github.io/tags/%E9%AB%98%E7%B2%BE%E5%BA%A6/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>高精度</p></a></div>
+  <span hidden itemprop="keywords">高精度</span>
 
 
         
@@ -2781,7 +2763,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://xinonria.github.io/project/2023/08/17/%E5%85%B3%E4%BA%8E%E4%BA%8C%E5%8F%89%E6%A0%91-%E4%B8%8B/&title=关于二叉树(下) - Xinon's Blog&summary="
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://xinonria.github.io/project/2023/09/07/2%E8%87%B336%E8%BF%9B%E5%88%B6%E7%9A%84%E9%AB%98%E7%B2%BE%E5%BA%A6%E5%8A%A0%E6%B3%95/&title=2至36进制的高精度加法 - Xinon's Blog&summary="
           
           >
           
@@ -2793,7 +2775,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://xinonria.github.io/project/2023/08/17/%E5%85%B3%E4%BA%8E%E4%BA%8C%E5%8F%89%E6%A0%91-%E4%B8%8B/&title=关于二叉树(下) - Xinon's Blog&summary="
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://xinonria.github.io/project/2023/09/07/2%E8%87%B336%E8%BF%9B%E5%88%B6%E7%9A%84%E9%AB%98%E7%B2%BE%E5%BA%A6%E5%8A%A0%E6%B3%95/&title=2至36进制的高精度加法 - Xinon's Blog&summary="
           
           >
           
@@ -2805,7 +2787,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://service.weibo.com/share/share.php?url=https://xinonria.github.io/project/2023/08/17/%E5%85%B3%E4%BA%8E%E4%BA%8C%E5%8F%89%E6%A0%91-%E4%B8%8B/&title=关于二叉树(下) - Xinon's Blog&summary="
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://xinonria.github.io/project/2023/09/07/2%E8%87%B336%E8%BF%9B%E5%88%B6%E7%9A%84%E9%AB%98%E7%B2%BE%E5%BA%A6%E5%8A%A0%E6%B3%95/&title=2至36进制的高精度加法 - Xinon's Blog&summary="
           
           >
           
@@ -2838,23 +2820,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     <div class="prev-next">
       
-        <a class='prev' href='/xinonria.github.io/2023/08/18/%E5%BF%AB%E6%85%A2%E6%8C%87%E9%92%88%E4%B8%8E%E9%93%BE%E8%A1%A8/'>
-          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>快慢指针与链表</p>
-          <p class='content'>当要求空间复杂度为O(1)，即只使用常量额外空间时，快慢指针对于处理链表中删除重复值和判断是否有环尤为重要。
-快慢指针也可称为龟兔赛跑算法。
-定义一个快指针，一个慢指针，它们的移动速度是不同的，...</p>
-        </a>
       
-      
-        <a class='next' href='/xinonria.github.io/2023/08/16/%E5%BC%82%E6%88%96%E7%9A%84%E5%A6%99%E7%94%A8/'>
-          <p class='title'>异或的妙用<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>本来觉得这题很简单的。但看了条件之后发现还真挺难想（压根想不到位操作）
+        <a class='next' href='/xinonria.github.io/2023/09/06/C-%E5%AD%A6%E4%B9%A0%E4%B9%8B%E8%B7%AF-day1/'>
+          <p class='title'>C#学习之路(day1)<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>在Windows下使用.Net做窗口应用比较方便。所以打算开始学一学C#。
+数据类型C#有以下几种简单数据类型:
 
-
-原题链接
-注意条件!!
-线性时间 &amp; 常量额外空间
-思考1. 暴力解法。取一个数记为 cur ，然后从剩下的数...</p>
+有符号整型:sbyte,short,int,long
+无符号整型:byte,u...</p>
         </a>
       
     </div>
@@ -2870,7 +2843,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <article class="post white-box shadow floatable blur" id="comments">
     <span hidden>
-      <meta itemprop="discussionUrl" content="/xinonria.github.io/2023/08/17/%E5%85%B3%E4%BA%8E%E4%BA%8C%E5%8F%89%E6%A0%91-%E4%B8%8B/index.html#comments">
+      <meta itemprop="discussionUrl" content="/xinonria.github.io/2023/09/07/2%E8%87%B336%E8%BF%9B%E5%88%B6%E7%9A%84%E9%AB%98%E7%B2%BE%E5%BA%A6%E5%8A%A0%E6%B3%95/index.html#comments">
     </span>
     <p ct><i class='fa-solid fa-comments'></i> 评论</p>
     
@@ -2912,7 +2885,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
     <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%90%9C%E7%B4%A2"><span class="toc-text">搜索</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BE%8B%E9%A2%98"><span class="toc-text">例题</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%80%9D%E8%80%83"><span class="toc-text">思考</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81"><span class="toc-text">代码</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8F%92%E5%85%A5"><span class="toc-text">插入</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BE%8B%E9%A2%98-1"><span class="toc-text">例题</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%80%9D%E8%80%83-1"><span class="toc-text">思考</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81-1"><span class="toc-text">代码</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%A0%E9%99%A4"><span class="toc-text">删除</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BE%8B%E9%A2%98-2"><span class="toc-text">例题</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%80%9D%E8%80%83-2"><span class="toc-text">思考</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81-2"><span class="toc-text">代码</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B0%8F%E7%BB%93"><span class="toc-text">小结</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8E%9F%E9%A2%98"><span class="toc-text">原题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%80%9D%E8%80%83"><span class="toc-text">思考</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81"><span class="toc-text">代码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9C%80%E5%90%8E"><span class="toc-text">最后</span></a></li></ol>
     </div>
   </section>
 
@@ -4227,7 +4200,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Xinon's Blog","url":"https://xinonria.github.io/project/xinonria.github.io/","logo":{"@type":"ImageObject","url":"/images/logo.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Xinon Zhang","image":{"@type":"ImageObject","url":"/images/logo.png"},"url":"https://xinonria.github.io/project/xinonria.github.io/","sameAs":["https://github.com/volantis-x"],"description":"一个兴趣使然的博客"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://xinonria.github.io/project/xinonria.github.io/","name":"Xinon's Blog"}},{"@type":"ListItem","position":3,"item":{"@id":"https://xinonria.github.io/project/xinonria.github.io/2023/08/17/关于二叉树-下/","name":"关于二叉树(下)"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Xinon's Blog","url":"https://xinonria.github.io/project/xinonria.github.io/","keywords":null,"description":"一个兴趣使然的博客","author":{"@type":"Person","name":"Xinon Zhang","image":{"@type":"ImageObject","url":"/images/logo.png"},"url":"https://xinonria.github.io/project/xinonria.github.io/","description":"一个兴趣使然的博客"},"publisher":{"@type":"Organization","name":"Xinon's Blog","url":"https://xinonria.github.io/project/xinonria.github.io/","logo":{"@type":"ImageObject","url":"/images/logo.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://xinonria.github.io/project?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"关于二叉树(下)","description":"一个兴趣使然的博客","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://xinonria.github.io/project/2023/08/17/%E5%85%B3%E4%BA%8E%E4%BA%8C%E5%8F%89%E6%A0%91-%E4%B8%8B/"},"author":{"@type":"Person","name":"Xinon Zhang","image":{"@type":"ImageObject","url":"/images/logo.png"},"url":"https://xinonria.github.io/project/xinonria.github.io/"},"publisher":{"@type":"Organization","name":"Xinon's Blog","logo":{"@type":"ImageObject","url":"/images/logo.png","width":192,"height":192}},"url":"https://xinonria.github.io/project/2023/08/17/%E5%85%B3%E4%BA%8E%E4%BA%8C%E5%8F%89%E6%A0%91-%E4%B8%8B/","wordCount":0,"datePublished":"2023-08-17T08:55:46.000Z","dateModified":"2023-08-23T13:24:14.459Z","keywords":"数据结构,二叉树","image":{"@type":"ImageObject","url":"/images/logo.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Xinon's Blog","url":"https://xinonria.github.io/project/xinonria.github.io/","logo":{"@type":"ImageObject","url":"/images/logo.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Xinon Zhang","image":{"@type":"ImageObject","url":"/images/logo.png"},"url":"https://xinonria.github.io/project/xinonria.github.io/","sameAs":["https://github.com/volantis-x"],"description":"一个兴趣使然的博客"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://xinonria.github.io/project/xinonria.github.io/","name":"Xinon's Blog"}},{"@type":"ListItem","position":3,"item":{"@id":"https://xinonria.github.io/project/xinonria.github.io/2023/09/07/2至36进制的高精度加法/","name":"2至36进制的高精度加法"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Xinon's Blog","url":"https://xinonria.github.io/project/xinonria.github.io/","keywords":null,"description":"一个兴趣使然的博客","author":{"@type":"Person","name":"Xinon Zhang","image":{"@type":"ImageObject","url":"/images/logo.png"},"url":"https://xinonria.github.io/project/xinonria.github.io/","description":"一个兴趣使然的博客"},"publisher":{"@type":"Organization","name":"Xinon's Blog","url":"https://xinonria.github.io/project/xinonria.github.io/","logo":{"@type":"ImageObject","url":"/images/logo.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://xinonria.github.io/project?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"2至36进制的高精度加法","description":"一个兴趣使然的博客","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://xinonria.github.io/project/2023/09/07/2%E8%87%B336%E8%BF%9B%E5%88%B6%E7%9A%84%E9%AB%98%E7%B2%BE%E5%BA%A6%E5%8A%A0%E6%B3%95/"},"author":{"@type":"Person","name":"Xinon Zhang","image":{"@type":"ImageObject","url":"/images/logo.png"},"url":"https://xinonria.github.io/project/xinonria.github.io/"},"publisher":{"@type":"Organization","name":"Xinon's Blog","logo":{"@type":"ImageObject","url":"/images/logo.png","width":192,"height":192}},"url":"https://xinonria.github.io/project/2023/09/07/2%E8%87%B336%E8%BF%9B%E5%88%B6%E7%9A%84%E9%AB%98%E7%B2%BE%E5%BA%A6%E5%8A%A0%E6%B3%95/","wordCount":0,"datePublished":"2023-09-06T16:34:14.000Z","dateModified":"2023-09-06T16:52:58.833Z","keywords":"高精度","image":{"@type":"ImageObject","url":"/images/logo.png","width":192,"height":192}}]</script>
 
 
 
