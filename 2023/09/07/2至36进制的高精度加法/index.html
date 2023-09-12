@@ -41,11 +41,11 @@
 <meta property="og:title" content="2至36进制的高精度加法">
 <meta property="og:url" content="https://xinonria.github.io/project/2023/09/07/2%E8%87%B336%E8%BF%9B%E5%88%B6%E7%9A%84%E9%AB%98%E7%B2%BE%E5%BA%A6%E5%8A%A0%E6%B3%95/index.html">
 <meta property="og:site_name" content="Xinon&#39;s Blog">
-<meta property="og:description" content="原题今天第一次刷CodeForces，随便找了个难度2000的题。 原题链接  要求实现2到36进制的累加，输出与输入进制相同。 第一行输入数字个数n 第二行输入进制。 后面n行输入累加的数字。 思考这道题核心是实现两个数任意进制的加法。 因为带有字母，所以用string存储数字是个不错选择。 既然都用string存储了，干脆用高精度加法的思路做题吧。 假设我们要将a和b相加。 首先将a和b倒序存">
+<meta property="og:description" content="原题今天第一次刷CodeForces，随便找了个题。 原题链接  要求实现2到36进制的累加，输出与输入进制相同。 第一行输入数字个数n 第二行输入进制。 后面n行输入累加的数字。 思考这道题核心是实现两个数任意进制的加法。 因为带有字母，所以用string存储数字是个不错选择。 既然都用string存储了，干脆用高精度加法的思路做题吧。 假设我们要将a和b相加。 首先将a和b倒序存储，方便进位。">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://cdn.jsdelivr.net/npm/volantis-static/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2023-09-06T16:34:14.000Z">
-<meta property="article:modified_time" content="2023-09-06T16:52:58.833Z">
+<meta property="article:modified_time" content="2023-09-12T10:20:09.363Z">
 <meta property="article:author" content="Xinon Zhang">
 <meta property="article:tag" content="高精度">
 <meta name="twitter:card" content="summary">
@@ -1916,7 +1916,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: false,
     cdn: {"js":{"app":"/xinonria.github.io/js/app.js","parallax":"/xinonria.github.io/js/plugins/parallax.js","rightMenu":"/xinonria.github.io/js/plugins/rightMenu.js","rightMenus":"/xinonria.github.io/js/plugins/rightMenus.js","sites":"/xinonria.github.io/js/plugins/tags/sites.js","friends":"/xinonria.github.io/js/plugins/tags/friends.js","contributors":"/xinonria.github.io/js/plugins/tags/contributors.js","search":"/xinonria.github.io/js/search/hexo.js"},"css":{"style":"/xinonria.github.io/css/style.css"}},
     default: {"avatar":"https://cdn.jsdelivr.net/npm/volantis-static/media/placeholder/avatar/round/3442075.svg","link":"https://cdn.jsdelivr.net/npm/volantis-static/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://cdn.jsdelivr.net/npm/volantis-static/media/placeholder/cover/76b86c0226ffd.svg","image":"https://cdn.jsdelivr.net/npm/volantis-static/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1694231998348),
+    lastupdate: new Date(1694514014976),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate"],
       for_post: ["toc"],
@@ -2691,7 +2691,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
-    <h3 id="原题"><a href="#原题" class="headerlink" title="原题"></a>原题</h3><p>今天第一次刷CodeForces，随便找了个难度2000的题。</p>
+    <h3 id="原题"><a href="#原题" class="headerlink" title="原题"></a>原题</h3><p>今天第一次刷CodeForces，随便找了个题。</p>
 <p><a target="_blank" rel="noopener" href="https://codeforces.com/problemset/problem/162/G">原题链接</a></p>
 <p><img src="https://www.z4a.net/images/2023/09/07/image.png" class="lazyload" data-srcset="https://www.z4a.net/images/2023/09/07/image.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
 <p>要求实现2到36进制的累加，输出与输入进制相同。</p>
@@ -2737,10 +2737,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-09-07T00:52:58+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-09-12T18:20:09+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2023年9月7日</p>
+    <p>更新于：2023年9月12日</p>
   </a>
 </div>
 
@@ -4207,7 +4207,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Xinon's Blog","url":"https://xinonria.github.io/project/xinonria.github.io/","logo":{"@type":"ImageObject","url":"/images/logo.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Xinon Zhang","image":{"@type":"ImageObject","url":"/images/logo.png"},"url":"https://xinonria.github.io/project/xinonria.github.io/","sameAs":["https://github.com/volantis-x"],"description":"一个兴趣使然的博客"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://xinonria.github.io/project/xinonria.github.io/","name":"Xinon's Blog"}},{"@type":"ListItem","position":3,"item":{"@id":"https://xinonria.github.io/project/xinonria.github.io/2023/09/07/2至36进制的高精度加法/","name":"2至36进制的高精度加法"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Xinon's Blog","url":"https://xinonria.github.io/project/xinonria.github.io/","keywords":null,"description":"一个兴趣使然的博客","author":{"@type":"Person","name":"Xinon Zhang","image":{"@type":"ImageObject","url":"/images/logo.png"},"url":"https://xinonria.github.io/project/xinonria.github.io/","description":"一个兴趣使然的博客"},"publisher":{"@type":"Organization","name":"Xinon's Blog","url":"https://xinonria.github.io/project/xinonria.github.io/","logo":{"@type":"ImageObject","url":"/images/logo.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://xinonria.github.io/project?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"2至36进制的高精度加法","description":"一个兴趣使然的博客","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://xinonria.github.io/project/2023/09/07/2%E8%87%B336%E8%BF%9B%E5%88%B6%E7%9A%84%E9%AB%98%E7%B2%BE%E5%BA%A6%E5%8A%A0%E6%B3%95/"},"author":{"@type":"Person","name":"Xinon Zhang","image":{"@type":"ImageObject","url":"/images/logo.png"},"url":"https://xinonria.github.io/project/xinonria.github.io/"},"publisher":{"@type":"Organization","name":"Xinon's Blog","logo":{"@type":"ImageObject","url":"/images/logo.png","width":192,"height":192}},"url":"https://xinonria.github.io/project/2023/09/07/2%E8%87%B336%E8%BF%9B%E5%88%B6%E7%9A%84%E9%AB%98%E7%B2%BE%E5%BA%A6%E5%8A%A0%E6%B3%95/","wordCount":0,"datePublished":"2023-09-06T16:34:14.000Z","dateModified":"2023-09-06T16:52:58.833Z","keywords":"高精度","image":{"@type":"ImageObject","url":"/images/logo.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Xinon's Blog","url":"https://xinonria.github.io/project/xinonria.github.io/","logo":{"@type":"ImageObject","url":"/images/logo.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Xinon Zhang","image":{"@type":"ImageObject","url":"/images/logo.png"},"url":"https://xinonria.github.io/project/xinonria.github.io/","sameAs":["https://github.com/volantis-x"],"description":"一个兴趣使然的博客"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://xinonria.github.io/project/xinonria.github.io/","name":"Xinon's Blog"}},{"@type":"ListItem","position":3,"item":{"@id":"https://xinonria.github.io/project/xinonria.github.io/2023/09/07/2至36进制的高精度加法/","name":"2至36进制的高精度加法"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Xinon's Blog","url":"https://xinonria.github.io/project/xinonria.github.io/","keywords":null,"description":"一个兴趣使然的博客","author":{"@type":"Person","name":"Xinon Zhang","image":{"@type":"ImageObject","url":"/images/logo.png"},"url":"https://xinonria.github.io/project/xinonria.github.io/","description":"一个兴趣使然的博客"},"publisher":{"@type":"Organization","name":"Xinon's Blog","url":"https://xinonria.github.io/project/xinonria.github.io/","logo":{"@type":"ImageObject","url":"/images/logo.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://xinonria.github.io/project?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"2至36进制的高精度加法","description":"一个兴趣使然的博客","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://xinonria.github.io/project/2023/09/07/2%E8%87%B336%E8%BF%9B%E5%88%B6%E7%9A%84%E9%AB%98%E7%B2%BE%E5%BA%A6%E5%8A%A0%E6%B3%95/"},"author":{"@type":"Person","name":"Xinon Zhang","image":{"@type":"ImageObject","url":"/images/logo.png"},"url":"https://xinonria.github.io/project/xinonria.github.io/"},"publisher":{"@type":"Organization","name":"Xinon's Blog","logo":{"@type":"ImageObject","url":"/images/logo.png","width":192,"height":192}},"url":"https://xinonria.github.io/project/2023/09/07/2%E8%87%B336%E8%BF%9B%E5%88%B6%E7%9A%84%E9%AB%98%E7%B2%BE%E5%BA%A6%E5%8A%A0%E6%B3%95/","wordCount":0,"datePublished":"2023-09-06T16:34:14.000Z","dateModified":"2023-09-12T10:20:09.363Z","keywords":"高精度","image":{"@type":"ImageObject","url":"/images/logo.png","width":192,"height":192}}]</script>
 
 
 
