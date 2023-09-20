@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <!-- SEO相关 -->
   <meta name="robots" content="noindex,follow">
-  <link rel="canonical" href="https://xinonria.github.io/project/tags/hexo/"/>
+  <link rel="canonical" href="https://xinonria.github.io/project/tags/工具/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -33,13 +33,13 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>标签：hexo - Xinon's Blog</title>
+  <title>标签：工具 - Xinon's Blog</title>
   <meta name="keywords" content="null">
   <meta desc name="description" content="一个兴趣使然的博客 - Xinon Zhang - Xinon's Blog">
   
 <meta property="og:type" content="website">
 <meta property="og:title" content="Xinon&#39;s Blog">
-<meta property="og:url" content="https://xinonria.github.io/project/tags/hexo/index.html">
+<meta property="og:url" content="https://xinonria.github.io/project/tags/%E5%B7%A5%E5%85%B7/index.html">
 <meta property="og:site_name" content="Xinon&#39;s Blog">
 <meta property="og:description" content="一个兴趣使然的博客">
 <meta property="og:locale" content="zh_CN">
@@ -2622,7 +2622,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           <div class='post-wrapper'>
             <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://xinonria.github.io/project/2023/08/11/hexo配置成功/">
+  <link itemprop="mainEntityOfPage" href="https://xinonria.github.io/project/2023/09/20/一些有用小操作/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Xinon's Blog">
   </span>
@@ -2640,20 +2640,21 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
     <h2 class="article-title"  itemprop="name headline">
-      <a href="/xinonria.github.io/2023/08/11/hexo%E9%85%8D%E7%BD%AE%E6%88%90%E5%8A%9F/"  itemprop="url">
-        hexo配置成功
+      <a href="/xinonria.github.io/2023/09/20/%E4%B8%80%E4%BA%9B%E6%9C%89%E7%94%A8%E5%B0%8F%E6%93%8D%E4%BD%9C/"  itemprop="url">
+        一些有用小操作
       </a>
     </h2>
   
   <div class='md article-desc' itemprop="articleBody">
     
       
-        花了两天时间终于成功把hexo+github托管的个人博客网站做完了。
-中途遇到了好多问题和障碍(哭
+        mid溢出在使用二分法的时候经常会用到一行代码:
+1mid = (left + right) / 2;
 
-npm install安装时一直卡住参考了CSDN的解决办法，发现没用。后来发现淘宝源停止对该域名解析了，遂换成官方源https://registry.npmjs.org解决问题。
-
-虚拟服务器无法配置白嫖了腾讯云虚拟服务器一个月。宝塔登陆不上去，1Panel安装不上。打算直接配置VanB...
+很正常的思维，mid就是left和right的中间值嘛。
+但是当right为INT_MAX也就是int上限的时候，left+right会导致mid溢出。
+如果这样写就可以避免这个溢出了。
+1mid = left + ((right - left) &gt;&gt; 1); // &gt;...
       
     
   </div>
@@ -2661,12 +2662,12 @@ npm install安装时一直卡住参考了CSDN的解决办法，发现没用。�
     <div class='meta-v3' line_style='solid'>
       <div>
         
-        <time itemprop="dateCreated datePublished" datetime="2023-08-11T13:49:14+08:00">2023-08-11</time>
+        <time itemprop="dateCreated datePublished" datetime="2023-09-20T21:55:28+08:00">2023-09-20</time>
         
       </div>
       
         <div>
-          <a class='readmore' href='/xinonria.github.io/2023/08/11/hexo%E9%85%8D%E7%BD%AE%E6%88%90%E5%8A%9F/' itemprop="url">
+          <a class='readmore' href='/xinonria.github.io/2023/09/20/%E4%B8%80%E4%BA%9B%E6%9C%89%E7%94%A8%E5%B0%8F%E6%93%8D%E4%BD%9C/' itemprop="url">
             阅读全文
           </a>
         </div>
@@ -4085,7 +4086,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Xinon's Blog","url":"https://xinonria.github.io/project/xinonria.github.io/","logo":{"@type":"ImageObject","url":"/images/logo.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Xinon Zhang","image":{"@type":"ImageObject","url":"/images/logo.png"},"url":"https://xinonria.github.io/project/xinonria.github.io/","sameAs":["https://github.com/volantis-x"],"description":"一个兴趣使然的博客"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://xinonria.github.io/project/xinonria.github.io/","name":"Xinon's Blog"}},{"@type":"ListItem","position":2,"item":{"@id":"https://xinonria.github.io/project/xinonria.github.io/tags/hexo/","name":"hexo"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Xinon's Blog","url":"https://xinonria.github.io/project/xinonria.github.io/","keywords":null,"description":"一个兴趣使然的博客","author":{"@type":"Person","name":"Xinon Zhang","image":{"@type":"ImageObject","url":"/images/logo.png"},"url":"https://xinonria.github.io/project/xinonria.github.io/","description":"一个兴趣使然的博客"},"publisher":{"@type":"Organization","name":"Xinon's Blog","url":"https://xinonria.github.io/project/xinonria.github.io/","logo":{"@type":"ImageObject","url":"/images/logo.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://xinonria.github.io/project?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"一个兴趣使然的博客","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"Xinon Zhang","image":{"@type":"ImageObject","url":"/images/logo.png"},"url":"https://xinonria.github.io/project/xinonria.github.io/"},"publisher":{"@type":"Organization","name":"Xinon's Blog","logo":{"@type":"ImageObject","url":"/images/logo.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"/images/logo.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Xinon's Blog","url":"https://xinonria.github.io/project/xinonria.github.io/","logo":{"@type":"ImageObject","url":"/images/logo.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Xinon Zhang","image":{"@type":"ImageObject","url":"/images/logo.png"},"url":"https://xinonria.github.io/project/xinonria.github.io/","sameAs":["https://github.com/volantis-x"],"description":"一个兴趣使然的博客"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://xinonria.github.io/project/xinonria.github.io/","name":"Xinon's Blog"}},{"@type":"ListItem","position":2,"item":{"@id":"https://xinonria.github.io/project/xinonria.github.io/tags/工具/","name":"工具"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Xinon's Blog","url":"https://xinonria.github.io/project/xinonria.github.io/","keywords":null,"description":"一个兴趣使然的博客","author":{"@type":"Person","name":"Xinon Zhang","image":{"@type":"ImageObject","url":"/images/logo.png"},"url":"https://xinonria.github.io/project/xinonria.github.io/","description":"一个兴趣使然的博客"},"publisher":{"@type":"Organization","name":"Xinon's Blog","url":"https://xinonria.github.io/project/xinonria.github.io/","logo":{"@type":"ImageObject","url":"/images/logo.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://xinonria.github.io/project?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"一个兴趣使然的博客","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"Xinon Zhang","image":{"@type":"ImageObject","url":"/images/logo.png"},"url":"https://xinonria.github.io/project/xinonria.github.io/"},"publisher":{"@type":"Organization","name":"Xinon's Blog","logo":{"@type":"ImageObject","url":"/images/logo.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"/images/logo.png","width":192,"height":192}}]</script>
 
 
 
