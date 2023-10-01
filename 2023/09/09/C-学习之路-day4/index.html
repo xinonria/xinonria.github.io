@@ -41,7 +41,7 @@
 <meta property="og:title" content="C#学习之路(day4)">
 <meta property="og:url" content="https://xinonria.github.io/project/2023/09/09/C-%E5%AD%A6%E4%B9%A0%E4%B9%8B%E8%B7%AF-day4/index.html">
 <meta property="og:site_name" content="Xinon&#39;s Blog">
-<meta property="og:description" content="函数有参数无返回值函数使用命名参数12345678910111213141516&#x2F;&#x2F; **定义函数**void Foo(string name, int number, bool ok)&amp;#123;  &#x2F;&#x2F; do something&amp;#125;&#x2F;&#x2F; **调用函数**&#x2F;&#x2F; 位置参数Foo(&quot;Xinon&quot;, 18, true);&#x2F;&#x2F; 命名参数Foo(name: &quot;Xino">
+<meta property="og:description" content="函数  有参数无返回值函数  使用命名参数 12345678910111213141516&#x2F;&#x2F; **定义函数**void Foo(string name, int number, bool ok)&amp;#123;  &#x2F;&#x2F; do something&amp;#125;&#x2F;&#x2F; **调用函数**&#x2F;&#x2F; 位置参数Foo(&quot;Xinon&quot;, 18, true);&#x2F;&#x2F; 命名参数Foo(name: &amp;quo">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://cdn.jsdelivr.net/npm/volantis-static/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2023-09-09T03:34:33.000Z">
@@ -1916,7 +1916,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: false,
     cdn: {"js":{"app":"/xinonria.github.io/js/app.js","parallax":"/xinonria.github.io/js/plugins/parallax.js","rightMenu":"/xinonria.github.io/js/plugins/rightMenu.js","rightMenus":"/xinonria.github.io/js/plugins/rightMenus.js","sites":"/xinonria.github.io/js/plugins/tags/sites.js","friends":"/xinonria.github.io/js/plugins/tags/friends.js","contributors":"/xinonria.github.io/js/plugins/tags/contributors.js","search":"/xinonria.github.io/js/search/hexo.js"},"css":{"style":"/xinonria.github.io/css/style.css"}},
     default: {"avatar":"https://cdn.jsdelivr.net/npm/volantis-static/media/placeholder/avatar/round/3442075.svg","link":"https://cdn.jsdelivr.net/npm/volantis-static/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://cdn.jsdelivr.net/npm/volantis-static/media/placeholder/cover/76b86c0226ffd.svg","image":"https://cdn.jsdelivr.net/npm/volantis-static/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1695221562176),
+    lastupdate: new Date(1696160963247),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate"],
       for_post: ["toc"],
@@ -2691,20 +2691,24 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
-    <h3 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h3><h4 id="有参数无返回值函数"><a href="#有参数无返回值函数" class="headerlink" title="有参数无返回值函数"></a>有参数无返回值函数</h4><h5 id="使用命名参数"><a href="#使用命名参数" class="headerlink" title="使用命名参数"></a>使用命名参数</h5><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// **定义函数**</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">Foo</span>(<span class="params"><span class="built_in">string</span> name, <span class="built_in">int</span> number, <span class="built_in">bool</span> ok</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">  <span class="comment">// do something</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// **调用函数**</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 位置参数</span></span><br><span class="line">Foo(<span class="string">&quot;Xinon&quot;</span>, <span class="number">18</span>, <span class="literal">true</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 命名参数</span></span><br><span class="line">Foo(name: <span class="string">&quot;Xinon&quot;</span>, ok: <span class="literal">true</span>, number: <span class="number">18</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 混用</span></span><br><span class="line">Foo(<span class="string">&quot;Xinon&quot;</span>, ok: <span class="literal">false</span>,number: <span class="number">18</span>);</span><br></pre></td></tr></table></figure>
-
+    <h3 id="函数"><a class="markdownIt-Anchor" href="#函数"></a> 函数</h3>
+<h4 id="有参数无返回值函数"><a class="markdownIt-Anchor" href="#有参数无返回值函数"></a> 有参数无返回值函数</h4>
+<h5 id="使用命名参数"><a class="markdownIt-Anchor" href="#使用命名参数"></a> 使用命名参数</h5>
+<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// **定义函数**</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">Foo</span>(<span class="params"><span class="built_in">string</span> name, <span class="built_in">int</span> number, <span class="built_in">bool</span> ok</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">  <span class="comment">// do something</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// **调用函数**</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 位置参数</span></span><br><span class="line">Foo(<span class="string">&quot;Xinon&quot;</span>, <span class="number">18</span>, <span class="literal">true</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 命名参数</span></span><br><span class="line">Foo(name: <span class="string">&quot;Xinon&quot;</span>, ok: <span class="literal">true</span>, number: <span class="number">18</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 混用</span></span><br><span class="line">Foo(<span class="string">&quot;Xinon&quot;</span>, ok: <span class="literal">false</span>,number: <span class="number">18</span>);</span><br></pre></td></tr></table></figure>
 <p>以上三个例子可以看出，可以使用命名参数来指定传入的值对应哪个形参。</p>
 <p>当使用命名参数后，顺序不重要了。</p>
 <p>但如果没有使用命名参数，就要保证位置参数的位置是正确的。</p>
-<h4 id="声明可选参数"><a href="#声明可选参数" class="headerlink" title="声明可选参数"></a>声明可选参数</h4><p>为参数分配默认值后，它将变为可选参数。 如果参数中省略了可选参数，则函数执行时将使用默认值。</p>
+<h4 id="声明可选参数"><a class="markdownIt-Anchor" href="#声明可选参数"></a> 声明可选参数</h4>
+<p>为参数分配默认值后，它将变为可选参数。 如果参数中省略了可选参数，则函数执行时将使用默认值。</p>
 <p><strong>注意可选参数必须都放在所有必需参数之后，否则编译失败CE</strong></p>
 <figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">Foo</span>(<span class="params"><span class="built_in">string</span> name, <span class="built_in">bool</span> ok = <span class="literal">true</span>, <span class="built_in">int</span> number = <span class="number">18</span></span>)</span></span><br><span class="line">&#123;</span><br><span class="line">  <span class="comment">//do something</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">Foo(<span class="string">&quot;Xinon&quot;</span>);</span><br></pre></td></tr></table></figure>
-
 <p>若不给出可选参数的值，那么函数执行时使用默认值<code>ok: true</code>和<code>number: 18</code>。</p>
-<h4 id="有参数有返回值函数"><a href="#有参数有返回值函数" class="headerlink" title="有参数有返回值函数"></a>有参数有返回值函数</h4><p>简单看了一下跟C差不多就不说了。</p>
+<h4 id="有参数有返回值函数"><a class="markdownIt-Anchor" href="#有参数有返回值函数"></a> 有参数有返回值函数</h4>
+<p>简单看了一下跟C差不多就不说了。</p>
 <p>可以看看官方文档。</p>
 <p><a target="_blank" rel="noopener" href="https://learn.microsoft.com/zh-cn/training/modules/create-c-sharp-methods-return-values/1-introduction">Microsoft Learn链接</a></p>
-<h3 id="题外话"><a href="#题外话" class="headerlink" title="题外话"></a>题外话</h3><p>今天上午六点半起，七点集合，教官八点到。</p>
+<h3 id="题外话"><a class="markdownIt-Anchor" href="#题外话"></a> 题外话</h3>
+<p>今天上午六点半起，七点集合，教官八点到。</p>
 <p>有点无语。。。</p>
 <p>天晴了拉到篮球场练习，最后评比的时候下雨了，淋着雨等所有班级过一遍动作。</p>
 <p>过完动作天又晴了，最后留下了一身湿了的外套。</p>
@@ -2818,21 +2822,22 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class='prev' href='/xinonria.github.io/2023/09/20/%E4%B8%80%E4%BA%9B%E6%9C%89%E7%94%A8%E5%B0%8F%E6%93%8D%E4%BD%9C/'>
           <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>一些有用小操作</p>
-          <p class='content'>mid溢出在使用二分法的时候经常会用到一行代码:
+          <p class='content'> mid溢出
+在使用二分法的时候经常会用到一行代码:
 1mid = (left + right) / 2;
-
 很正常的思维，mid就是left和right的中间值嘛。
-但是当right为INT_MA...</p>
+但是当right为INT_M...</p>
         </a>
       
       
         <a class='next' href='/xinonria.github.io/2023/09/08/C-%E5%AD%A6%E4%B9%A0%E4%B9%8B%E8%B7%AF-day3/'>
           <p class='title'>C#学习之路(day3)<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>题外话今天开始军训了，晚上也有安排，回到宿舍差不多九点半了。
+          <p class='content'> 题外话
+今天开始军训了，晚上也有安排，回到宿舍差不多九点半了。
 少了好多时间刷题和学习。
 今天的内容实际是在等教官来时用手机看的。
 没有接上昨天的内容，因为不能做笔记。
-本来今天内容可以把函数基本...</p>
+本来今天内容可以把函数...</p>
         </a>
       
     </div>
@@ -2890,7 +2895,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
     <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%87%BD%E6%95%B0"><span class="toc-text">函数</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9C%89%E5%8F%82%E6%95%B0%E6%97%A0%E8%BF%94%E5%9B%9E%E5%80%BC%E5%87%BD%E6%95%B0"><span class="toc-text">有参数无返回值函数</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%E5%91%BD%E5%90%8D%E5%8F%82%E6%95%B0"><span class="toc-text">使用命名参数</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%A3%B0%E6%98%8E%E5%8F%AF%E9%80%89%E5%8F%82%E6%95%B0"><span class="toc-text">声明可选参数</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9C%89%E5%8F%82%E6%95%B0%E6%9C%89%E8%BF%94%E5%9B%9E%E5%80%BC%E5%87%BD%E6%95%B0"><span class="toc-text">有参数有返回值函数</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A2%98%E5%A4%96%E8%AF%9D"><span class="toc-text">题外话</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%87%BD%E6%95%B0"><span class="toc-text"> 函数</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9C%89%E5%8F%82%E6%95%B0%E6%97%A0%E8%BF%94%E5%9B%9E%E5%80%BC%E5%87%BD%E6%95%B0"><span class="toc-text"> 有参数无返回值函数</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%E5%91%BD%E5%90%8D%E5%8F%82%E6%95%B0"><span class="toc-text"> 使用命名参数</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%A3%B0%E6%98%8E%E5%8F%AF%E9%80%89%E5%8F%82%E6%95%B0"><span class="toc-text"> 声明可选参数</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9C%89%E5%8F%82%E6%95%B0%E6%9C%89%E8%BF%94%E5%9B%9E%E5%80%BC%E5%87%BD%E6%95%B0"><span class="toc-text"> 有参数有返回值函数</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A2%98%E5%A4%96%E8%AF%9D"><span class="toc-text"> 题外话</span></a></li></ol>
     </div>
   </section>
 

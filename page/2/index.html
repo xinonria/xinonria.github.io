@@ -1913,7 +1913,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: false,
     cdn: {"js":{"app":"/xinonria.github.io/js/app.js","parallax":"/xinonria.github.io/js/plugins/parallax.js","rightMenu":"/xinonria.github.io/js/plugins/rightMenu.js","rightMenus":"/xinonria.github.io/js/plugins/rightMenus.js","sites":"/xinonria.github.io/js/plugins/tags/sites.js","friends":"/xinonria.github.io/js/plugins/tags/friends.js","contributors":"/xinonria.github.io/js/plugins/tags/contributors.js","search":"/xinonria.github.io/js/search/hexo.js"},"css":{"style":"/xinonria.github.io/css/style.css"}},
     default: {"avatar":"https://cdn.jsdelivr.net/npm/volantis-static/media/placeholder/avatar/round/3442075.svg","link":"https://cdn.jsdelivr.net/npm/volantis-static/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://cdn.jsdelivr.net/npm/volantis-static/media/placeholder/cover/76b86c0226ffd.svg","image":"https://cdn.jsdelivr.net/npm/volantis-static/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1695221562176),
+    lastupdate: new Date(1696160963247),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate"],
       for_post: ["toc"],
@@ -2613,6 +2613,69 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           <div class='post-wrapper'>
             <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="https://xinonria.github.io/project/2023/08/24/异或交换整数/">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Xinon's Blog">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="Xinon's Blog">
+    <meta itemprop="description" content="一个兴趣使然的博客">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="/images/logo.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/xinonria.github.io/2023/08/24/%E5%BC%82%E6%88%96%E4%BA%A4%E6%8D%A2%E6%95%B4%E6%95%B0/"  itemprop="url">
+        异或交换整数
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+         正常操作
+正常交换两个整数我们需要创建一个临时变量。
+12345int a = 1, b = 2;int temp;temp = b;b = a;a = temp;
+temp变量用于保存b的值，避免被覆盖，最后赋值给a。
+ 异或操作
+但通过异或操作，我们可以不需要创建额外的临时变量来交换两个整数。
+异或操作见原文链接
+ 代码
+1234int a = 1, b = 2;a = a ^ b;b...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+        <time itemprop="dateCreated datePublished" datetime="2023-08-24T15:14:35+08:00">2023-08-24</time>
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/xinonria.github.io/2023/08/24/%E5%BC%82%E6%88%96%E4%BA%A4%E6%8D%A2%E6%95%B4%E6%95%B0/' itemprop="url">
+            阅读全文
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
   <link itemprop="mainEntityOfPage" href="https://xinonria.github.io/project/2023/08/23/二进制下的负数/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Xinon's Blog">
@@ -2640,14 +2703,16 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
       
         看上去越基础的题，背后越有大道理。
-背景日常刷Leetcode题遇到一个很基础的题目。
+ 背景
+日常刷Leetcode题遇到一个很基础的题目。
 原题链接
 给你一个整数 n，请你判断该整数是否是 2 的幂次方。如果是，返回 true ；否则，返回 false 。
 
-进阶：你能够不使用循环&#x2F;递归解决此问题吗？
-思路正常想法就是一直mod 2和除以2判断是否是2的幂次方。
+进阶：你能够不使用循环/递归解决此问题吗？
+ 思路
+正常想法就是一直mod 2和除以2判断是否是2的幂次方。
 但看到这个进阶，Easy题必要达到好吗。
-题目跟2的幂次方有关，计算机...
+题目跟2的幂次方有关，计算机又...
       
     
   </div>
@@ -2703,7 +2768,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
       
         最近刷题经常使用到哈希表。
-哈希表官方定义:
+ 哈希表
+官方定义:
 
 哈希表是根据关键码的值而直接进行访问的数据结构。
 
@@ -2714,7 +2780,7 @@ a[key] = value;
 键不能相同，但值可以相同。
 哈希表可以用来快速检索一个元素。
 比如我们拿学生的名字作为键(key)，ta所在的宿舍作为值(key)。
-我们要查询一个学生在哪个宿舍，...
+我们要查询一个学生在哪个宿...
       
     
   </div>
@@ -2769,14 +2835,14 @@ a[key] = value;
   <div class='md article-desc' itemprop="articleBody">
     
       
-        数组
+         数组
 
 我们都知道访问数组的一个元素可以通过下标访问。
 例如
 123456int a[5] = &#123; 1,2,3,4,5 &#125;; //初始化printf(&quot;%d %d&quot;, a[0], a[1]);-----output:1 2
 通过下标我们访问了数组a的第0个和第1个元素。
 但是数组的下标访问本质是编程语言的一个语法糖。
-数组的本质是开辟一串连续的空间用于...
+数组的本质是开辟一串连续的空间用...
       
     
   </div>
@@ -2831,14 +2897,15 @@ a[key] = value;
   <div class='md article-desc' itemprop="articleBody">
     
       
-        主题问题最近使用hexo的volantis主题。
+         主题问题
+最近使用hexo的volantis主题。
 好看是好看，但它的资源cdn都在unpkg上。
 最近发现unpkg国内无法访问了，导致图标、图片什么的都都失效。qwq
 设置了使用jsdelivr(国内能正常访问)，但似乎并不起作用。
 要不换一个不依赖unpkg的主题？
 尝试了Star最高的Next主题。
 但感觉实在太丑，用不下去。再加上waline评论系统时不时会出错。
-还是放弃了Next...
+还是放弃了Ne...
       
     
   </div>
@@ -2893,7 +2960,7 @@ a[key] = value;
   <div class='md article-desc' itemprop="articleBody">
     
       
-        开始
+         开始
 
 前几天使用数据恢复软件恢复了一批word文档(大概2k个)，但是有些文档已经被损坏了，完全打不开。
 用word修复工具能修复吗？抱着这样的想法尝试了市面上大部分的修复工具。
@@ -2901,10 +2968,11 @@ a[key] = value;
 
 这个时候尝试看看原始数据？
 用一款开源的软件imhex
+
 直接查看这些文档的16进制数据。
 ![Alt text]
 好好好，就剩个文件路径了是吧。损坏成这样只有神笔马良能修复了。
-这种文件已经不...
+这种文件已...
       
     
   </div>
@@ -2962,12 +3030,13 @@ a[key] = value;
         当要求空间复杂度为O(1)，即只使用常量额外空间时，快慢指针对于处理链表中删除重复值和判断是否有环尤为重要。
 快慢指针也可称为龟兔赛跑算法。
 定义一个快指针，一个慢指针，它们的移动速度是不同的，根据这个速度差，我们就能完成一些工作了。
-删除重复值
+ 删除重复值
 
-例题给定一个已排序的链表的头 head ， 删除所有重复的元素，使每个元素只出现一次 。返回 已排序的链表 。
+ 例题
+给定一个已排序的链表的头 head ， 删除所有重复的元素，使每个元素只出现一次 。返回 已排序的链表 。
 
-思考首先这个链表是有序链表。
-...
+ 思考
+首先这个链表是有...
       
     
   </div>
@@ -3024,8 +3093,11 @@ a[key] = value;
       
         二叉搜索树是有序的。
 它可以完成搜索，插入以及删除等操作。
-搜索例题
-思考因为二叉搜索树有以下几个性质。
+ 搜索
+ 例题
+
+ 思考
+因为二叉搜索树有以下几个性质。
 
 若它的左子树不空，则左子树上所有结点的值均小于它的根结点的值；
 若它的右子树不空，则右子树上所有结点的值均大于它的根结点的值；
@@ -3033,7 +3105,8 @@ a[key] = value;
 
 所以它的搜索效率就跟二分搜索一样很快。
 使用迭代法很快就能写出来。
-代码12345678910TreeNode* sea...
+ 代码
+12345678910TreeN...
       
     
   </div>
@@ -3090,15 +3163,17 @@ a[key] = value;
       
         本来觉得这题很简单的。但看了条件之后发现还真挺难想（压根想不到位操作）
 
+ 原题链接
 
-原题链接
 注意条件!!
 线性时间 &amp; 常量额外空间
-思考1. 暴力解法。取一个数记为 cur ，然后从剩下的数中查找，如果找不到，则 cur 即为要找的那个数。
+ 思考
+ 1. 暴力解法。
+取一个数记为 cur ，然后从剩下的数中查找，如果找不到，则 cur 即为要找的那个数。
 双层循环，时间复杂度O(n^2)。
 不满足线性时间。
-2. 哈希表直接用unordered_set&lt;int, int&gt;作哈希表。
-第一次...
+ 2. 哈希表
+直接用unordered_set&lt;int, int&gt;作哈...
       
     
   </div>
@@ -3153,15 +3228,19 @@ a[key] = value;
   <div class='md article-desc' itemprop="articleBody">
     
       
-        构造
+         构造
 
 前序和中序可以唯一确定一棵二叉树。
 后序和中序可以唯一确定一棵二叉树。
 前序和后序不能唯一确定一棵二叉树！
 没中序遍历就无法分割了。
-前序遍历&amp;中序遍历构造分析首先要牢记各个遍历方法的顺序。
-前序遍历是：根节点-&gt;左子树-&gt;右子树中序遍历是：左子树-&gt;根节点-&gt;右子树
-所以前序遍历的第一个元素就是整个二叉树的根节点。同理，在中序遍历中找到这个元素，它的...
+ 前序遍历&amp;中序遍历构造
+ 分析
+首先要牢记各个遍历方法的顺序。
+前序遍历是：根节点-&gt;左子树-&gt;右子树
+中序遍历是：左子树-&gt;根节点-&gt;右子树
+所以前序遍历的第一个元素就是整个二叉树的根节点。
+同理，在中序遍历中找到...
       
     
   </div>
@@ -3175,74 +3254,6 @@ a[key] = value;
       
         <div>
           <a class='readmore' href='/xinonria.github.io/2023/08/16/%E5%85%B3%E4%BA%8E%E4%BA%8C%E5%8F%89%E6%A0%91(%E4%B8%AD)/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://xinonria.github.io/project/2023/08/15/关于二叉树(上)/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Xinon's Blog">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Xinon's Blog">
-    <meta itemprop="description" content="一个兴趣使然的博客">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="/images/logo.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/xinonria.github.io/2023/08/15/%E5%85%B3%E4%BA%8E%E4%BA%8C%E5%8F%89%E6%A0%91(%E4%B8%8A)/"  itemprop="url">
-        关于二叉树（上）
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        前言
-
-最近经常刷到二叉树的题，那么好好把二叉树的相关知识点都过一下吧。
-
-本文参考了代码随想录关于二叉树的介绍。原文链接
-
-分类
-
-满二叉树一个二叉树除了叶节点外每个节点都有两个子节点，且叶节点在同一层的二叉树。就是看上去都是满的。
-深度为$k$。节点数量就是$2^k-1$个。
-
-完全二叉树除了最底层节点没填满外，其他节点都是满的。且最底层节点必须从左到右连续！
-
-所以，满二叉树同时也是一...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2023-08-15T13:35:35+08:00">2023-08-15</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/xinonria.github.io/2023/08/15/%E5%85%B3%E4%BA%8E%E4%BA%8C%E5%8F%89%E6%A0%91(%E4%B8%8A)/' itemprop="url">
             阅读全文
           </a>
         </div>
@@ -3371,7 +3382,7 @@ a[key] = value;
 
 
     <div class='content'>
-      <a href="/xinonria.github.io/tags/Blog/" style="font-size: 16px; color: #8b8b8b">Blog</a> <a href="/xinonria.github.io/tags/C/" style="font-size: 20px; color: #707070">C#</a> <a href="/xinonria.github.io/tags/Leetcode/" style="font-size: 20px; color: #707070">Leetcode</a> <a href="/xinonria.github.io/tags/hexo/" style="font-size: 14px; color: #999">hexo</a> <a href="/xinonria.github.io/tags/python/" style="font-size: 14px; color: #999">python</a> <a href="/xinonria.github.io/tags/%E4%BA%8C%E5%8F%89%E6%A0%91/" style="font-size: 22px; color: #636363">二叉树</a> <a href="/xinonria.github.io/tags/%E4%BA%8C%E8%BF%9B%E5%88%B6/" style="font-size: 14px; color: #999">二进制</a> <a href="/xinonria.github.io/tags/%E4%BD%8D%E6%93%8D%E4%BD%9C/" style="font-size: 18px; color: #7e7e7e">位操作</a> <a href="/xinonria.github.io/tags/%E5%93%88%E5%B8%8C%E8%A1%A8/" style="font-size: 14px; color: #999">哈希表</a> <a href="/xinonria.github.io/tags/%E5%B0%8F%E5%B7%A5%E5%85%B7/" style="font-size: 14px; color: #999">小工具</a> <a href="/xinonria.github.io/tags/%E5%B7%A5%E5%85%B7/" style="font-size: 14px; color: #999">工具</a> <a href="/xinonria.github.io/tags/%E6%8C%87%E9%92%88/" style="font-size: 14px; color: #999">指针</a> <a href="/xinonria.github.io/tags/%E6%95%B0%E5%AD%A6/" style="font-size: 14px; color: #999">数学</a> <a href="/xinonria.github.io/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" style="font-size: 24px; color: #555">数据结构</a> <a href="/xinonria.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%8E%9F%E7%90%86/" style="font-size: 14px; color: #999">计算机原理</a> <a href="/xinonria.github.io/tags/%E9%80%92%E5%BD%92/" style="font-size: 14px; color: #999">递归</a> <a href="/xinonria.github.io/tags/%E9%93%BE%E8%A1%A8/" style="font-size: 14px; color: #999">链表</a> <a href="/xinonria.github.io/tags/%E9%AB%98%E7%B2%BE%E5%BA%A6/" style="font-size: 14px; color: #999">高精度</a>
+      <a href="/xinonria.github.io/tags/Blog/" style="font-size: 16px; color: #8b8b8b">Blog</a> <a href="/xinonria.github.io/tags/C/" style="font-size: 20px; color: #707070">C#</a> <a href="/xinonria.github.io/tags/Leetcode/" style="font-size: 20px; color: #707070">Leetcode</a> <a href="/xinonria.github.io/tags/hexo/" style="font-size: 14px; color: #999">hexo</a> <a href="/xinonria.github.io/tags/python/" style="font-size: 14px; color: #999">python</a> <a href="/xinonria.github.io/tags/vscode/" style="font-size: 14px; color: #999">vscode</a> <a href="/xinonria.github.io/tags/%E4%BA%8C%E5%8F%89%E6%A0%91/" style="font-size: 22px; color: #636363">二叉树</a> <a href="/xinonria.github.io/tags/%E4%BA%8C%E8%BF%9B%E5%88%B6/" style="font-size: 14px; color: #999">二进制</a> <a href="/xinonria.github.io/tags/%E4%BD%8D%E6%93%8D%E4%BD%9C/" style="font-size: 18px; color: #7e7e7e">位操作</a> <a href="/xinonria.github.io/tags/%E5%93%88%E5%B8%8C%E8%A1%A8/" style="font-size: 14px; color: #999">哈希表</a> <a href="/xinonria.github.io/tags/%E5%B0%8F%E5%B7%A5%E5%85%B7/" style="font-size: 14px; color: #999">小工具</a> <a href="/xinonria.github.io/tags/%E5%B7%A5%E5%85%B7/" style="font-size: 14px; color: #999">工具</a> <a href="/xinonria.github.io/tags/%E6%8C%87%E9%92%88/" style="font-size: 14px; color: #999">指针</a> <a href="/xinonria.github.io/tags/%E6%95%B0%E5%AD%A6/" style="font-size: 14px; color: #999">数学</a> <a href="/xinonria.github.io/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" style="font-size: 24px; color: #555">数据结构</a> <a href="/xinonria.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%8E%9F%E7%90%86/" style="font-size: 14px; color: #999">计算机原理</a> <a href="/xinonria.github.io/tags/%E9%80%92%E5%BD%92/" style="font-size: 14px; color: #999">递归</a> <a href="/xinonria.github.io/tags/%E9%93%BE%E8%A1%A8/" style="font-size: 14px; color: #999">链表</a> <a href="/xinonria.github.io/tags/%E9%AB%98%E7%B2%BE%E5%BA%A6/" style="font-size: 14px; color: #999">高精度</a>
     </div>
   </section>
 

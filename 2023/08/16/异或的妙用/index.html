@@ -41,7 +41,7 @@
 <meta property="og:title" content="异或的妙用">
 <meta property="og:url" content="https://xinonria.github.io/project/2023/08/16/%E5%BC%82%E6%88%96%E7%9A%84%E5%A6%99%E7%94%A8/index.html">
 <meta property="og:site_name" content="Xinon&#39;s Blog">
-<meta property="og:description" content="本来觉得这题很简单的。但看了条件之后发现还真挺难想（压根想不到位操作）   原题链接 注意条件!! 线性时间 &amp; 常量额外空间 思考1. 暴力解法。取一个数记为 cur ，然后从剩下的数中查找，如果找不到，则 cur 即为要找的那个数。 双层循环，时间复杂度O(n^2)。 不满足线性时间。 2. 哈希表直接用unordered_set&lt;int, int&gt;作哈希表。 第一次遇到这">
+<meta property="og:description" content="本来觉得这题很简单的。但看了条件之后发现还真挺难想（压根想不到位操作）   原题链接  注意条件!! 线性时间 &amp; 常量额外空间  思考  1. 暴力解法。 取一个数记为 cur ，然后从剩下的数中查找，如果找不到，则 cur 即为要找的那个数。 双层循环，时间复杂度O(n^2)。 不满足线性时间。  2. 哈希表 直接用unordered_set&lt;int, int&gt;作哈希表。">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://cdn.jsdelivr.net/npm/volantis-static/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2023-08-16T14:38:11.000Z">
@@ -1917,7 +1917,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: false,
     cdn: {"js":{"app":"/xinonria.github.io/js/app.js","parallax":"/xinonria.github.io/js/plugins/parallax.js","rightMenu":"/xinonria.github.io/js/plugins/rightMenu.js","rightMenus":"/xinonria.github.io/js/plugins/rightMenus.js","sites":"/xinonria.github.io/js/plugins/tags/sites.js","friends":"/xinonria.github.io/js/plugins/tags/friends.js","contributors":"/xinonria.github.io/js/plugins/tags/contributors.js","search":"/xinonria.github.io/js/search/hexo.js"},"css":{"style":"/xinonria.github.io/css/style.css"}},
     default: {"avatar":"https://cdn.jsdelivr.net/npm/volantis-static/media/placeholder/avatar/round/3442075.svg","link":"https://cdn.jsdelivr.net/npm/volantis-static/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://cdn.jsdelivr.net/npm/volantis-static/media/placeholder/cover/76b86c0226ffd.svg","image":"https://cdn.jsdelivr.net/npm/volantis-static/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1695221562176),
+    lastupdate: new Date(1696160963247),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate"],
       for_post: ["toc"],
@@ -2694,20 +2694,25 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div id="post-body" itemprop="articleBody">
     <p>本来觉得这题很简单的。但看了条件之后发现还真挺难想（压根想不到位操作）</p>
 <hr></hr>
-
-<h4 id="原题链接"><a href="#原题链接" class="headerlink" title="原题链接"></a><a target="_blank" rel="noopener" href="https://leetcode.cn/problems/single-number/description/">原题链接</a></h4><p><img src="https://s1.ax1x.com/2023/08/16/pPlwAz9.png" class="lazyload" data-srcset="https://s1.ax1x.com/2023/08/16/pPlwAz9.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<h4 id="原题链接"><a class="markdownIt-Anchor" href="#原题链接"></a> <a target="_blank" rel="noopener" href="https://leetcode.cn/problems/single-number/description/">原题链接</a></h4>
+<p><img src="https://s1.ax1x.com/2023/08/16/pPlwAz9.png" class="lazyload" data-srcset="https://s1.ax1x.com/2023/08/16/pPlwAz9.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" /></p>
 <p>注意条件!!</p>
 <p><strong>线性时间 &amp; 常量额外空间</strong></p>
-<h4 id="思考"><a href="#思考" class="headerlink" title="思考"></a>思考</h4><h5 id="1-暴力解法。"><a href="#1-暴力解法。" class="headerlink" title="1. 暴力解法。"></a>1. 暴力解法。</h5><p>取一个数记为 cur ，然后从剩下的数中查找，如果找不到，则 cur 即为要找的那个数。</p>
+<h4 id="思考"><a class="markdownIt-Anchor" href="#思考"></a> 思考</h4>
+<h5 id="1-暴力解法"><a class="markdownIt-Anchor" href="#1-暴力解法"></a> 1. 暴力解法。</h5>
+<p>取一个数记为 cur ，然后从剩下的数中查找，如果找不到，则 cur 即为要找的那个数。</p>
 <p>双层循环，时间复杂度O(n^2)。</p>
 <p>不满足线性时间。</p>
-<h5 id="2-哈希表"><a href="#2-哈希表" class="headerlink" title="2. 哈希表"></a>2. 哈希表</h5><p>直接用<code>unordered_set&lt;int, int&gt;</code>作哈希表。</p>
+<h5 id="2-哈希表"><a class="markdownIt-Anchor" href="#2-哈希表"></a> 2. 哈希表</h5>
+<p>直接用<code>unordered_set&lt;int, int&gt;</code>作哈希表。</p>
 <p>第一次遇到这个数时放进去，同时记录个数。</p>
 <p>最后循环一遍看谁的个数是1。</p>
 <p>然而这个解法不满足常量额外空间。</p>
-<h5 id="3-排序"><a href="#3-排序" class="headerlink" title="3. 排序"></a>3. 排序</h5><p>排序完之后看谁的值只出现一次。</p>
+<h5 id="3-排序"><a class="markdownIt-Anchor" href="#3-排序"></a> 3. 排序</h5>
+<p>排序完之后看谁的值只出现一次。</p>
 <p>使用快速排序时间复杂度O(nlogn)，还是不够快。</p>
-<h5 id="4-异或"><a href="#4-异或" class="headerlink" title="4. 异或"></a>4. 异或</h5><p><em><strong>重量级登场</strong></em></p>
+<h5 id="4-异或"><a class="markdownIt-Anchor" href="#4-异或"></a> 4. 异或</h5>
+<p><em><strong>重量级登场</strong></em></p>
 <p>首先了解什么是异或。</p>
 <p>异或运算符在C++里是<code>^</code>。</p>
 <p>两个输入相同时为0，不同则为1。</p>
@@ -2719,7 +2724,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <th>a⊕b</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -2739,15 +2745,18 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <td>1</td>
 <td>0</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 <p>我们只需要使用它这几个性质。</p>
 <ul>
-<li>任何数和 0 做异或运算，结果仍然是原来的数，即 a ⊕ 0 &#x3D; a。</li>
-<li>任何数和其自身做异或运算，结果是 0，即 a ⊕ a &#x3D; 0。</li>
+<li>任何数和 0 做异或运算，结果仍然是原来的数，即 a ⊕ 0 = a。</li>
+<li>任何数和其自身做异或运算，结果是 0，即 a ⊕ a = 0。</li>
 <li><strong>满足交换律和结合律</strong> （也就是说无论一对相同的ta相隔天涯海角，中途经历了多少事情，异或都能让它们匹配在一起为0）</li>
 </ul>
-<p>(a1⊕a1)⊕(a2⊕a2)⊕⋯⊕(an⊕an)⊕am+1最后结果是<br>0⊕0⊕⋯⊕0⊕am+1&#x3D;am+1</p>
-<h4 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h4><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span></span><br><span class="line">&#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">singleNumber</span><span class="params">(vector&lt;<span class="type">int</span>&gt; &amp;nums)</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="type">int</span> len = nums.<span class="built_in">size</span>();</span><br><span class="line">        <span class="keyword">if</span> (len == <span class="number">1</span>)              <span class="comment">//只有一个数就直接返回咯</span></span><br><span class="line">            <span class="keyword">return</span> nums[<span class="number">0</span>];</span><br><span class="line">        <span class="type">int</span> ans = <span class="number">0</span>;               <span class="comment">//第一个条件:任何数和 0 做异或运算，结果仍然是原来的数</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> num : nums)</span><br><span class="line">            ans = ans ^ num;</span><br><span class="line">        <span class="keyword">return</span> ans;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<p>(a1⊕a1)⊕(a2⊕a2)⊕⋯⊕(an⊕an)⊕am+1最后结果是<br />
+0⊕0⊕⋯⊕0⊕am+1=am+1</p>
+<h4 id="代码"><a class="markdownIt-Anchor" href="#代码"></a> 代码</h4>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span></span><br><span class="line">&#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">singleNumber</span><span class="params">(vector&lt;<span class="type">int</span>&gt; &amp;nums)</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="type">int</span> len = nums.<span class="built_in">size</span>();</span><br><span class="line">        <span class="keyword">if</span> (len == <span class="number">1</span>)              <span class="comment">//只有一个数就直接返回咯</span></span><br><span class="line">            <span class="keyword">return</span> nums[<span class="number">0</span>];</span><br><span class="line">        <span class="type">int</span> ans = <span class="number">0</span>;               <span class="comment">//第一个条件:任何数和 0 做异或运算，结果仍然是原来的数</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> num : nums)</span><br><span class="line">            ans = ans ^ num;</span><br><span class="line">        <span class="keyword">return</span> ans;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
   </div>
   
   
@@ -2858,23 +2867,28 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>关于二叉树(下)</p>
           <p class='content'>二叉搜索树是有序的。
 它可以完成搜索，插入以及删除等操作。
-搜索例题
-思考因为二叉搜索树有以下几个性质。
+ 搜索
+ 例题
+
+ 思考
+因为二叉搜索树有以下几个性质。
 
 若它的左子树不空，则左子树上所有结点的值均小于它的根结点的值；
-若它的右子树不空，则右...</p>
+若它的右子...</p>
         </a>
       
       
         <a class='next' href='/xinonria.github.io/2023/08/16/%E5%85%B3%E4%BA%8E%E4%BA%8C%E5%8F%89%E6%A0%91(%E4%B8%AD)/'>
           <p class='title'>关于二叉树（中）<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>构造
+          <p class='content'> 构造
 
 前序和中序可以唯一确定一棵二叉树。
 后序和中序可以唯一确定一棵二叉树。
 前序和后序不能唯一确定一棵二叉树！
 没中序遍历就无法分割了。
-前序遍历&amp;中序遍历构造分析首先要牢记各个遍历...</p>
+ 前序遍历&amp;中序遍历构造
+ 分析
+首先要牢...</p>
         </a>
       
     </div>
@@ -2932,7 +2946,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
     <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8E%9F%E9%A2%98%E9%93%BE%E6%8E%A5"><span class="toc-text">原题链接</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%80%9D%E8%80%83"><span class="toc-text">思考</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-%E6%9A%B4%E5%8A%9B%E8%A7%A3%E6%B3%95%E3%80%82"><span class="toc-text">1. 暴力解法。</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-%E5%93%88%E5%B8%8C%E8%A1%A8"><span class="toc-text">2. 哈希表</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3-%E6%8E%92%E5%BA%8F"><span class="toc-text">3. 排序</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#4-%E5%BC%82%E6%88%96"><span class="toc-text">4. 异或</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81"><span class="toc-text">代码</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8E%9F%E9%A2%98%E9%93%BE%E6%8E%A5"><span class="toc-text"> 原题链接</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%80%9D%E8%80%83"><span class="toc-text"> 思考</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-%E6%9A%B4%E5%8A%9B%E8%A7%A3%E6%B3%95"><span class="toc-text"> 1. 暴力解法。</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-%E5%93%88%E5%B8%8C%E8%A1%A8"><span class="toc-text"> 2. 哈希表</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3-%E6%8E%92%E5%BA%8F"><span class="toc-text"> 3. 排序</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#4-%E5%BC%82%E6%88%96"><span class="toc-text"> 4. 异或</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81"><span class="toc-text"> 代码</span></a></li></ol>
     </div>
   </section>
 

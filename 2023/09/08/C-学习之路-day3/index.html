@@ -41,7 +41,7 @@
 <meta property="og:title" content="C#学习之路(day3)">
 <meta property="og:url" content="https://xinonria.github.io/project/2023/09/08/C-%E5%AD%A6%E4%B9%A0%E4%B9%8B%E8%B7%AF-day3/index.html">
 <meta property="og:site_name" content="Xinon&#39;s Blog">
-<meta property="og:description" content="题外话今天开始军训了，晚上也有安排，回到宿舍差不多九点半了。 少了好多时间刷题和学习。 今天的内容实际是在等教官来时用手机看的。 没有接上昨天的内容，因为不能做笔记。 本来今天内容可以把函数基本知识全写完的，命名参数啊什么的。 宿舍弄回来一个洗衣机，进水口接的水龙头炸了，只能手动加水，来来回回跑了四五趟。 明天又要六点半起床，今天就先到这里吧。 正文函数函数声明void foo(); 创建一个函数">
+<meta property="og:description" content="题外话 今天开始军训了，晚上也有安排，回到宿舍差不多九点半了。 少了好多时间刷题和学习。 今天的内容实际是在等教官来时用手机看的。 没有接上昨天的内容，因为不能做笔记。 本来今天内容可以把函数基本知识全写完的，命名参数啊什么的。 宿舍弄回来一个洗衣机，进水口接的水龙头炸了，只能手动加水，来来回回跑了四五趟。 明天又要六点半起床，今天就先到这里吧。  正文  函数  函数声明 void foo()">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://cdn.jsdelivr.net/npm/volantis-static/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2023-09-08T13:35:10.000Z">
@@ -1916,7 +1916,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: false,
     cdn: {"js":{"app":"/xinonria.github.io/js/app.js","parallax":"/xinonria.github.io/js/plugins/parallax.js","rightMenu":"/xinonria.github.io/js/plugins/rightMenu.js","rightMenus":"/xinonria.github.io/js/plugins/rightMenus.js","sites":"/xinonria.github.io/js/plugins/tags/sites.js","friends":"/xinonria.github.io/js/plugins/tags/friends.js","contributors":"/xinonria.github.io/js/plugins/tags/contributors.js","search":"/xinonria.github.io/js/search/hexo.js"},"css":{"style":"/xinonria.github.io/css/style.css"}},
     default: {"avatar":"https://cdn.jsdelivr.net/npm/volantis-static/media/placeholder/avatar/round/3442075.svg","link":"https://cdn.jsdelivr.net/npm/volantis-static/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://cdn.jsdelivr.net/npm/volantis-static/media/placeholder/cover/76b86c0226ffd.svg","image":"https://cdn.jsdelivr.net/npm/volantis-static/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1695221562176),
+    lastupdate: new Date(1696160963247),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate"],
       for_post: ["toc"],
@@ -2691,40 +2691,44 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
-    <h2 id="题外话"><a href="#题外话" class="headerlink" title="题外话"></a>题外话</h2><p>今天开始军训了，晚上也有安排，回到宿舍差不多九点半了。</p>
+    <h2 id="题外话"><a class="markdownIt-Anchor" href="#题外话"></a> 题外话</h2>
+<p>今天开始军训了，晚上也有安排，回到宿舍差不多九点半了。</p>
 <p>少了好多时间刷题和学习。</p>
 <p>今天的内容实际是在等教官来时用手机看的。</p>
 <p>没有接上昨天的内容，因为不能做笔记。</p>
 <p>本来今天内容可以把函数基本知识全写完的，命名参数啊什么的。</p>
 <p>宿舍弄回来一个洗衣机，进水口接的水龙头炸了，只能手动加水，来来回回跑了四五趟。</p>
 <p>明天又要六点半起床，今天就先到这里吧。</p>
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><h3 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h3><h4 id="函数声明"><a href="#函数声明" class="headerlink" title="函数声明"></a>函数声明</h4><p><code>void foo();</code></p>
+<h2 id="正文"><a class="markdownIt-Anchor" href="#正文"></a> 正文</h2>
+<h3 id="函数"><a class="markdownIt-Anchor" href="#函数"></a> 函数</h3>
+<h4 id="函数声明"><a class="markdownIt-Anchor" href="#函数声明"></a> 函数声明</h4>
+<p><code>void foo();</code></p>
 <p>创建一个函数声明(Microsoft Learn里叫做方法签名)。</p>
-<h4 id="无参数无返回值函数"><a href="#无参数无返回值函数" class="headerlink" title="无参数无返回值函数"></a>无参数无返回值函数</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">SayHello</span>()</span> </span><br><span class="line">&#123;</span><br><span class="line">  <span class="comment">// do something...</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
+<h4 id="无参数无返回值函数"><a class="markdownIt-Anchor" href="#无参数无返回值函数"></a> 无参数无返回值函数</h4>
+<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">SayHello</span>()</span> </span><br><span class="line">&#123;</span><br><span class="line">  <span class="comment">// do something...</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>这就是函数定义，看上去跟<code>C</code>一样。</p>
 <p><code>void</code>表示无返回值。</p>
 <p><code>int</code>，<code>string</code>,<code>double</code>等都可与void替换，表示返回值的类型。</p>
 <p>调用一个方法只需要直接输入就行了。</p>
 <p><code>SayHello();</code></p>
 <p>貌似使用大驼峰命名法。</p>
-<h4 id="有参数无返回值函数"><a href="#有参数无返回值函数" class="headerlink" title="有参数无返回值函数"></a>有参数无返回值函数</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">SaySomething</span>(<span class="params"><span class="built_in">string</span> message</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">  <span class="comment">// do something...</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
+<h4 id="有参数无返回值函数"><a class="markdownIt-Anchor" href="#有参数无返回值函数"></a> 有参数无返回值函数</h4>
+<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">SaySomething</span>(<span class="params"><span class="built_in">string</span> message</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">  <span class="comment">// do something...</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>在圆括号内指出形参的类型和名字。</p>
-<h5 id="按值传递和按引用传递的参数"><a href="#按值传递和按引用传递的参数" class="headerlink" title="按值传递和按引用传递的参数"></a>按值传递和按引用传递的参数</h5><ul>
+<h5 id="按值传递和按引用传递的参数"><a class="markdownIt-Anchor" href="#按值传递和按引用传递的参数"></a> 按值传递和按引用传递的参数</h5>
+<ul>
 <li>将参数传递给某个方法时，值类型的变量会将其值复制到该方法中。 每个变量都有自己的值副本，因此不会修改原始变量。</li>
 <li>使用引用类型时，会将值的地址传递到该方法中。 向该方法提供的变量会引用该地址中的值，因此对该变量的操作会影响另一个变量引用的值。</li>
 </ul>
 <p>一个赋值进去，一个是传地址进去。</p>
-<p><img src="https://www.z4a.net/images/2023/09/08/image7dbdcb71885f9df4.png" class="lazyload" data-srcset="https://www.z4a.net/images/2023/09/08/image7dbdcb71885f9df4.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p><img src="https://www.z4a.net/images/2023/09/08/image7dbdcb71885f9df4.png" class="lazyload" data-srcset="https://www.z4a.net/images/2023/09/08/image7dbdcb71885f9df4.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" /></p>
 <p>传值很常见，就是函数里随便造，离开函数还是那个值。</p>
 <p>传地址这里给了一个样例。</p>
 <figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">int</span>[] array = &#123;<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>&#125;;</span><br><span class="line"></span><br><span class="line">PrintArray(array);</span><br><span class="line">Clear(array);</span><br><span class="line">PrintArray(array);</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">PrintArray</span>(<span class="params"><span class="built_in">int</span>[] array</span>)</span> </span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">foreach</span> (<span class="built_in">int</span> a <span class="keyword">in</span> array) </span><br><span class="line">    &#123;</span><br><span class="line">        Console.Write(<span class="string">$&quot;<span class="subst">&#123;a&#125;</span> &quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">Clear</span>(<span class="params"><span class="built_in">int</span>[] array</span>)</span> </span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="built_in">int</span> i = <span class="number">0</span>; i &lt; array.Length; i++) </span><br><span class="line">    &#123;</span><br><span class="line">        array[i] = <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">------</span><br><span class="line">output:</span><br><span class="line"><span class="number">1</span> <span class="number">2</span> <span class="number">3</span> <span class="number">4</span> <span class="number">5</span> </span><br><span class="line"><span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span></span><br></pre></td></tr></table></figure>
-
 <p>注意到<code>Clear()</code>函数中对array的操作对Array的内容发生了修改。</p>
 <p>并不是创建了一个新数组array，把Array赋值过去，再在新数组里面把所有数设为0.</p>
 <p>这也印证了前面说的<code>int[]</code>实际是一个指针。</p>
-<p><img src="https://www.z4a.net/images/2023/09/08/imaged6c0ad6618772e3c.png" class="lazyload" data-srcset="https://www.z4a.net/images/2023/09/08/imaged6c0ad6618772e3c.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p><img src="https://www.z4a.net/images/2023/09/08/imaged6c0ad6618772e3c.png" class="lazyload" data-srcset="https://www.z4a.net/images/2023/09/08/imaged6c0ad6618772e3c.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" /></p>
 <p>函数内的形参能覆盖掉同名的别的函数里的参数。</p>
 
   </div>
@@ -2835,15 +2839,19 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class='prev' href='/xinonria.github.io/2023/09/09/C-%E5%AD%A6%E4%B9%A0%E4%B9%8B%E8%B7%AF-day4/'>
           <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>C#学习之路(day4)</p>
-          <p class='content'>函数有参数无返回值函数使用命名参数12345678910111213141516// **定义函数**void Foo(string name, int number, bool ok)&#12...</p>
+          <p class='content'> 函数
+ 有参数无返回值函数
+ 使用命名参数
+12345678910111213141516// **定义函数**void Foo(string name, int number, bool o...</p>
         </a>
       
       
         <a class='next' href='/xinonria.github.io/2023/09/07/C-%E5%AD%A6%E4%B9%A0%E4%B9%8B%E8%B7%AF-day2/'>
           <p class='title'>C#学习之路(day2)<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
           <p class='content'>更深入学习了数据类型的相关知识
-数据范围可使用int.MinValue和int.MaxValue来获取int类型的数据范围。
-12345几种基础整型范围sbyte : -128 to 127sh...</p>
+ 数据范围
+可使用int.MinValue和int.MaxValue来获取int类型的数据范围。
+12345几种基础整型范围sbyte : -128 to 127...</p>
         </a>
       
     </div>
@@ -2901,7 +2909,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
     <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%A2%98%E5%A4%96%E8%AF%9D"><span class="toc-text">题外话</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%AD%A3%E6%96%87"><span class="toc-text">正文</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%87%BD%E6%95%B0"><span class="toc-text">函数</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%87%BD%E6%95%B0%E5%A3%B0%E6%98%8E"><span class="toc-text">函数声明</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%97%A0%E5%8F%82%E6%95%B0%E6%97%A0%E8%BF%94%E5%9B%9E%E5%80%BC%E5%87%BD%E6%95%B0"><span class="toc-text">无参数无返回值函数</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9C%89%E5%8F%82%E6%95%B0%E6%97%A0%E8%BF%94%E5%9B%9E%E5%80%BC%E5%87%BD%E6%95%B0"><span class="toc-text">有参数无返回值函数</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%8C%89%E5%80%BC%E4%BC%A0%E9%80%92%E5%92%8C%E6%8C%89%E5%BC%95%E7%94%A8%E4%BC%A0%E9%80%92%E7%9A%84%E5%8F%82%E6%95%B0"><span class="toc-text">按值传递和按引用传递的参数</span></a></li></ol></li></ol></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%A2%98%E5%A4%96%E8%AF%9D"><span class="toc-text"> 题外话</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%AD%A3%E6%96%87"><span class="toc-text"> 正文</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%87%BD%E6%95%B0"><span class="toc-text"> 函数</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%87%BD%E6%95%B0%E5%A3%B0%E6%98%8E"><span class="toc-text"> 函数声明</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%97%A0%E5%8F%82%E6%95%B0%E6%97%A0%E8%BF%94%E5%9B%9E%E5%80%BC%E5%87%BD%E6%95%B0"><span class="toc-text"> 无参数无返回值函数</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9C%89%E5%8F%82%E6%95%B0%E6%97%A0%E8%BF%94%E5%9B%9E%E5%80%BC%E5%87%BD%E6%95%B0"><span class="toc-text"> 有参数无返回值函数</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%8C%89%E5%80%BC%E4%BC%A0%E9%80%92%E5%92%8C%E6%8C%89%E5%BC%95%E7%94%A8%E4%BC%A0%E9%80%92%E7%9A%84%E5%8F%82%E6%95%B0"><span class="toc-text"> 按值传递和按引用传递的参数</span></a></li></ol></li></ol></li></ol></li></ol>
     </div>
   </section>
 

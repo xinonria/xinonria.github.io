@@ -41,7 +41,7 @@
 <meta property="og:title" content="C#学习之路(day1)">
 <meta property="og:url" content="https://xinonria.github.io/project/2023/09/06/C-%E5%AD%A6%E4%B9%A0%E4%B9%8B%E8%B7%AF-day1/index.html">
 <meta property="og:site_name" content="Xinon&#39;s Blog">
-<meta property="og:description" content="在Windows下使用.Net做窗口应用比较方便。所以打算开始学一学C#。 数据类型C#有以下几种简单数据类型:  有符号整型:sbyte,short,int,long 无符号整型:byte,ushort,uint,ulong (前面的u可能是unsigned的缩写吧 Unicode字符:char (官方文档说表示UTF-16代码单元) IEEE二进制浮点:float,double (哈哈还真有跟">
+<meta property="og:description" content="在Windows下使用.Net做窗口应用比较方便。所以打算开始学一学C#。  数据类型 C#有以下几种简单数据类型:  有符号整型:sbyte,short,int,long 无符号整型:byte,ushort,uint,ulong (前面的u可能是unsigned的缩写吧 Unicode字符:char (官方文档说表示UTF-16代码单元) IEEE二进制浮点:float,double (哈哈还真">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://cdn.jsdelivr.net/npm/volantis-static/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2023-09-06T09:40:17.000Z">
@@ -1916,7 +1916,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: false,
     cdn: {"js":{"app":"/xinonria.github.io/js/app.js","parallax":"/xinonria.github.io/js/plugins/parallax.js","rightMenu":"/xinonria.github.io/js/plugins/rightMenu.js","rightMenus":"/xinonria.github.io/js/plugins/rightMenus.js","sites":"/xinonria.github.io/js/plugins/tags/sites.js","friends":"/xinonria.github.io/js/plugins/tags/friends.js","contributors":"/xinonria.github.io/js/plugins/tags/contributors.js","search":"/xinonria.github.io/js/search/hexo.js"},"css":{"style":"/xinonria.github.io/css/style.css"}},
     default: {"avatar":"https://cdn.jsdelivr.net/npm/volantis-static/media/placeholder/avatar/round/3442075.svg","link":"https://cdn.jsdelivr.net/npm/volantis-static/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://cdn.jsdelivr.net/npm/volantis-static/media/placeholder/cover/76b86c0226ffd.svg","image":"https://cdn.jsdelivr.net/npm/volantis-static/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1695221562176),
+    lastupdate: new Date(1696160963247),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate"],
       for_post: ["toc"],
@@ -2692,40 +2692,45 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
     <p>在Windows下使用.Net做窗口应用比较方便。所以打算开始学一学C#。</p>
-<h3 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h3><p>C#有以下几种简单数据类型:</p>
+<h3 id="数据类型"><a class="markdownIt-Anchor" href="#数据类型"></a> 数据类型</h3>
+<p>C#有以下几种简单数据类型:</p>
 <ol>
 <li>有符号整型:<code>sbyte</code>,<code>short</code>,<code>int</code>,<code>long</code></li>
 <li>无符号整型:<code>byte</code>,<code>ushort</code>,<code>uint</code>,<code>ulong</code> (前面的u可能是unsigned的缩写吧</li>
 <li>Unicode字符:<code>char</code> (官方文档说表示UTF-16代码单元)</li>
-<li>IEEE二进制浮点:<code>float</code>,<code>double</code> (哈哈还真有跟JS一样的精度丢失bug (经典0.1 + 0.2 !&#x3D; 0.3))</li>
-<li>高精度十进制浮点数：<code>decimal</code> (范围比double略小，精度高，而且0.1+0.2&#x3D;&#x3D;0.3了科科。<strong>赋值时要注意是0.1m,0.2m后面要带m,否则就是double了</strong>)</li>
+<li>IEEE二进制浮点:<code>float</code>,<code>double</code> (哈哈还真有跟JS一样的精度丢失bug (经典0.1 + 0.2 != 0.3))</li>
+<li>高精度十进制浮点数：<code>decimal</code> (范围比double略小，精度高，而且0.1+0.2==0.3了科科。<strong>赋值时要注意是0.1m,0.2m后面要带m,否则就是double了</strong>)</li>
 <li>布尔值: <code>bool</code></li>
 </ol>
 <p>C++里的<code>auto</code>跟C#的<code>var</code>对应，智能类型推断，需要初始化。</p>
-<h3 id="判断"><a href="#判断" class="headerlink" title="判断"></a>判断</h3><p>跟C一样的if语句</p>
+<h3 id="判断"><a class="markdownIt-Anchor" href="#判断"></a> 判断</h3>
+<p>跟C一样的if语句</p>
 <figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (表达式) &#123;&#125;</span><br><span class="line"><span class="keyword">else</span> &#123;&#125;</span><br></pre></td></tr></table></figure>
-
 <p>逻辑预算符也是<code>&amp;&amp;</code>,<code>||</code>,<code>!</code>。(与或非)</p>
 <p>三元运算符也有。</p>
 <p><code>a = a &gt; b? a : b;</code></p>
 <p>翻译：a等于什么？来看一下，a&gt;b吗？大于的话就是<code>a=a</code>，否则就是<code>a=b</code>。</p>
-<h3 id="循环"><a href="#循环" class="headerlink" title="循环"></a>循环</h3><p><code>while(表达式) &#123;&#125;</code></p>
+<h3 id="循环"><a class="markdownIt-Anchor" href="#循环"></a> 循环</h3>
+<p><code>while(表达式) &#123;&#125;</code></p>
 <p>满足条件就循环。</p>
 <p><code>do &#123;&#125;while(表达式);</code></p>
 <p>先做一次看满不满足条件，满足就循环。</p>
 <p><code>for(int i = 0; i &lt;= n; i++)</code></p>
 <p>for语句没变化</p>
 <p><code>foreach(var num : nums)</code></p>
-<p><del>这个跟C++的<code>for(auto num : nums)</code>一样用法，枚举列表中每个元素。</del><br>2023&#x2F;9&#x2F;8更正，不能对num进行赋值操作，不能修改，只能读取。</p>
+<p><s>这个跟C++的<code>for(auto num : nums)</code>一样用法，枚举列表中每个元素。</s><br />
+2023/9/8更正，不能对num进行赋值操作，不能修改，只能读取。</p>
 <blockquote>
 <p>不能重新分配 num 的值，因为它是 foreach 迭代的内部实现的一部分。</p>
 </blockquote>
-<h3 id="控制台输出"><a href="#控制台输出" class="headerlink" title="控制台输出"></a>控制台输出</h3><p><code>Console.Write()</code></p>
+<h3 id="控制台输出"><a class="markdownIt-Anchor" href="#控制台输出"></a> 控制台输出</h3>
+<p><code>Console.Write()</code></p>
 <p>输出内容</p>
 <p><code>Console.WriteLine()</code></p>
 <p>输出内容，会在末尾加个换行符<code>\n</code>。</p>
-<h3 id="PS"><a href="#PS" class="headerlink" title="PS"></a>PS</h3><p>Visual Stdio 2022对C#的intelligence code真是绝绝子，好用到翘jiojio。</p>
-<p><img src="https://www.z4a.net/images/2023/09/06/image5dd563d71f93bc69.png" class="lazyload" data-srcset="https://www.z4a.net/images/2023/09/06/image5dd563d71f93bc69.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<h3 id="ps"><a class="markdownIt-Anchor" href="#ps"></a> PS</h3>
+<p>Visual Stdio 2022对C#的intelligence code真是绝绝子，好用到翘jiojio。</p>
+<p><img src="https://www.z4a.net/images/2023/09/06/image5dd563d71f93bc69.png" class="lazyload" data-srcset="https://www.z4a.net/images/2023/09/06/image5dd563d71f93bc69.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" /></p>
 <p>按一下tab就补全了，写简单示例题的时候疯狂tab。</p>
 
   </div>
@@ -2836,24 +2841,27 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class='prev' href='/xinonria.github.io/2023/09/07/2%E8%87%B336%E8%BF%9B%E5%88%B6%E7%9A%84%E9%AB%98%E7%B2%BE%E5%BA%A6%E5%8A%A0%E6%B3%95/'>
           <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>2至36进制的高精度加法</p>
-          <p class='content'>原题今天第一次刷CodeForces，随便找了个题。
+          <p class='content'> 原题
+今天第一次刷CodeForces，随便找了个题。
 原题链接
 
 要求实现2到36进制的累加，输出与输入进制相同。
 第一行输入数字个数n
 第二行输入进制。
 后面n行输入累加的数字。
-思考这道题核...</p>
+ 思考
+...</p>
         </a>
       
       
         <a class='next' href='/xinonria.github.io/2023/09/05/%E6%94%AF%E6%8C%81%E8%B4%9F%E6%95%B0%E7%9A%8416%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2/'>
           <p class='title'>支持负数的16进制转换<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>原题给定一个整数，编写一个算法将这个数转换为十六进制数。对于负整数，我们通常使用 补码运算 方法。
+          <p class='content'> 原题
+给定一个整数，编写一个算法将这个数转换为十六进制数。对于负整数，我们通常使用 补码运算 方法。
 注意:
 
 十六进制中所有字母(a-f)都必须是小写。
-十六进制字符串中不能包含多余的前导零。如...</p>
+十六进制字符串中不能包含多余的前导零...</p>
         </a>
       
     </div>
@@ -2911,7 +2919,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
     <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B"><span class="toc-text">数据类型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%A4%E6%96%AD"><span class="toc-text">判断</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BE%AA%E7%8E%AF"><span class="toc-text">循环</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8E%A7%E5%88%B6%E5%8F%B0%E8%BE%93%E5%87%BA"><span class="toc-text">控制台输出</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#PS"><span class="toc-text">PS</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B"><span class="toc-text"> 数据类型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%A4%E6%96%AD"><span class="toc-text"> 判断</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BE%AA%E7%8E%AF"><span class="toc-text"> 循环</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8E%A7%E5%88%B6%E5%8F%B0%E8%BE%93%E5%87%BA"><span class="toc-text"> 控制台输出</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ps"><span class="toc-text"> PS</span></a></li></ol>
     </div>
   </section>
 

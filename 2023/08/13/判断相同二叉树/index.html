@@ -41,7 +41,7 @@
 <meta property="og:title" content="判断相同二叉树">
 <meta property="og:url" content="https://xinonria.github.io/project/2023/08/13/%E5%88%A4%E6%96%AD%E7%9B%B8%E5%90%8C%E4%BA%8C%E5%8F%89%E6%A0%91/index.html">
 <meta property="og:site_name" content="Xinon&#39;s Blog">
-<meta property="og:description" content="一道较简单的Leetcode题，判断两个二叉树是否相同。 原题链接 数据范围 两棵树上的节点数目都在范围 [0, 100] 内 -104 &lt;&#x3D; Node.val &lt;&#x3D; 104  思路既然要判断是否相同，那么就要遍历树的每一个节点了。 注意到数据范围节点数在100以内，不算太大。考虑用递归的方法（太大会爆栈）深度优先搜索的思路来解决。  如果两个树都能成功到达边界，那">
+<meta property="og:description" content="一道较简单的Leetcode题，判断两个二叉树是否相同。  原题链接   数据范围  两棵树上的节点数目都在范围 [0, 100] 内 -104 &lt;&#x3D; Node.val &lt;&#x3D; 104   思路 既然要判断是否相同，那么就要遍历树的每一个节点了。 注意到数据范围节点数在100以内，不算太大。考虑用递归的方法（太大会爆栈）深度优先搜索的思路来解决。  如果两个树都能成功到达边界，那么说明这">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://cdn.jsdelivr.net/npm/volantis-static/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2023-08-13T12:22:03.000Z">
@@ -1916,7 +1916,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: false,
     cdn: {"js":{"app":"/xinonria.github.io/js/app.js","parallax":"/xinonria.github.io/js/plugins/parallax.js","rightMenu":"/xinonria.github.io/js/plugins/rightMenu.js","rightMenus":"/xinonria.github.io/js/plugins/rightMenus.js","sites":"/xinonria.github.io/js/plugins/tags/sites.js","friends":"/xinonria.github.io/js/plugins/tags/friends.js","contributors":"/xinonria.github.io/js/plugins/tags/contributors.js","search":"/xinonria.github.io/js/search/hexo.js"},"css":{"style":"/xinonria.github.io/css/style.css"}},
     default: {"avatar":"https://cdn.jsdelivr.net/npm/volantis-static/media/placeholder/avatar/round/3442075.svg","link":"https://cdn.jsdelivr.net/npm/volantis-static/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://cdn.jsdelivr.net/npm/volantis-static/media/placeholder/cover/76b86c0226ffd.svg","image":"https://cdn.jsdelivr.net/npm/volantis-static/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1695221562176),
+    lastupdate: new Date(1696160963247),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate"],
       for_post: ["toc"],
@@ -2692,12 +2692,15 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
     <p>一道较简单的Leetcode题，判断两个二叉树是否相同。</p>
-<h4 id="原题链接"><a href="#原题链接" class="headerlink" title="原题链接"></a><a target="_blank" rel="noopener" href="https://leetcode.cn/problems/same-tree/solutions/363636/xiang-tong-de-shu-by-leetcode-solution/">原题链接</a></h4><p><img src="https://www.z4a.net/images/2023/08/13/imagefe314b64b16aa615.png" class="lazyload" data-srcset="https://www.z4a.net/images/2023/08/13/imagefe314b64b16aa615.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image.pmg"></p>
-<h5 id="数据范围"><a href="#数据范围" class="headerlink" title="数据范围"></a>数据范围</h5><ul>
+<h4 id="原题链接"><a class="markdownIt-Anchor" href="#原题链接"></a> <a target="_blank" rel="noopener" href="https://leetcode.cn/problems/same-tree/solutions/363636/xiang-tong-de-shu-by-leetcode-solution/">原题链接</a></h4>
+<p><img src="https://www.z4a.net/images/2023/08/13/imagefe314b64b16aa615.png" class="lazyload" data-srcset="https://www.z4a.net/images/2023/08/13/imagefe314b64b16aa615.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image.pmg" /></p>
+<h5 id="数据范围"><a class="markdownIt-Anchor" href="#数据范围"></a> 数据范围</h5>
+<ul>
 <li>两棵树上的节点数目都在范围 [0, 100] 内</li>
-<li>-104 &lt;&#x3D; Node.val &lt;&#x3D; 104</li>
+<li>-104 &lt;= Node.val &lt;= 104</li>
 </ul>
-<h4 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h4><p>既然要判断是否相同，那么就要遍历树的每一个节点了。</p>
+<h4 id="思路"><a class="markdownIt-Anchor" href="#思路"></a> 思路</h4>
+<p>既然要判断是否相同，那么就要遍历树的每一个节点了。</p>
 <p>注意到数据范围节点数在100以内，不算太大。考虑用递归的方法（太大会爆栈）深度优先搜索的思路来解决。</p>
 <ul>
 <li>如果两个树都能成功到达边界，那么说明这一路上都是匹配的，可以直接<code>return true</code>了。</li>
@@ -2705,7 +2708,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <li>如果两个储存的值对不上的话，那么也是说明树不相同。<code>return false</code></li>
 <li>此外没到边界的话就递归下去。</li>
 </ul>
-<h4 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h4><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span></span><br><span class="line">&#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="type">bool</span> <span class="title">isSameTree</span><span class="params">(TreeNode *p, TreeNode *q)</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (!p &amp;&amp; !q)          <span class="comment">//两节点都到达边界</span></span><br><span class="line">            <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">        <span class="keyword">if</span> (!p || !q)          <span class="comment">//只有一个节点到达边界 （结合上个if语句想想之间的逻辑关系，为什么能这样写）</span></span><br><span class="line">            <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">        <span class="keyword">if</span> (p-&gt;val != q-&gt;val)  <span class="comment">//数值不同</span></span><br><span class="line">            <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">        <span class="keyword">return</span> <span class="built_in">isSameTree</span>(p-&gt;left, q-&gt;left) &amp;&amp; <span class="built_in">isSameTree</span>(p-&gt;right, q-&gt;right);       <span class="comment">//递归左右节点，&amp;&amp;保证左右子节点都满足条件</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<h4 id="代码"><a class="markdownIt-Anchor" href="#代码"></a> 代码</h4>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span></span><br><span class="line">&#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="type">bool</span> <span class="title">isSameTree</span><span class="params">(TreeNode *p, TreeNode *q)</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (!p &amp;&amp; !q)          <span class="comment">//两节点都到达边界</span></span><br><span class="line">            <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">        <span class="keyword">if</span> (!p || !q)          <span class="comment">//只有一个节点到达边界 （结合上个if语句想想之间的逻辑关系，为什么能这样写）</span></span><br><span class="line">            <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">        <span class="keyword">if</span> (p-&gt;val != q-&gt;val)  <span class="comment">//数值不同</span></span><br><span class="line">            <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">        <span class="keyword">return</span> <span class="built_in">isSameTree</span>(p-&gt;left, q-&gt;left) &amp;&amp; <span class="built_in">isSameTree</span>(p-&gt;right, q-&gt;right);       <span class="comment">//递归左右节点，&amp;&amp;保证左右子节点都满足条件</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 
   </div>
   
@@ -2818,9 +2822,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           <p class='content'>最近经常做到关于二叉树的Easy题。
 二叉树的遍历总是和递归绑在一起。
 如下题寻找二叉树的最大深度。
-原题原题链接
+ 原题
+原题链接
 
-思路用递推的思路来想，从某一个节点出发，它的最大深度就是max(左子节点最大...</p>
+ 思路
+用递推的思路来想，从某一个节点出发，它的最大深度就是max(左子...</p>
         </a>
       
       
@@ -2829,7 +2835,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           <p class='content'>今天日常刷Leetcode刷到了一个二叉树中序遍历的题。原题链接
 
 通过示例可以很明显了解到何为中序遍历，同时打算用栈结构来实现。
-中序遍历可以看作将节点投影到一个水平坐标轴上，从原点开始向右遍...</p>
+ 中序遍历
+可以看作将节点投影到一个水平坐标轴上，从原点开始向...</p>
         </a>
       
     </div>
@@ -2887,7 +2894,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
     <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8E%9F%E9%A2%98%E9%93%BE%E6%8E%A5"><span class="toc-text">原题链接</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E8%8C%83%E5%9B%B4"><span class="toc-text">数据范围</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%80%9D%E8%B7%AF"><span class="toc-text">思路</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81"><span class="toc-text">代码</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8E%9F%E9%A2%98%E9%93%BE%E6%8E%A5"><span class="toc-text"> 原题链接</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E8%8C%83%E5%9B%B4"><span class="toc-text"> 数据范围</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%80%9D%E8%B7%AF"><span class="toc-text"> 思路</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81"><span class="toc-text"> 代码</span></a></li></ol>
     </div>
   </section>
 

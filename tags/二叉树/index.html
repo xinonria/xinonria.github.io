@@ -1913,7 +1913,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: false,
     cdn: {"js":{"app":"/xinonria.github.io/js/app.js","parallax":"/xinonria.github.io/js/plugins/parallax.js","rightMenu":"/xinonria.github.io/js/plugins/rightMenu.js","rightMenus":"/xinonria.github.io/js/plugins/rightMenus.js","sites":"/xinonria.github.io/js/plugins/tags/sites.js","friends":"/xinonria.github.io/js/plugins/tags/friends.js","contributors":"/xinonria.github.io/js/plugins/tags/contributors.js","search":"/xinonria.github.io/js/search/hexo.js"},"css":{"style":"/xinonria.github.io/css/style.css"}},
     default: {"avatar":"https://cdn.jsdelivr.net/npm/volantis-static/media/placeholder/avatar/round/3442075.svg","link":"https://cdn.jsdelivr.net/npm/volantis-static/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://cdn.jsdelivr.net/npm/volantis-static/media/placeholder/cover/76b86c0226ffd.svg","image":"https://cdn.jsdelivr.net/npm/volantis-static/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1695221562176),
+    lastupdate: new Date(1696160963247),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate"],
       for_post: ["toc"],
@@ -2658,8 +2658,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         二叉搜索树是有序的。
 它可以完成搜索，插入以及删除等操作。
-搜索例题
-思考因为二叉搜索树有以下几个性质。
+ 搜索
+ 例题
+
+ 思考
+因为二叉搜索树有以下几个性质。
 
 若它的左子树不空，则左子树上所有结点的值均小于它的根结点的值；
 若它的右子树不空，则右子树上所有结点的值均大于它的根结点的值；
@@ -2667,7 +2670,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 所以它的搜索效率就跟二分搜索一样很快。
 使用迭代法很快就能写出来。
-代码12345678910TreeNode* sea...
+ 代码
+12345678910TreeN...
       
     
   </div>
@@ -2722,15 +2726,19 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div class='md article-desc' itemprop="articleBody">
     
       
-        构造
+         构造
 
 前序和中序可以唯一确定一棵二叉树。
 后序和中序可以唯一确定一棵二叉树。
 前序和后序不能唯一确定一棵二叉树！
 没中序遍历就无法分割了。
-前序遍历&amp;中序遍历构造分析首先要牢记各个遍历方法的顺序。
-前序遍历是：根节点-&gt;左子树-&gt;右子树中序遍历是：左子树-&gt;根节点-&gt;右子树
-所以前序遍历的第一个元素就是整个二叉树的根节点。同理，在中序遍历中找到这个元素，它的...
+ 前序遍历&amp;中序遍历构造
+ 分析
+首先要牢记各个遍历方法的顺序。
+前序遍历是：根节点-&gt;左子树-&gt;右子树
+中序遍历是：左子树-&gt;根节点-&gt;右子树
+所以前序遍历的第一个元素就是整个二叉树的根节点。
+同理，在中序遍历中找到...
       
     
   </div>
@@ -2785,20 +2793,22 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div class='md article-desc' itemprop="articleBody">
     
       
-        前言
+         前言
 
 最近经常刷到二叉树的题，那么好好把二叉树的相关知识点都过一下吧。
 
 本文参考了代码随想录关于二叉树的介绍。原文链接
 
-分类
+ 分类
 
-满二叉树一个二叉树除了叶节点外每个节点都有两个子节点，且叶节点在同一层的二叉树。就是看上去都是满的。
-深度为$k$。节点数量就是$2^k-1$个。
+ 满二叉树
+一个二叉树除了叶节点外每个节点都有两个子节点，且叶节点在同一层的二叉树。就是看上去都是满的。
+深度为kkk。节点数量就是2k−12^k-12k−1个。
 
-完全二叉树除了最底层节点没填满外，其他节点都是满的。且最底层节点必须从左到右连续！
+ 完全二叉树
+除了最底层节点没填满外，其他节点都是满的。且最底层节点必须从左到右连续！
 
-所以，满二叉树同时也是一...
+...
       
     
   </div>
@@ -2856,10 +2866,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         最近经常做到关于二叉树的Easy题。
 二叉树的遍历总是和递归绑在一起。
 如下题寻找二叉树的最大深度。
-原题原题链接
+ 原题
+原题链接
 
-思路用递推的思路来想，从某一个节点出发，它的最大深度就是max(左子节点最大深度，右子节点最大深度) + 1。对于每一个节点来说都是这样的，那么就可以用递归的办法来解决了。(长度也短)，所以主要是思路问题。
-代码12345678910class Solution&#123;p...
+ 思路
+用递推的思路来想，从某一个节点出发，它的最大深度就是max(左子节点最大深度，右子节点最大深度) + 1。
+对于每一个节点来说都是这样的，那么就可以用递归的办法来解决了。(长度也短)，所以主要是思路问题。
+ 代码
+12345678910class Solution...
       
     
   </div>
@@ -2917,10 +2931,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         今天日常刷Leetcode刷到了一个二叉树中序遍历的题。原题链接
 
 通过示例可以很明显了解到何为中序遍历，同时打算用栈结构来实现。
-中序遍历可以看作将节点投影到一个水平坐标轴上，从原点开始向右遍历。如图顺序为:H-&gt;D-&gt;I-&gt;B-&gt;E-&gt;J-&gt;A-&gt;F-&gt;K-&gt;C-&gt;G
-栈
+ 中序遍历
+可以看作将节点投影到一个水平坐标轴上，从原点开始向右遍历。
+
+如图顺序为:H-&gt;D-&gt;I-&gt;B-&gt;E-&gt;J-&gt;A-&gt;F-&gt;K-&gt;C-&gt;G
+ 栈
+
 栈遵循先进后出的原则。
-把栈想象成一个桶：a1先入栈，被...
+把栈想象成一个桶：a...
       
     
   </div>
@@ -3043,7 +3061,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
     <div class='content'>
-      <a href="/xinonria.github.io/tags/Blog/" style="font-size: 16px; color: #8b8b8b">Blog</a> <a href="/xinonria.github.io/tags/C/" style="font-size: 20px; color: #707070">C#</a> <a href="/xinonria.github.io/tags/Leetcode/" style="font-size: 20px; color: #707070">Leetcode</a> <a href="/xinonria.github.io/tags/hexo/" style="font-size: 14px; color: #999">hexo</a> <a href="/xinonria.github.io/tags/python/" style="font-size: 14px; color: #999">python</a> <a href="/xinonria.github.io/tags/%E4%BA%8C%E5%8F%89%E6%A0%91/" style="font-size: 22px; color: #636363">二叉树</a> <a href="/xinonria.github.io/tags/%E4%BA%8C%E8%BF%9B%E5%88%B6/" style="font-size: 14px; color: #999">二进制</a> <a href="/xinonria.github.io/tags/%E4%BD%8D%E6%93%8D%E4%BD%9C/" style="font-size: 18px; color: #7e7e7e">位操作</a> <a href="/xinonria.github.io/tags/%E5%93%88%E5%B8%8C%E8%A1%A8/" style="font-size: 14px; color: #999">哈希表</a> <a href="/xinonria.github.io/tags/%E5%B0%8F%E5%B7%A5%E5%85%B7/" style="font-size: 14px; color: #999">小工具</a> <a href="/xinonria.github.io/tags/%E5%B7%A5%E5%85%B7/" style="font-size: 14px; color: #999">工具</a> <a href="/xinonria.github.io/tags/%E6%8C%87%E9%92%88/" style="font-size: 14px; color: #999">指针</a> <a href="/xinonria.github.io/tags/%E6%95%B0%E5%AD%A6/" style="font-size: 14px; color: #999">数学</a> <a href="/xinonria.github.io/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" style="font-size: 24px; color: #555">数据结构</a> <a href="/xinonria.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%8E%9F%E7%90%86/" style="font-size: 14px; color: #999">计算机原理</a> <a href="/xinonria.github.io/tags/%E9%80%92%E5%BD%92/" style="font-size: 14px; color: #999">递归</a> <a href="/xinonria.github.io/tags/%E9%93%BE%E8%A1%A8/" style="font-size: 14px; color: #999">链表</a> <a href="/xinonria.github.io/tags/%E9%AB%98%E7%B2%BE%E5%BA%A6/" style="font-size: 14px; color: #999">高精度</a>
+      <a href="/xinonria.github.io/tags/Blog/" style="font-size: 16px; color: #8b8b8b">Blog</a> <a href="/xinonria.github.io/tags/C/" style="font-size: 20px; color: #707070">C#</a> <a href="/xinonria.github.io/tags/Leetcode/" style="font-size: 20px; color: #707070">Leetcode</a> <a href="/xinonria.github.io/tags/hexo/" style="font-size: 14px; color: #999">hexo</a> <a href="/xinonria.github.io/tags/python/" style="font-size: 14px; color: #999">python</a> <a href="/xinonria.github.io/tags/vscode/" style="font-size: 14px; color: #999">vscode</a> <a href="/xinonria.github.io/tags/%E4%BA%8C%E5%8F%89%E6%A0%91/" style="font-size: 22px; color: #636363">二叉树</a> <a href="/xinonria.github.io/tags/%E4%BA%8C%E8%BF%9B%E5%88%B6/" style="font-size: 14px; color: #999">二进制</a> <a href="/xinonria.github.io/tags/%E4%BD%8D%E6%93%8D%E4%BD%9C/" style="font-size: 18px; color: #7e7e7e">位操作</a> <a href="/xinonria.github.io/tags/%E5%93%88%E5%B8%8C%E8%A1%A8/" style="font-size: 14px; color: #999">哈希表</a> <a href="/xinonria.github.io/tags/%E5%B0%8F%E5%B7%A5%E5%85%B7/" style="font-size: 14px; color: #999">小工具</a> <a href="/xinonria.github.io/tags/%E5%B7%A5%E5%85%B7/" style="font-size: 14px; color: #999">工具</a> <a href="/xinonria.github.io/tags/%E6%8C%87%E9%92%88/" style="font-size: 14px; color: #999">指针</a> <a href="/xinonria.github.io/tags/%E6%95%B0%E5%AD%A6/" style="font-size: 14px; color: #999">数学</a> <a href="/xinonria.github.io/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" style="font-size: 24px; color: #555">数据结构</a> <a href="/xinonria.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%8E%9F%E7%90%86/" style="font-size: 14px; color: #999">计算机原理</a> <a href="/xinonria.github.io/tags/%E9%80%92%E5%BD%92/" style="font-size: 14px; color: #999">递归</a> <a href="/xinonria.github.io/tags/%E9%93%BE%E8%A1%A8/" style="font-size: 14px; color: #999">链表</a> <a href="/xinonria.github.io/tags/%E9%AB%98%E7%B2%BE%E5%BA%A6/" style="font-size: 14px; color: #999">高精度</a>
     </div>
   </section>
 
