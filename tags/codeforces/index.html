@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <!-- SEO相关 -->
   <meta name="robots" content="noindex,follow">
-  <link rel="canonical" href="https://xinonria.github.io/project/page/2/"/>
+  <link rel="canonical" href="https://xinonria.github.io/project/tags/codeforces/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -33,13 +33,13 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>Xinon's Blog</title>
+  <title>标签：codeforces - Xinon's Blog</title>
   <meta name="keywords" content="null">
   <meta desc name="description" content="一个兴趣使然的博客 - Xinon Zhang - Xinon's Blog">
   
 <meta property="og:type" content="website">
 <meta property="og:title" content="Xinon&#39;s Blog">
-<meta property="og:url" content="https://xinonria.github.io/project/page/2/index.html">
+<meta property="og:url" content="https://xinonria.github.io/project/tags/codeforces/index.html">
 <meta property="og:site_name" content="Xinon&#39;s Blog">
 <meta property="og:description" content="一个兴趣使然的博客">
 <meta property="og:locale" content="zh_CN">
@@ -2604,16 +2604,25 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div id="safearea">
         <div class="body-wrapper">
           
+
 <div id="l_main" class=''>
   
+    
+      
   <section class="post-list">
     
+      
+        
+          
+        
+      
+    
     
       
         
           <div class='post-wrapper'>
             <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://xinonria.github.io/project/2023/09/04/快速幂/">
+  <link itemprop="mainEntityOfPage" href="https://xinonria.github.io/project/2023/10/14/记第一次codeforces比赛/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Xinon's Blog">
   </span>
@@ -2631,82 +2640,23 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
     <h2 class="article-title"  itemprop="name headline">
-      <a href="/xinonria.github.io/2023/09/04/%E5%BF%AB%E9%80%9F%E5%B9%82/"  itemprop="url">
-        快速幂
+      <a href="/xinonria.github.io/2023/10/14/%E8%AE%B0%E7%AC%AC%E4%B8%80%E6%AC%A1codeforces%E6%AF%94%E8%B5%9B/"  itemprop="url">
+        记第一次codeforces比赛(上)
       </a>
     </h2>
   
   <div class='md article-desc' itemprop="articleBody">
     
       
-        昨天来大学报道了，很期待将来的学习生活。
-在刷学校OJ新生题时刷到几题要用幂运算（虽然都是二次幂三次幂），正好复习一下快速幂这个算法。
- 朴素做法
-按照定义，要多少次幂就乘以多少次数字呗。
-123456long long myPow(int x, int n)&#123;  long long ans = 1;  for (int i = 1; i &lt;= n; ++i) ans *= ...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2023-09-04T11:45:54+08:00">2023-09-04</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/xinonria.github.io/2023/09/04/%E5%BF%AB%E9%80%9F%E5%B9%82/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://xinonria.github.io/project/2023/08/28/数一数二进制1个数/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Xinon's Blog">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Xinon's Blog">
-    <meta itemprop="description" content="一个兴趣使然的博客">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="/images/logo.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/xinonria.github.io/2023/08/28/%E6%95%B0%E4%B8%80%E6%95%B0%E4%BA%8C%E8%BF%9B%E5%88%B61%E4%B8%AA%E6%95%B0/"  itemprop="url">
-        数一数二进制1个数
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        最近隔了几天没更新博客，因为最近刷的题觉得没什么价值写。
-不过好在今天遇到一道题，动态规划与二进制特征结合在一起特别妙。
- 原题
-给你一个整数 n ，对于 0 &lt;= i &lt;= n 中的每个 i ，计算其二进制表示中 1 的个数 ，返回一个长度为 n + 1 的数组 ans 作为答案。
-
+         写在前面
+如果要提升自己算法技术的话听说刷Leetcode帮助不大，那现在每日一题转为刷codeforces上的题目吧。
+第一次参加codeforces的比赛，只敢打了个div.3。2h15min只能做出两道题来，感觉自己被血虐。
+赛后补了下题目，补题的时候又感觉好像也不难。。。
+ A. Don’t Try to Count (补题AC)
+ 题面
 原题链接
- 思路
-最简单的想法就是一个个数字数过去。
-因为要多次调用数二进制1个数这个功能，所...
+(看到这标题吓我一跳)
+翻译一下...
       
     
   </div>
@@ -2714,534 +2664,12 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='meta-v3' line_style='solid'>
       <div>
         
-        <time itemprop="dateCreated datePublished" datetime="2023-08-28T17:17:25+08:00">2023-08-28</time>
+        <time itemprop="dateCreated datePublished" datetime="2023-10-14T23:04:57+08:00">2023-10-14</time>
         
       </div>
       
         <div>
-          <a class='readmore' href='/xinonria.github.io/2023/08/28/%E6%95%B0%E4%B8%80%E6%95%B0%E4%BA%8C%E8%BF%9B%E5%88%B61%E4%B8%AA%E6%95%B0/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://xinonria.github.io/project/2023/08/24/异或交换整数/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Xinon's Blog">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Xinon's Blog">
-    <meta itemprop="description" content="一个兴趣使然的博客">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="/images/logo.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/xinonria.github.io/2023/08/24/%E5%BC%82%E6%88%96%E4%BA%A4%E6%8D%A2%E6%95%B4%E6%95%B0/"  itemprop="url">
-        异或交换整数
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-         正常操作
-正常交换两个整数我们需要创建一个临时变量。
-12345int a = 1, b = 2;int temp;temp = b;b = a;a = temp;
-temp变量用于保存b的值，避免被覆盖，最后赋值给a。
- 异或操作
-但通过异或操作，我们可以不需要创建额外的临时变量来交换两个整数。
-异或操作见原文链接
- 代码
-1234int a = 1, b = 2;a = a ^ b;b...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2023-08-24T15:14:35+08:00">2023-08-24</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/xinonria.github.io/2023/08/24/%E5%BC%82%E6%88%96%E4%BA%A4%E6%8D%A2%E6%95%B4%E6%95%B0/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://xinonria.github.io/project/2023/08/23/二进制下的负数/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Xinon's Blog">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Xinon's Blog">
-    <meta itemprop="description" content="一个兴趣使然的博客">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="/images/logo.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/xinonria.github.io/2023/08/23/%E4%BA%8C%E8%BF%9B%E5%88%B6%E4%B8%8B%E7%9A%84%E8%B4%9F%E6%95%B0/"  itemprop="url">
-        二进制下的负数
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        看上去越基础的题，背后越有大道理。
- 背景
-日常刷Leetcode题遇到一个很基础的题目。
-原题链接
-给你一个整数 n，请你判断该整数是否是 2 的幂次方。如果是，返回 true ；否则，返回 false 。
-
-进阶：你能够不使用循环/递归解决此问题吗？
- 思路
-正常想法就是一直mod 2和除以2判断是否是2的幂次方。
-但看到这个进阶，Easy题必要达到好吗。
-题目跟2的幂次方有关，计算机又...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2023-08-23T21:10:44+08:00">2023-08-23</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/xinonria.github.io/2023/08/23/%E4%BA%8C%E8%BF%9B%E5%88%B6%E4%B8%8B%E7%9A%84%E8%B4%9F%E6%95%B0/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://xinonria.github.io/project/2023/08/22/C-中的哈希表/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Xinon's Blog">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Xinon's Blog">
-    <meta itemprop="description" content="一个兴趣使然的博客">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="/images/logo.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/xinonria.github.io/2023/08/22/C-%E4%B8%AD%E7%9A%84%E5%93%88%E5%B8%8C%E8%A1%A8/"  itemprop="url">
-        C++中的哈希表
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        最近刷题经常使用到哈希表。
- 哈希表
-官方定义:
-
-哈希表是根据关键码的值而直接进行访问的数据结构。
-
-数组其实就是一张最基础的哈希表。
-它的下标数字作为键(key)对应一个值(value)。
-比如:
-a[key] = value;
-键不能相同，但值可以相同。
-哈希表可以用来快速检索一个元素。
-比如我们拿学生的名字作为键(key)，ta所在的宿舍作为值(key)。
-我们要查询一个学生在哪个宿...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2023-08-22T18:37:11+08:00">2023-08-22</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/xinonria.github.io/2023/08/22/C-%E4%B8%AD%E7%9A%84%E5%93%88%E5%B8%8C%E8%A1%A8/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://xinonria.github.io/project/2023/08/21/数组与指针/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Xinon's Blog">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Xinon's Blog">
-    <meta itemprop="description" content="一个兴趣使然的博客">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="/images/logo.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/xinonria.github.io/2023/08/21/%E6%95%B0%E7%BB%84%E4%B8%8E%E6%8C%87%E9%92%88/"  itemprop="url">
-        数组与指针
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-         数组
-
-我们都知道访问数组的一个元素可以通过下标访问。
-例如
-123456int a[5] = &#123; 1,2,3,4,5 &#125;; //初始化printf(&quot;%d %d&quot;, a[0], a[1]);-----output:1 2
-通过下标我们访问了数组a的第0个和第1个元素。
-但是数组的下标访问本质是编程语言的一个语法糖。
-数组的本质是开辟一串连续的空间用...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2023-08-21T23:40:58+08:00">2023-08-21</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/xinonria.github.io/2023/08/21/%E6%95%B0%E7%BB%84%E4%B8%8E%E6%8C%87%E9%92%88/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://xinonria.github.io/project/2023/08/20/尝试迁移博客/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Xinon's Blog">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Xinon's Blog">
-    <meta itemprop="description" content="一个兴趣使然的博客">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="/images/logo.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/xinonria.github.io/2023/08/20/%E5%B0%9D%E8%AF%95%E8%BF%81%E7%A7%BB%E5%8D%9A%E5%AE%A2/"  itemprop="url">
-        尝试迁移博客
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-         主题问题
-最近使用hexo的volantis主题。
-好看是好看，但它的资源cdn都在unpkg上。
-最近发现unpkg国内无法访问了，导致图标、图片什么的都都失效。qwq
-设置了使用jsdelivr(国内能正常访问)，但似乎并不起作用。
-要不换一个不依赖unpkg的主题？
-尝试了Star最高的Next主题。
-但感觉实在太丑，用不下去。再加上waline评论系统时不时会出错。
-还是放弃了Ne...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2023-08-20T19:55:06+08:00">2023-08-20</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/xinonria.github.io/2023/08/20/%E5%B0%9D%E8%AF%95%E8%BF%81%E7%A7%BB%E5%8D%9A%E5%AE%A2/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://xinonria.github.io/project/2023/08/19/检测word损坏小工具/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Xinon's Blog">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Xinon's Blog">
-    <meta itemprop="description" content="一个兴趣使然的博客">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="/images/logo.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/xinonria.github.io/2023/08/19/%E6%A3%80%E6%B5%8Bword%E6%8D%9F%E5%9D%8F%E5%B0%8F%E5%B7%A5%E5%85%B7/"  itemprop="url">
-        检测受损word文档
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-         开始
-
-前几天使用数据恢复软件恢复了一批word文档(大概2k个)，但是有些文档已经被损坏了，完全打不开。
-用word修复工具能修复吗？抱着这样的想法尝试了市面上大部分的修复工具。
-结果都修复失败。
-
-这个时候尝试看看原始数据？
-用一款开源的软件imhex
-
-直接查看这些文档的16进制数据。
-![Alt text]
-好好好，就剩个文件路径了是吧。损坏成这样只有神笔马良能修复了。
-这种文件已...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2023-08-19T21:08:40+08:00">2023-08-19</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/xinonria.github.io/2023/08/19/%E6%A3%80%E6%B5%8Bword%E6%8D%9F%E5%9D%8F%E5%B0%8F%E5%B7%A5%E5%85%B7/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://xinonria.github.io/project/2023/08/18/快慢指针与链表/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Xinon's Blog">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Xinon's Blog">
-    <meta itemprop="description" content="一个兴趣使然的博客">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="/images/logo.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/xinonria.github.io/2023/08/18/%E5%BF%AB%E6%85%A2%E6%8C%87%E9%92%88%E4%B8%8E%E9%93%BE%E8%A1%A8/"  itemprop="url">
-        快慢指针与链表
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        当要求空间复杂度为O(1)，即只使用常量额外空间时，快慢指针对于处理链表中删除重复值和判断是否有环尤为重要。
-快慢指针也可称为龟兔赛跑算法。
-定义一个快指针，一个慢指针，它们的移动速度是不同的，根据这个速度差，我们就能完成一些工作了。
- 删除重复值
-
- 例题
-给定一个已排序的链表的头 head ， 删除所有重复的元素，使每个元素只出现一次 。返回 已排序的链表 。
-
- 思考
-首先这个链表是有...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2023-08-18T19:55:35+08:00">2023-08-18</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/xinonria.github.io/2023/08/18/%E5%BF%AB%E6%85%A2%E6%8C%87%E9%92%88%E4%B8%8E%E9%93%BE%E8%A1%A8/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://xinonria.github.io/project/2023/08/17/关于二叉树-下/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Xinon's Blog">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Xinon's Blog">
-    <meta itemprop="description" content="一个兴趣使然的博客">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="/images/logo.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/xinonria.github.io/2023/08/17/%E5%85%B3%E4%BA%8E%E4%BA%8C%E5%8F%89%E6%A0%91-%E4%B8%8B/"  itemprop="url">
-        关于二叉树(下)
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        二叉搜索树是有序的。
-它可以完成搜索，插入以及删除等操作。
- 搜索
- 例题
-
- 思考
-因为二叉搜索树有以下几个性质。
-
-若它的左子树不空，则左子树上所有结点的值均小于它的根结点的值；
-若它的右子树不空，则右子树上所有结点的值均大于它的根结点的值；
-它的左、右子树也分别为二叉搜索树。
-
-所以它的搜索效率就跟二分搜索一样很快。
-使用迭代法很快就能写出来。
- 代码
-12345678910TreeN...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2023-08-17T16:55:46+08:00">2023-08-17</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/xinonria.github.io/2023/08/17/%E5%85%B3%E4%BA%8E%E4%BA%8C%E5%8F%89%E6%A0%91-%E4%B8%8B/' itemprop="url">
+          <a class='readmore' href='/xinonria.github.io/2023/10/14/%E8%AE%B0%E7%AC%AC%E4%B8%80%E6%AC%A1codeforces%E6%AF%94%E8%B5%9B/' itemprop="url">
             阅读全文
           </a>
         </div>
@@ -3258,30 +2686,11 @@ a[key] = value;
   </section>
   
     
-      <br>
-      <div class="prev-next">
-        
-          <a class="prev" rel="prev" href="/xinonria.github.io/">
-            <section class="post prev white-box shadow floatable blur" >
-              <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>&nbsp;上一页&nbsp;
-            </section>
-          </a>
-        
-        <p class="current">
-          2 / 3
-        </p>
-        
-          <a class="next" rel="next" href="/xinonria.github.io/page/3/">
-            <section class="post next white-box shadow floatable blur">
-              &nbsp;下一页&nbsp;<i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
-            </section>
-          </a>
-        
-      </div>
-    
   
 
 
+    
+  
 </div>
 <aside id='l_side' itemscope itemtype="http://schema.org/WPSideBar">
   
@@ -3412,7 +2821,6 @@ a[key] = value;
   
   <!-- Custom Files side end -->
 </aside>
-
 
 
           <!--此文件用来存放一些不方便取值的变量-->
@@ -4680,7 +4088,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Xinon's Blog","url":"https://xinonria.github.io/project/xinonria.github.io/","logo":{"@type":"ImageObject","url":"/images/logo.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Xinon Zhang","image":{"@type":"ImageObject","url":"/images/logo.png"},"url":"https://xinonria.github.io/project/xinonria.github.io/","sameAs":["https://github.com/volantis-x"],"description":"一个兴趣使然的博客"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://xinonria.github.io/project/xinonria.github.io/","name":"Xinon's Blog"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Xinon's Blog","url":"https://xinonria.github.io/project/xinonria.github.io/","keywords":null,"description":"一个兴趣使然的博客","author":{"@type":"Person","name":"Xinon Zhang","image":{"@type":"ImageObject","url":"/images/logo.png"},"url":"https://xinonria.github.io/project/xinonria.github.io/","description":"一个兴趣使然的博客"},"publisher":{"@type":"Organization","name":"Xinon's Blog","url":"https://xinonria.github.io/project/xinonria.github.io/","logo":{"@type":"ImageObject","url":"/images/logo.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://xinonria.github.io/project?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"一个兴趣使然的博客","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"Xinon Zhang","image":{"@type":"ImageObject","url":"/images/logo.png"},"url":"https://xinonria.github.io/project/xinonria.github.io/"},"publisher":{"@type":"Organization","name":"Xinon's Blog","logo":{"@type":"ImageObject","url":"/images/logo.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"/images/logo.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Xinon's Blog","url":"https://xinonria.github.io/project/xinonria.github.io/","logo":{"@type":"ImageObject","url":"/images/logo.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Xinon Zhang","image":{"@type":"ImageObject","url":"/images/logo.png"},"url":"https://xinonria.github.io/project/xinonria.github.io/","sameAs":["https://github.com/volantis-x"],"description":"一个兴趣使然的博客"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://xinonria.github.io/project/xinonria.github.io/","name":"Xinon's Blog"}},{"@type":"ListItem","position":2,"item":{"@id":"https://xinonria.github.io/project/xinonria.github.io/tags/codeforces/","name":"codeforces"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Xinon's Blog","url":"https://xinonria.github.io/project/xinonria.github.io/","keywords":null,"description":"一个兴趣使然的博客","author":{"@type":"Person","name":"Xinon Zhang","image":{"@type":"ImageObject","url":"/images/logo.png"},"url":"https://xinonria.github.io/project/xinonria.github.io/","description":"一个兴趣使然的博客"},"publisher":{"@type":"Organization","name":"Xinon's Blog","url":"https://xinonria.github.io/project/xinonria.github.io/","logo":{"@type":"ImageObject","url":"/images/logo.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://xinonria.github.io/project?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"一个兴趣使然的博客","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"Xinon Zhang","image":{"@type":"ImageObject","url":"/images/logo.png"},"url":"https://xinonria.github.io/project/xinonria.github.io/"},"publisher":{"@type":"Organization","name":"Xinon's Blog","logo":{"@type":"ImageObject","url":"/images/logo.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"/images/logo.png","width":192,"height":192}}]</script>
 
 
 

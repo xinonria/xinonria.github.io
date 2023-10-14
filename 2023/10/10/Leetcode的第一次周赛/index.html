@@ -45,7 +45,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://cdn.jsdelivr.net/npm/volantis-static/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2023-10-10T14:05:32.000Z">
-<meta property="article:modified_time" content="2023-10-10T14:11:24.232Z">
+<meta property="article:modified_time" content="2023-10-14T15:12:41.342Z">
 <meta property="article:author" content="Xinon Zhang">
 <meta property="article:tag" content="Leetcode">
 <meta property="article:tag" content="周赛">
@@ -1917,7 +1917,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: false,
     cdn: {"js":{"app":"/xinonria.github.io/js/app.js","parallax":"/xinonria.github.io/js/plugins/parallax.js","rightMenu":"/xinonria.github.io/js/plugins/rightMenu.js","rightMenus":"/xinonria.github.io/js/plugins/rightMenus.js","sites":"/xinonria.github.io/js/plugins/tags/sites.js","friends":"/xinonria.github.io/js/plugins/tags/friends.js","contributors":"/xinonria.github.io/js/plugins/tags/contributors.js","search":"/xinonria.github.io/js/search/hexo.js"},"css":{"style":"/xinonria.github.io/css/style.css"}},
     default: {"avatar":"https://cdn.jsdelivr.net/npm/volantis-static/media/placeholder/avatar/round/3442075.svg","link":"https://cdn.jsdelivr.net/npm/volantis-static/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://cdn.jsdelivr.net/npm/volantis-static/media/placeholder/cover/76b86c0226ffd.svg","image":"https://cdn.jsdelivr.net/npm/volantis-static/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1696947089505),
+    lastupdate: new Date(1697299383317),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate"],
       for_post: ["toc"],
@@ -2768,10 +2768,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-10-10T22:11:24+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-10-14T23:12:41+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2023年10月10日</p>
+    <p>更新于：2023年10月14日</p>
   </a>
 </div>
 
@@ -2850,6 +2850,13 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   
     <div class="prev-next">
+      
+        <a class='prev' href='/xinonria.github.io/2023/10/14/%E8%AE%B0%E7%AC%AC%E4%B8%80%E6%AC%A1codeforces%E6%AF%94%E8%B5%9B/'>
+          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>记第一次codeforces比赛(上)</p>
+          <p class='content'> 写在前面
+如果要提升自己算法技术的话听说刷Leetcode帮助不大，那现在每日一题转为刷codeforces上的题目吧。
+第一次参加codeforces的比赛，只敢打了个div.3。2h15m...</p>
+        </a>
       
       
         <a class='next' href='/xinonria.github.io/2023/10/01/%E5%B9%B3%E6%9D%BF%E4%B8%8A%E7%9A%84VsCode/'>
@@ -4101,57 +4108,18 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 <pjax>
 
         <script>
-  // https://github.com/theme-next/hexo-theme-next/blob/master/layout/_third-party/math/mathjax.swig
-  if (typeof MathJax === 'undefined') {
-    window.MathJax = {
-      loader: {
-        source: {
-          '[tex]/amsCd': '[tex]/amscd',
-          '[tex]/AMScd': '[tex]/amscd'
-        }
-      },
-      tex: {
-        inlineMath: {'[+]': [['$', '$']]},
-        tags: 'ams'
-      },
-      options: {
-        renderActions: {
-          findScript: [10, doc => {
-            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
-              const display = !!node.type.match(/; *mode=display/);
-              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
-              const text = document.createTextNode('');
-              node.parentNode.replaceChild(text, node);
-              math.start = {node: text, delim: '', n: 0};
-              math.end = {node: text, delim: '', n: 0};
-              doc.math.push(math);
-            });
-          }, '', false],
-          insertedScript: [200, () => {
-            document.querySelectorAll('mjx-container').forEach(node => {
-              let target = node.parentNode;
-              if (target.nodeName.toLowerCase() === 'li') {
-                target.parentNode.classList.add('has-jax');
-              }
-            });
-          }, '', false]
-        }
-      }
-    };
-    (function () {
-      var script = document.createElement('script');
-      script.src = "https://cdn.jsdelivr.net/npm/volantis-static/libs/mathjax/es5/tex-mml-chtml.js";
-      script.defer = true;
-      document.head.appendChild(script);
-    })();
-  } else {
-    // 文章章节标题不能为 “MathJax” ，否则会报错。
-    MathJax.startup.document.state(0);
-    MathJax.texReset();
-    MathJax.typesetPromise();
+  // https://www.micdz.cn/article/katex-on-volantis/
+  if (typeof renderMathInElement == "undefined") {
+    volantis.css("https://cdn.jsdelivr.net/npm/volantis-static/libs/katex/katex.min.css")
+    function pjax_katex() {
+      volantis.js("https://cdn.jsdelivr.net/npm/volantis-static/libs/katex/contrib/auto-render.min.js").then(()=>{
+        renderMathInElement(document.body);
+      })
+    }
+    volantis.js("https://cdn.jsdelivr.net/npm/volantis-static/libs/katex/katex.min.js").then(pjax_katex)
+    volantis.pjax.push(pjax_katex)
   }
 </script>
-
 
 
 </pjax>
@@ -4285,7 +4253,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Xinon's Blog","url":"https://xinonria.github.io/project/xinonria.github.io/","logo":{"@type":"ImageObject","url":"/images/logo.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Xinon Zhang","image":{"@type":"ImageObject","url":"/images/logo.png"},"url":"https://xinonria.github.io/project/xinonria.github.io/","sameAs":["https://github.com/volantis-x"],"description":"一个兴趣使然的博客"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://xinonria.github.io/project/xinonria.github.io/","name":"Xinon's Blog"}},{"@type":"ListItem","position":3,"item":{"@id":"https://xinonria.github.io/project/xinonria.github.io/2023/10/10/Leetcode的第一次周赛/","name":"Leetcode的第一次周赛"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Xinon's Blog","url":"https://xinonria.github.io/project/xinonria.github.io/","keywords":null,"description":"一个兴趣使然的博客","author":{"@type":"Person","name":"Xinon Zhang","image":{"@type":"ImageObject","url":"/images/logo.png"},"url":"https://xinonria.github.io/project/xinonria.github.io/","description":"一个兴趣使然的博客"},"publisher":{"@type":"Organization","name":"Xinon's Blog","url":"https://xinonria.github.io/project/xinonria.github.io/","logo":{"@type":"ImageObject","url":"/images/logo.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://xinonria.github.io/project?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Leetcode的第一次周赛","description":"一个兴趣使然的博客","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://xinonria.github.io/project/2023/10/10/Leetcode%E7%9A%84%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%91%A8%E8%B5%9B/"},"author":{"@type":"Person","name":"Xinon Zhang","image":{"@type":"ImageObject","url":"/images/logo.png"},"url":"https://xinonria.github.io/project/xinonria.github.io/"},"publisher":{"@type":"Organization","name":"Xinon's Blog","logo":{"@type":"ImageObject","url":"/images/logo.png","width":192,"height":192}},"url":"https://xinonria.github.io/project/2023/10/10/Leetcode%E7%9A%84%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%91%A8%E8%B5%9B/","wordCount":0,"datePublished":"2023-10-10T14:05:32.000Z","dateModified":"2023-10-10T14:11:24.232Z","keywords":"Leetcode,周赛","image":{"@type":"ImageObject","url":"/images/logo.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Xinon's Blog","url":"https://xinonria.github.io/project/xinonria.github.io/","logo":{"@type":"ImageObject","url":"/images/logo.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Xinon Zhang","image":{"@type":"ImageObject","url":"/images/logo.png"},"url":"https://xinonria.github.io/project/xinonria.github.io/","sameAs":["https://github.com/volantis-x"],"description":"一个兴趣使然的博客"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://xinonria.github.io/project/xinonria.github.io/","name":"Xinon's Blog"}},{"@type":"ListItem","position":3,"item":{"@id":"https://xinonria.github.io/project/xinonria.github.io/2023/10/10/Leetcode的第一次周赛/","name":"Leetcode的第一次周赛"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Xinon's Blog","url":"https://xinonria.github.io/project/xinonria.github.io/","keywords":null,"description":"一个兴趣使然的博客","author":{"@type":"Person","name":"Xinon Zhang","image":{"@type":"ImageObject","url":"/images/logo.png"},"url":"https://xinonria.github.io/project/xinonria.github.io/","description":"一个兴趣使然的博客"},"publisher":{"@type":"Organization","name":"Xinon's Blog","url":"https://xinonria.github.io/project/xinonria.github.io/","logo":{"@type":"ImageObject","url":"/images/logo.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://xinonria.github.io/project?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Leetcode的第一次周赛","description":"一个兴趣使然的博客","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://xinonria.github.io/project/2023/10/10/Leetcode%E7%9A%84%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%91%A8%E8%B5%9B/"},"author":{"@type":"Person","name":"Xinon Zhang","image":{"@type":"ImageObject","url":"/images/logo.png"},"url":"https://xinonria.github.io/project/xinonria.github.io/"},"publisher":{"@type":"Organization","name":"Xinon's Blog","logo":{"@type":"ImageObject","url":"/images/logo.png","width":192,"height":192}},"url":"https://xinonria.github.io/project/2023/10/10/Leetcode%E7%9A%84%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%91%A8%E8%B5%9B/","wordCount":0,"datePublished":"2023-10-10T14:05:32.000Z","dateModified":"2023-10-14T15:12:41.342Z","keywords":"Leetcode,周赛","image":{"@type":"ImageObject","url":"/images/logo.png","width":192,"height":192}}]</script>
 
 
 
