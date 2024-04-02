@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <!-- SEO相关 -->
   
-  <link rel="canonical" href="https://xinonria.github.io/project/posts/39412549/"/>
+  <link rel="canonical" href="https://xinonria.top/posts/39412549/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -39,7 +39,7 @@
   
 <meta property="og:type" content="article">
 <meta property="og:title" content="一些有用小操作">
-<meta property="og:url" content="https://xinonria.github.io/project/posts/39412549/index.html">
+<meta property="og:url" content="https://xinonria.top/posts/39412549/index.html">
 <meta property="og:site_name" content="Xinon&#39;s Blog">
 <meta property="og:description" content="mid溢出 在使用二分法的时候经常会用到一行代码: 1mid &#x3D; (left + right) &#x2F; 2; 很正常的思维，mid就是left和right的中间值嘛。 但是当right为INT_MAX也就是int上限的时候，left+right会导致mid溢出。 如果这样写就可以避免这个溢出了。 1mid &#x3D; left + ((right - left) &gt;&gt; 1); &#x2F;&#x2F; &gt;&amp;g">
 <meta property="og:locale" content="zh_CN">
@@ -1753,7 +1753,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/xinonria.github.io/js/app.js","parallax":"/xinonria.github.io/js/plugins/parallax.js","rightMenu":"/xinonria.github.io/js/plugins/rightMenu.js","rightMenus":"/xinonria.github.io/js/plugins/rightMenus.js","sites":"/xinonria.github.io/js/plugins/tags/sites.js","friends":"/xinonria.github.io/js/plugins/tags/friends.js","contributors":"/xinonria.github.io/js/plugins/tags/contributors.js","search":"/xinonria.github.io/js/search/hexo.js"},"css":{"style":"/xinonria.github.io/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1712069363945),
+    lastupdate: new Date(1712069570378),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate"],
       for_post: ["toc"],
@@ -2419,7 +2419,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
 <div id="l_main" class=''>
   <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
-  <link itemprop="mainEntityOfPage" href="https://xinonria.github.io/project/posts/39412549/">
+  <link itemprop="mainEntityOfPage" href="https://xinonria.top/posts/39412549/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Xinon's Blog">
   </span>
@@ -2515,7 +2515,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <p>例如</p>
 <p><img src="https://www.z4a.net/images/2023/09/20/image05f845ad07e900e7.png" class="lazyload" data-srcset="https://www.z4a.net/images/2023/09/20/image05f845ad07e900e7.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" /></p>
 <p>(这道题每步取模就够用了)</p>
-<p><a target="_blank" rel="noopener" href="https://xinonria.top/2023/09/04/%E5%BF%AB%E9%80%9F%E5%B9%82/">快速幂</a></p>
+<p><a href="https://xinonria.top/2023/09/04/%E5%BF%AB%E9%80%9F%E5%B9%82/">快速幂</a></p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">define</span> MOD 200907</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">long</span> <span class="type">long</span> <span class="title">myPow</span><span class="params">(<span class="type">int</span> x, <span class="type">int</span> n)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="type">long</span> <span class="type">long</span> ans = <span class="number">1</span>;</span><br><span class="line">	<span class="keyword">while</span> (n) &#123;</span><br><span class="line">		<span class="keyword">if</span> (n &amp; <span class="number">1</span>) ans = (ans * x) % MOD;  <span class="comment">//遇到1了，把当前结果乘进ans里</span></span><br><span class="line">		x = (x * x) % MOD;</span><br><span class="line">		n &gt;&gt;= <span class="number">1</span>;  <span class="comment">//n的二进制右移一位</span></span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> ans % MOD;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>但这里有一个问题，如果中途<code>ans*x</code>这步就直接导致溢出了怎么办？</p>
 <p>乘法的原理就是不断地加，我们可以用类似于快速幂的方法写一个快速乘（虽然并不快速），不过目的是保证在乘法过程中每步取模，不会出现溢出。</p>
@@ -2571,7 +2571,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://xinonria.github.io/project/posts/39412549/&title=一些有用小操作 - Xinon's Blog&summary="
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://xinonria.top/posts/39412549/&title=一些有用小操作 - Xinon's Blog&summary="
           
           >
           
@@ -2583,7 +2583,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://xinonria.github.io/project/posts/39412549/&title=一些有用小操作 - Xinon's Blog&summary="
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://xinonria.top/posts/39412549/&title=一些有用小操作 - Xinon's Blog&summary="
           
           >
           
@@ -2595,7 +2595,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://service.weibo.com/share/share.php?url=https://xinonria.github.io/project/posts/39412549/&title=一些有用小操作 - Xinon's Blog&summary="
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://xinonria.top/posts/39412549/&title=一些有用小操作 - Xinon's Blog&summary="
           
           >
           
@@ -3891,7 +3891,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Xinon's Blog","url":"https://xinonria.github.io/project/xinonria.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Xinon Zhang","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://xinonria.github.io/project/xinonria.github.io/","sameAs":["https://github.com/volantis-x"],"description":"一个用于学习记录的个人博客"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://xinonria.github.io/project/xinonria.github.io/","name":"Xinon's Blog"}},{"@type":"ListItem","position":3,"item":{"@id":"https://xinonria.github.io/project/xinonria.github.io/posts/39412549/","name":"一些有用小操作"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Xinon's Blog","url":"https://xinonria.github.io/project/xinonria.github.io/","keywords":null,"description":"一个用于学习记录的个人博客","author":{"@type":"Person","name":"Xinon Zhang","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://xinonria.github.io/project/xinonria.github.io/","description":"一个用于学习记录的个人博客"},"publisher":{"@type":"Organization","name":"Xinon's Blog","url":"https://xinonria.github.io/project/xinonria.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://xinonria.github.io/project?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"一些有用小操作","description":"一个用于学习记录的个人博客","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://xinonria.github.io/project/posts/39412549/"},"author":{"@type":"Person","name":"Xinon Zhang","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://xinonria.github.io/project/xinonria.github.io/"},"publisher":{"@type":"Organization","name":"Xinon's Blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://xinonria.github.io/project/posts/39412549/","wordCount":0,"datePublished":"2023-09-20T13:55:28.000Z","dateModified":"2024-04-02T13:48:34.838Z","keywords":"工具","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Xinon's Blog","url":"https://xinonria.top/xinonria.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Xinon Zhang","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://xinonria.top/xinonria.github.io/","sameAs":["https://github.com/volantis-x"],"description":"一个用于学习记录的个人博客"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://xinonria.top/xinonria.github.io/","name":"Xinon's Blog"}},{"@type":"ListItem","position":3,"item":{"@id":"https://xinonria.top/xinonria.github.io/posts/39412549/","name":"一些有用小操作"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Xinon's Blog","url":"https://xinonria.top/xinonria.github.io/","keywords":null,"description":"一个用于学习记录的个人博客","author":{"@type":"Person","name":"Xinon Zhang","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://xinonria.top/xinonria.github.io/","description":"一个用于学习记录的个人博客"},"publisher":{"@type":"Organization","name":"Xinon's Blog","url":"https://xinonria.top/xinonria.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://xinonria.top?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"一些有用小操作","description":"一个用于学习记录的个人博客","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://xinonria.top/posts/39412549/"},"author":{"@type":"Person","name":"Xinon Zhang","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://xinonria.top/xinonria.github.io/"},"publisher":{"@type":"Organization","name":"Xinon's Blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://xinonria.top/posts/39412549/","wordCount":0,"datePublished":"2023-09-20T13:55:28.000Z","dateModified":"2024-04-02T13:48:34.838Z","keywords":"工具","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
