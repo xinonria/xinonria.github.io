@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <!-- SEO相关 -->
   
-  <link rel="canonical" href="https://xinonria.top/posts/f61fb787/"/>
+  <link rel="canonical" href="https://xinonria.top/posts/8feee3db/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -33,22 +33,22 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>关于二叉树中序遍历 - Xinon's Blog</title>
-  <meta name="keywords" content="Leetcode,二叉树,null">
-  <meta desc name="description" content="一个用于学习记录的个人博客 - Xinon Zhang - Xinon's Blog">
+  <title>手把手带你实现一个响应式系统 - Xinon's Blog</title>
+  <meta name="keywords" content="前端,vue,null">
+  <meta desc name="description" content="本文探究了Vue.js中响应式系统的实现，通过介绍副作用函数与响应式数据，利用Proxy实现了一个相对完善的响应系统，同时讨论了分支切换导致冗余副作用的清理问题。 - Xinon Zhang - Xinon's Blog">
   
 <meta property="og:type" content="article">
-<meta property="og:title" content="关于二叉树中序遍历">
-<meta property="og:url" content="https://xinonria.top/posts/f61fb787/index.html">
+<meta property="og:title" content="手把手带你实现一个响应式系统">
+<meta property="og:url" content="https://xinonria.top/posts/8feee3db/index.html">
 <meta property="og:site_name" content="Xinon&#39;s Blog">
-<meta property="og:description" content="今天日常刷Leetcode刷到了一个二叉树中序遍历的题。原题链接  通过示例可以很明显了解到何为中序遍历，同时打算用栈结构来实现。  中序遍历 可以看作将节点投影到一个水平坐标轴上，从原点开始向右遍历。  如图顺序为:H-&gt;D-&gt;I-&gt;B-&gt;E-&gt;J-&gt;A-&gt;F-&gt;K-&gt;C-&gt;G  栈  栈遵循先进后出的原则。 把栈想象成一个桶：a1先入">
+<meta property="og:description" content="本文探究了Vue.js中响应式系统的实现，通过介绍副作用函数与响应式数据，利用Proxy实现了一个相对完善的响应系统，同时讨论了分支切换导致冗余副作用的清理问题。">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-<meta property="article:published_time" content="2023-08-12T10:27:49.000Z">
-<meta property="article:modified_time" content="2024-04-02T13:48:34.841Z">
+<meta property="article:published_time" content="2024-04-03T02:51:45.000Z">
+<meta property="article:modified_time" content="2024-04-04T19:27:39.083Z">
 <meta property="article:author" content="Xinon Zhang">
-<meta property="article:tag" content="Leetcode">
-<meta property="article:tag" content="二叉树">
+<meta property="article:tag" content="前端">
+<meta property="article:tag" content="vue">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
   <style>
@@ -2420,7 +2420,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
 <div id="l_main" class=''>
   <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
-  <link itemprop="mainEntityOfPage" href="https://xinonria.top/posts/f61fb787/">
+  <link itemprop="mainEntityOfPage" href="https://xinonria.top/posts/8feee3db/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Xinon's Blog">
   </span>
@@ -2441,7 +2441,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       <h1 class="title" itemprop="name headline">
-        关于二叉树中序遍历
+        手把手带你实现一个响应式系统
       </h1>
       <div class='new-meta-box'>
         
@@ -2462,10 +2462,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
         
           
-            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2023-08-12T18:27:49+08:00">
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2024-04-03T10:51:45+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
-    <p>发布于：2023年8月12日</p>
+    <p>发布于：2024年4月3日</p>
   </a>
 </div>
 
@@ -2480,7 +2480,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <p>
       <i class="fa-solid fa-eye fa-fw" aria-hidden="true"></i>
       
-      <span data-path="/xinonria.github.io/posts/f61fb787/" class="waline-pageview-count">
+      <span data-path="/xinonria.github.io/posts/8feee3db/" class="waline-pageview-count">
         <i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i>
       </span>
       
@@ -2502,31 +2502,120 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
-    <p>今天日常刷Leetcode刷到了一个二叉树中序遍历的题。<a target="_blank" rel="noopener" href="https://leetcode.cn/problems/binary-tree-inorder-traversal/description/">原题链接</a></p>
-<p><img src="https://www.z4a.net/images/2023/08/12/image969eeb0431acff42.png" class="lazyload" data-srcset="https://www.z4a.net/images/2023/08/12/image969eeb0431acff42.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image.png" /></p>
-<p>通过示例可以很明显了解到何为中序遍历，同时打算用栈结构来实现。</p>
-<h4 id="中序遍历"><a class="markdownIt-Anchor" href="#中序遍历"></a> 中序遍历</h4>
-<p>可以看作将节点投影到一个水平坐标轴上，从原点开始向右遍历。<br />
-<img src="https://www.z4a.net/images/2023/08/12/image194664320ff4e02f.png" class="lazyload" data-srcset="https://www.z4a.net/images/2023/08/12/image194664320ff4e02f.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image.gif" /><br />
-如图顺序为:H-&gt;D-&gt;I-&gt;B-&gt;E-&gt;J-&gt;A-&gt;F-&gt;K-&gt;C-&gt;G</p>
-<h4 id="栈"><a class="markdownIt-Anchor" href="#栈"></a> 栈</h4>
-<p><img src="https://www.z4a.net/images/2023/08/12/image528190e58558130f.png" class="lazyload" data-srcset="https://www.z4a.net/images/2023/08/12/image528190e58558130f.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image.png" /></p>
-<p>栈遵循先进后出的原则。</p>
-<p>把栈想象成一个桶：a1先入栈，被压在最底下；然后a2再入栈，压在a1的上面……</p>
-<p>如何取出里面的数据呢？拿走最上面的元素，也就是出栈。被压在最底下的元素最后才能被拿出来。</p>
-<p>例如： 入栈顺序 = 1, 2, 3, 4<br />
-出栈顺序 = 4, 3, 2, 1</p>
-<p>明白概念之后就到了实现这个操作了。</p>
-<h4 id="思路"><a class="markdownIt-Anchor" href="#思路"></a> 思路</h4>
-<p>我使用了栈结构以及访问标记来实现。每个节点都附带一个名为visited的bool值（默认false)。</p>
-<p>先让根节点入栈（栈里面没元素怎么出栈）</p>
-<p>然后一直循环直到栈内元素全部出来。</p>
-<p>中途如果发现是空节点就continue回到循环开始的地方。</p>
-<p>如果这个节点没被访问过，那么就先标记一下已被访问<code>visited=true</code>。</p>
-<p>然后分别按顺序让右节点-&gt;当前节点-&gt;左节点入栈。（因为要中序遍历，所以如此入栈后出栈的顺序就是左节点-&gt;当前节点-&gt;右节点）</p>
-<p>如果当前节点已经访问过了，那么就直接返回当前节点的值。</p>
-<h4 id="代码-c"><a class="markdownIt-Anchor" href="#代码-c"></a> 代码 (C++)</h4>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;vector&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stack&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;unordered_map&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="comment">//二叉树定义</span></span><br><span class="line"><span class="keyword">struct</span> <span class="title class_">TreeNode</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="type">int</span> val;</span><br><span class="line">	TreeNode* left;</span><br><span class="line">	TreeNode* right;</span><br><span class="line">	<span class="built_in">TreeNode</span>() : <span class="built_in">val</span>(<span class="number">0</span>), <span class="built_in">left</span>(<span class="literal">nullptr</span>), <span class="built_in">right</span>(<span class="literal">nullptr</span>) &#123;&#125;</span><br><span class="line">	<span class="built_in">TreeNode</span>(<span class="type">int</span> x) : <span class="built_in">val</span>(x), <span class="built_in">left</span>(<span class="literal">nullptr</span>), <span class="built_in">right</span>(<span class="literal">nullptr</span>) &#123;&#125;</span><br><span class="line">	<span class="built_in">TreeNode</span>(<span class="type">int</span> x, TreeNode* left, TreeNode* right) : <span class="built_in">val</span>(x), <span class="built_in">left</span>(left), <span class="built_in">right</span>(right) &#123;&#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span></span><br><span class="line">&#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">	<span class="function">vector&lt;<span class="type">int</span>&gt; <span class="title">inorderTraversal</span><span class="params">(TreeNode* root)</span></span></span><br><span class="line"><span class="function">	</span>&#123;</span><br><span class="line">		stack&lt;TreeNode*&gt; s;   <span class="comment">//栈，存储每个节点的地址</span></span><br><span class="line">		unordered_map&lt;TreeNode*, <span class="type">bool</span>&gt; umap&#123;&#123;<span class="literal">nullptr</span>, <span class="literal">false</span>&#125;&#125;;  <span class="comment">//visited表，判断当前节点是否访问过，初始化全为false</span></span><br><span class="line">		vector&lt;<span class="type">int</span>&gt; res;   <span class="comment">//答案结果</span></span><br><span class="line">		s.<span class="built_in">push</span>(root);   <span class="comment">//根节点入栈</span></span><br><span class="line">		TreeNode* temp;   <span class="comment">//当前节点</span></span><br><span class="line">		<span class="keyword">while</span> (!s.<span class="built_in">empty</span>())</span><br><span class="line">		&#123;</span><br><span class="line">			temp = s.<span class="built_in">top</span>();</span><br><span class="line">			s.<span class="built_in">pop</span>();            <span class="comment">//取得栈顶的元素</span></span><br><span class="line">			<span class="keyword">if</span> (!temp) <span class="keyword">continue</span>;  <span class="comment">//节点为空就continue</span></span><br><span class="line">			<span class="keyword">if</span> (umap[temp]) res.<span class="built_in">push_back</span>(temp-&gt;val);     <span class="comment">//当前节点已被访问过，返回节点的值</span></span><br><span class="line">			<span class="keyword">else</span></span><br><span class="line">			&#123;</span><br><span class="line">				umap[temp] = <span class="literal">true</span>;      <span class="comment">//标记已被访问</span></span><br><span class="line">				s.<span class="built_in">push</span>(temp-&gt;right);</span><br><span class="line">				s.<span class="built_in">push</span>(temp);</span><br><span class="line">				s.<span class="built_in">push</span>(temp-&gt;left);</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">return</span> res;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+    <p>本文探究了Vue.js中响应式系统的实现，通过介绍副作用函数与响应式数据，利用Proxy实现了一个相对完善的响应系统，同时讨论了分支切换导致冗余副作用的清理问题。</p>
+<span id="more"></span>
+<h1 id="副作用函数"><a class="markdownIt-Anchor" href="#副作用函数"></a> 副作用函数</h1>
+<p>如果我们使用js中的某个函数改变了html标签里的某个内容，由于在这个函数以外的地方都能访问或者设置这个html标签的内容</p>
+<p>所以我们说这个函数可能会<strong>直接或者间接</strong>影响到其他函数的执行，也就是产生了<strong>副作用</strong>。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> obj = &#123; <span class="attr">text</span>: <span class="string">&#x27;nihao&#x27;</span> &#125;</span><br><span class="line"><span class="comment">// effect函数产生了副作用</span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">effect</span>(<span class="params"></span>) &#123;</span><br><span class="line">  <span class="variable language_">document</span>.<span class="property">body</span>.<span class="property">innerText</span> = obj.<span class="property">text</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1 id="响应式数据"><a class="markdownIt-Anchor" href="#响应式数据"></a> 响应式数据</h1>
+<p>还是上面的代码:</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> obj = &#123; <span class="attr">text</span>: <span class="string">&#x27;nihao&#x27;</span> &#125;</span><br><span class="line"><span class="comment">// effect函数执行会读取obj.text</span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">effect</span>(<span class="params"></span>) &#123;</span><br><span class="line">  <span class="variable language_">document</span>.<span class="property">body</span>.<span class="property">innerText</span> = obj.<span class="property">text</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">obj.<span class="property">text</span> = <span class="string">&quot;hello&quot;</span></span><br></pre></td></tr></table></figure>
+<p>在<code>effect</code>中我们将<code>body.innerText</code>与<code>obj.text</code>的值绑定在了一起。</p>
+<hr />
+<h2 id="朴素做法"><a class="markdownIt-Anchor" href="#朴素做法"></a> 朴素做法</h2>
+<p>我们的所希望的是<code>body.innerText</code>总是显示<code>obj.text</code>，要达到这个效果，只要每次修改<code>obj.text</code>的时候都调用一次effect就行了。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> obj = &#123; <span class="attr">text</span>: <span class="string">&#x27;nihao&#x27;</span> &#125;</span><br><span class="line"><span class="comment">// effect函数执行会读取obj.text</span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">effect</span>(<span class="params"></span>) &#123;</span><br><span class="line">  <span class="variable language_">document</span>.<span class="property">body</span>.<span class="property">innerText</span> = obj.<span class="property">text</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="title function_">effect</span>()</span><br><span class="line"></span><br><span class="line">obj.<span class="property">text</span> = <span class="string">&quot;hello&quot;</span></span><br><span class="line"><span class="title function_">effect</span>()</span><br><span class="line"></span><br><span class="line">obj.<span class="property">text</span> = <span class="string">&quot;like&quot;</span></span><br><span class="line"><span class="title function_">effect</span>()</span><br><span class="line">...</span><br></pre></td></tr></table></figure>
+<p>这未免也有些太麻烦了，我们是否可以让js智能一点？</p>
+<p>在每次<strong>修改</strong><code>obj</code>的时候调用一下所有会<strong>读取</strong><code>obj</code>内容的副作用函数。</p>
+<p>这样我们就把<code>obj</code>变成了所谓的<strong>响应式数据</strong>。</p>
+<hr />
+<h2 id="基本实现响应式数据"><a class="markdownIt-Anchor" href="#基本实现响应式数据"></a> 基本实现响应式数据</h2>
+<p>按照前面的说法，我们需要在<code>obj</code>被读取的时候，把这个函数给记录下来，作为<code>obj</code>的副作用函数。</p>
+<p>在<code>obj</code>被修改的时候，把之前记录下来的关于它的副作用函数再调用一遍。</p>
+<p>接下来的关键在于如何拦截<code>obj</code>的读取和修改操作。</p>
+<hr />
+<p><code>Vue.js 3</code>使用ES2015+中的代理对象<code>Proxy</code>来实现这个拦截操作。</p>
+<h3 id="proxy代理对象"><a class="markdownIt-Anchor" href="#proxy代理对象"></a> Proxy代理对象</h3>
+<p>根据<a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Proxy/Proxy">MDN文档</a>中对<code>Proxy</code>的说明:</p>
+<h4 id="语法"><a class="markdownIt-Anchor" href="#语法"></a> 语法</h4>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">new</span> <span class="title class_">Proxy</span>(target, handler)</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p><code>Proxy</code>会对<code>target</code>(可以是任意类型)进行包装，最后返回一个<code>Proxy</code>对象。</p>
+</blockquote>
+<blockquote>
+<p><code>handler</code>: 一个对象，其属性是定义了在对代理执行操作时的行为的函数。</p>
+</blockquote>
+<p>正常情况下我们不能拦截<code>target</code>的一些行为，但我们使用<code>Proxy</code>把它&quot;<strong>绑架</strong>&quot;之后，返回的一个跟它一模一样的<code>Proxy</code>对象就可以被我们拦截了。</p>
+<hr />
+<p>在这里我们只拦截对<code>target</code>的<strong>读取</strong>和<strong>修改</strong>操作。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 存储当前的副作用函数</span></span><br><span class="line"><span class="keyword">let</span> activeEffect</span><br><span class="line"></span><br><span class="line"><span class="comment">// effect用于注册副作用函数</span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">effect</span>(<span class="params">fn</span>) &#123;</span><br><span class="line">    activeEffect = fn</span><br><span class="line">    <span class="title function_">fn</span>()</span><br><span class="line">    activeEffect = <span class="literal">null</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">// 使用Set来存储副作用函数</span></span><br><span class="line"><span class="keyword">const</span> effectFuncs = <span class="keyword">new</span> <span class="title class_">Set</span>()</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> data = &#123; <span class="attr">text</span>: <span class="string">&#x27;nihao&#x27;</span> &#125;</span><br><span class="line"><span class="comment">// 劫持data</span></span><br><span class="line"><span class="keyword">const</span> obj = <span class="keyword">new</span> <span class="title class_">Proxy</span>(data, &#123;</span><br><span class="line">    <span class="comment">// 拦截读取操作</span></span><br><span class="line">    <span class="title function_">get</span>(<span class="params">target, key</span>) &#123;</span><br><span class="line">        <span class="comment">// 记录副作用函数</span></span><br><span class="line">        effectFuncs.<span class="title function_">add</span>(activeEffect)</span><br><span class="line">        <span class="comment">// 返回属性</span></span><br><span class="line">        <span class="keyword">return</span> target[key]</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="comment">// 拦截修改操作</span></span><br><span class="line">    <span class="title function_">set</span>(<span class="params">target, key, newVal</span>) &#123;</span><br><span class="line">        <span class="comment">// 先修改</span></span><br><span class="line">        target[key] = newVal</span><br><span class="line">        <span class="comment">// 再调用所有副作用函数</span></span><br><span class="line">        effectFuncs.<span class="title function_">forEach</span>(<span class="function"><span class="params">fn</span> =&gt;</span> <span class="title function_">fn</span>())</span><br><span class="line">        <span class="comment">// 表示设置成功</span></span><br><span class="line">        <span class="keyword">return</span> <span class="literal">true</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"><span class="comment">// 一个匿名的副作用函数, 用于更新页面</span></span><br><span class="line"><span class="title function_">effect</span>(<span class="function">() =&gt;</span> &#123;</span><br><span class="line">    <span class="variable language_">document</span>.<span class="property">body</span>.<span class="property">innerText</span> = obj.<span class="property">text</span></span><br><span class="line">&#125;)</span><br><span class="line"><span class="comment">// 修改响应式数据</span></span><br><span class="line"><span class="built_in">setTimeout</span>(<span class="function">() =&gt;</span> &#123;</span><br><span class="line">    obj.<span class="property">text</span> = <span class="string">&#x27;hello&#x27;</span></span><br><span class="line">&#125;, <span class="number">2000</span>)</span><br></pre></td></tr></table></figure>
+<p>当页面运行的时候第一个副作用函数被调用，把<code>obj.text</code>绑定到<code>body.innerText</code>上，</p>
+<p>同时将这个副作用函数放到<code>Set</code>内，以便以后调用。</p>
+<p>当时间经过2s后，<code>obj</code>受到修改，同时调用与之相关的副作用函数(也就是前一个绑定<code>obj.text</code>到<code>body.innerText</code>的副作用函数)，更新<code>body.innerText</code>的值。</p>
+<hr />
+<p>细心的读者可能发现上面的代码有些不合适，我们的劫持操作是对<code>obj</code>整个对象来做的</p>
+<p>同时副作用函数也绑定在整个对象上。</p>
+<p>如果我们修改<code>obj</code>对象，但是我们修改的是<code>obj</code>别的属性(例如<code>value</code>)，似乎也会触发对<code>set()</code>的劫持，把所有绑定到<code>obj</code>上的副作用函数都调用一遍。</p>
+<p>我们应该让副作用函数跟对象的属性绑定在一起，如下图的结构:</p>
+<p><a target="_blank" rel="noopener" href="https://imgse.com/i/pFHzCL9"><img src="https://s21.ax1x.com/2024/04/03/pFHzCL9.jpg" class="lazyload" data-srcset="https://s21.ax1x.com/2024/04/03/pFHzCL9.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="结构图" /></a></p>
+<p><code>effect1</code>和<code>effect2</code>会读取<code>obj1.text</code>属性，所以在修改<code>obj1.text</code>属性的时候应该执行这两个函数。</p>
+<p><code>effect1</code>和<code>effect3</code>会读取<code>obj1.value</code>属性，所以在修改<code>obj1.value</code>属性的时候应该执行这两个函数。</p>
+<p>现在修改一下上面的代码:</p>
+<p>只存储涉及副作用函数的对象和属性，并不是追踪所有属性。</p>
+<p>下文所有对象、属性都为跟副作用函数的有关的对象和属性</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> activeEffect</span><br><span class="line"><span class="comment">// 存储对象，对象-&gt;属性</span></span><br><span class="line"><span class="keyword">const</span> bucket = <span class="keyword">new</span> <span class="title class_">WeakMap</span>() <span class="comment">// 后文解释为什么这里用WeakMap</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> obj = <span class="keyword">new</span> <span class="title class_">Proxy</span>(data, &#123;</span><br><span class="line">  <span class="title function_">get</span>(<span class="params">target, key</span>) &#123;</span><br><span class="line">    <span class="comment">// 将当前对象的属性和副作用函数关联</span></span><br><span class="line">    <span class="title function_">track</span>(target, key);</span><br><span class="line">    <span class="keyword">return</span> target[key];</span><br><span class="line">  &#125;,</span><br><span class="line"></span><br><span class="line">  <span class="title function_">set</span>(<span class="params">target, key, newVal</span>) &#123;</span><br><span class="line">    target[key] = newVal;</span><br><span class="line">    <span class="comment">// 当属性发生变化时，触发所有副作用函数</span></span><br><span class="line">    <span class="title function_">trigger</span>(target, key);</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">track</span>(<span class="params">target, key</span>) &#123;</span><br><span class="line">  <span class="comment">// 不是通过副作用函数读取的属性，直接return</span></span><br><span class="line">  <span class="keyword">if</span> (!activeEffect) <span class="keyword">return</span> target[key];</span><br><span class="line">  <span class="comment">// 获取当前target的属性，depsMap类型为Map，存储属性-&gt;副作用函数</span></span><br><span class="line">  <span class="keyword">let</span> depsMap = bucket.<span class="title function_">get</span>(target);</span><br><span class="line">  <span class="comment">// 当前对象还没有属性</span></span><br><span class="line">  <span class="keyword">if</span> (!depsMap) &#123;</span><br><span class="line">    bucket.<span class="title function_">set</span>(target, (depsMap = <span class="keyword">new</span> <span class="title class_">Map</span>()));</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">// 获取当前属性的副作用函数，类型为Set，存储副作用函数</span></span><br><span class="line">  <span class="keyword">let</span> deps = depsMap.<span class="title function_">get</span>(key);</span><br><span class="line">  <span class="comment">// 当前属性还没有存储副作用函数</span></span><br><span class="line">  <span class="keyword">if</span> (!deps) &#123;</span><br><span class="line">    depsMap.<span class="title function_">set</span>(key, (deps = <span class="keyword">new</span> <span class="title class_">Set</span>()));</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">// 将当前副作用函数存储进Set中</span></span><br><span class="line">  deps.<span class="title function_">add</span>(activeEffect);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">trigger</span>(<span class="params">target, key</span>) &#123;</span><br><span class="line">  <span class="comment">// 获得当前对象的属性</span></span><br><span class="line">  <span class="keyword">const</span> depsMap = bucket.<span class="title function_">get</span>(target);</span><br><span class="line">  <span class="comment">// 当前对象不存在涉及副作用函数的属性</span></span><br><span class="line">  <span class="keyword">if</span> (!depsMap) <span class="keyword">return</span>;</span><br><span class="line">  <span class="comment">// 获得当前属性的副作用函数</span></span><br><span class="line">  <span class="keyword">const</span> effects = depsMap.<span class="title function_">get</span>(key);</span><br><span class="line">  effects &amp;&amp; effects.<span class="title function_">forEach</span>(<span class="function"><span class="params">fn</span> =&gt;</span> <span class="title function_">fn</span>());</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<hr />
+<h3 id="weakmap"><a class="markdownIt-Anchor" href="#weakmap"></a> weakMap</h3>
+<p>根据<a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/WeakMap">MDN文档</a>中对weakMap的说明:</p>
+<p>weakMap和Map很相似，但区别在于</p>
+<blockquote>
+<ul>
+<li>不会阻止垃圾回收，直到垃圾回收器移除了键对象的引用</li>
+<li>任何值都可以被垃圾回收，只要它们的键对象没有被 <code>WeakMap</code> 以外的地方引用</li>
+</ul>
+</blockquote>
+<p>weakMap不会阻止它的键被垃圾回收，一旦键的生命周期结束，键被垃圾回收了，那么weakMap的键值对也都会被回收。</p>
+<p>我们使用<code>weakMap</code>存储对象-&gt;属性的原因也在于此。</p>
+<p>如果这个响应式数据被<strong>销毁了</strong>或是<strong>生命周期结束</strong>了，那么它所存储的那些副作用函数都应该被<strong>释放</strong>。这样才能避免发生<strong>内存泄露</strong>。</p>
+<hr />
+<p>现在让我们来尝试使用一下这个简单的响应式数据。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">./index.html</span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;div1&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;div2&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;./js/my.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">./js/my.<span class="property">js</span></span><br><span class="line"><span class="keyword">const</span> data = &#123;<span class="attr">text</span>: <span class="string">&#x27;nihao&#x27;</span>, <span class="attr">value</span>: <span class="number">1</span>&#125;;</span><br><span class="line">...</span><br><span class="line"><span class="keyword">const</span> div1 = <span class="variable language_">document</span>.<span class="title function_">querySelector</span>(<span class="string">&#x27;.div1&#x27;</span>);</span><br><span class="line"><span class="keyword">const</span> div2 = <span class="variable language_">document</span>.<span class="title function_">querySelector</span>(<span class="string">&#x27;.div2&#x27;</span>);</span><br><span class="line"></span><br><span class="line"><span class="title function_">effect</span>(<span class="keyword">function</span> <span class="title function_">effect1</span>(<span class="params"></span>) &#123;</span><br><span class="line">    div1.<span class="property">innerHTML</span> = obj.<span class="property">text</span>;</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="title function_">effect</span>(<span class="keyword">function</span> <span class="title function_">effect2</span>(<span class="params"></span>) &#123;</span><br><span class="line">    div2.<span class="property">innerHTML</span> = obj.<span class="property">value</span>;</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="built_in">setTimeout</span>(<span class="function">() =&gt;</span> &#123;</span><br><span class="line">    obj.<span class="property">text</span> = <span class="string">&#x27;hello world&#x27;</span>;</span><br><span class="line">&#125;, <span class="number">1000</span>);</span><br><span class="line"></span><br><span class="line"><span class="built_in">setTimeout</span>(<span class="function">() =&gt;</span> &#123;</span><br><span class="line">    obj.<span class="property">value</span> = <span class="number">2</span>;</span><br><span class="line">&#125;, <span class="number">2000</span>);</span><br></pre></td></tr></table></figure>
+<p><code>effect1</code>和<code>effect2</code>被注册为副作用函数。</p>
+<p>在读取<code>obj.text</code>和<code>obj.value</code>的时候被<code>get</code>方法劫持，将对应的副作用函数与<code>obj</code>对应的属性绑定。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">obj -&gt; text -&gt; effect1</span><br><span class="line">    |</span><br><span class="line">    |</span><br><span class="line">    -&gt; value -&gt; effect2</span><br></pre></td></tr></table></figure>
+<p>过了1s之后，修改<code>obj.text</code>的值，被<code>set</code>方法劫持，得到<code>text</code>属性对应的所有副作用函数<code>effect1</code>，重新执行<code>effect1</code>函数，更新页面。</p>
+<p>过了2s之后，修改<code>obj.value</code>的值，被<code>set</code>方法劫持，得到<code>value</code>属性对应的所有副作用函数<code>effect2</code>，重新执行<code>effect2</code>函数，更新页面。</p>
+<hr />
+<h2 id="优化分支切换"><a class="markdownIt-Anchor" href="#优化分支切换"></a> 优化分支切换</h2>
+<h3 id="分支切换"><a class="markdownIt-Anchor" href="#分支切换"></a> 分支切换</h3>
+<p>也许我们可能会根据对象的某个属性的值来执行不同的操作，如果某个操作分支当中又发生了<code>get</code>操作，那么可能会产生遗留的副作用函数。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> data = &#123;<span class="attr">text</span>: <span class="string">&#x27;hello world&#x27;</span>, <span class="attr">ok</span>: <span class="literal">true</span>&#125;;</span><br><span class="line">...</span><br><span class="line"><span class="title function_">effect</span>(<span class="keyword">function</span> <span class="title function_">effect1</span>(<span class="params"></span>) &#123;</span><br><span class="line">    div1.<span class="property">innerHTML</span> = obj.<span class="property">ok</span> ? obj.<span class="property">text</span> : <span class="string">&#x27;not&#x27;</span>;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<p>这里的三元运算就产生了分支操作。</p>
+<p>当<code>obj.ok</code>的值为真时，读取<code>obj.text</code>的值，触发两次<code>get</code>操作(读取<code>ok</code>一次，读取<code>text</code>一次)，所以让effect1这个函数被绑定在<code>ok</code>和<code>text</code>属性上。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">obj -&gt; ok -&gt; effect1</span><br><span class="line">    |</span><br><span class="line">    |</span><br><span class="line">    -&gt; text -&gt; effect1</span><br></pre></td></tr></table></figure>
+<p>如果我们修改<code>obj.text</code>的值时，调用<code>effect1</code>函数，更新页面内容。</p>
+<p>如果我们修改<code>obj.ok</code>的值时，也会调用<code>effect1</code>函数</p>
+<p>但由于<code>ok</code>控制了分支切换，如果它为<code>false</code>，那么<code>div1</code>内容就是固定的<code>not</code>，与<code>obj.text</code>无关了。</p>
+<p>但由于<code>obj.text</code>仍然绑定着这个<code>effect1</code>副作用函数，修改<code>obj.text</code>仍然会重新执行<code>effect1</code>函数，尽管这并不会导致页面更新(因为<code>obj.ok</code>此时为<code>false</code>)。</p>
+<p>理想情况下我们希望在<code>obj.ok</code>为<code>false</code>的时候解除<code>obj.text</code>对<code>effect1</code>的绑定，因为<code>obj.text</code>已经与这个副作用函数脱钩了。</p>
+<hr />
+<p>解决的思路也简单，我们需要在每次<strong>副作用函数执行</strong>的时候<strong>先</strong>把它自己从所有<strong>与之有关的对象属性</strong>中删除，称为<code>cleanup</code>操作。</p>
+<p>在副作用函数执行的过程中重新把自己添加进相应的对象属性中。</p>
+<p>还是上面的例子:</p>
+<p><code>obj.ok</code>为<code>true</code>，读取了<code>obj.ok</code>与<code>obj.text</code>，所以把副作用函数绑定到了这两个属性上。</p>
+<p>接下来修改<code>obj.ok</code>为<code>false</code>，触发<code>set</code>方法，调用<code>effect1</code>函数。</p>
+<p>在调用的时候<strong>先把<code>effect1</code>从所有属性上脱离绑定</strong>，接着运行函数。</p>
+<p>触发对<code>obj.ok</code>的读取，触发<code>get</code>方法，把<code>effect1</code>重新注册到<code>obj.ok</code>属性上。</p>
+<p>读取到当前<code>obj.ok</code>为<code>false</code>，显示<code>not</code>。(不会触发读取<code>obj.text</code>的操作，因此<code>effect1</code>不会被注册到<code>obj.text</code>上了)</p>
+<hr />
+<p>接下来就是实现以上思路了。</p>
+<p>我们需要完成两个操作:</p>
+<ol>
+<li>收集<code>effect1</code>与哪些属性绑定的信息</li>
+<li>对绑定了<code>effect1</code>的属性进行<code>cleanup</code>操作</li>
+</ol>
+<p>既然要收集信息，所以我们要先创建一个<code>list</code>来用于存放相关的对象属性。</p>
+<p>修改一下注册副作用函数时的<code>effect</code>函数与<code>track</code>函数与<code>trigger</code>函数。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 存储当前的副作用函数</span></span><br><span class="line"><span class="keyword">let</span> activeEffect</span><br><span class="line"></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">effect</span>(<span class="params">fn</span>) &#123;</span><br><span class="line">    <span class="comment">// 清理副作用函数</span></span><br><span class="line">    <span class="keyword">function</span> <span class="title function_">cleanup</span>(<span class="params"></span>) &#123;</span><br><span class="line">        effectFn.<span class="property">deps</span>.<span class="title function_">forEach</span>(<span class="function"><span class="params">dep</span> =&gt;</span> &#123;</span><br><span class="line">            dep.<span class="title function_">delete</span>(effectFn);</span><br><span class="line">        &#125;);</span><br><span class="line">        effectFn.<span class="property">deps</span>.<span class="property">length</span> = <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">const</span> <span class="title function_">effectFn</span> = (<span class="params"></span>) =&gt; &#123;</span><br><span class="line">        <span class="title function_">cleanup</span>();</span><br><span class="line">        activeEffect = effectFn;</span><br><span class="line">        <span class="title function_">fn</span>();</span><br><span class="line">        activeEffect = <span class="literal">null</span>;</span><br><span class="line">    &#125;;</span><br><span class="line">    effectFn.<span class="property">deps</span> = [];</span><br><span class="line">    <span class="title function_">effectFn</span>();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">...</span><br><span class="line"><span class="comment">// 收集属性</span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">track</span>(<span class="params">target, key</span>) &#123;</span><br><span class="line">    ...</span><br><span class="line">    <span class="comment">// 收集当前属性包含的副作用函数，放到触发set操作的副作用函数的deps里</span></span><br><span class="line">    activeEffect.<span class="property">deps</span>.<span class="title function_">push</span>(deps);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">trigger</span>(<span class="params">target, key</span>) &#123;</span><br><span class="line">    ...</span><br><span class="line">    <span class="comment">// 创建一个新的effectsToRun来使用forEach，否则会在执行副作用函数的时候先cleanup接着再次添加进Set，这样子会进入死循环</span></span><br><span class="line">    <span class="keyword">const</span> effectsToRun = <span class="keyword">new</span> <span class="title class_">Set</span>(effects);</span><br><span class="line">    effectsToRun.<span class="title function_">forEach</span>(<span class="function"><span class="params">fn</span> =&gt;</span> <span class="title function_">fn</span>());</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<hr />
+<p>感谢您阅读到这里，本文就先写到这里吧。</p>
+<p>响应式系统还有更多复杂的内容，例如<code>effect</code>函数嵌套和调度执行，以及<code>computed</code>和<code>watch</code>等属性，这些内容以后再写写吧。</p>
+<blockquote>
+<p>我的理解和分析很大程度上得益于《Vue.js 设计与实现》一书 (作者:霍春阳)。书中对响应系统的实现原理进行了深入的讲解，为我撰写本文提供宝贵的参考。在此我向霍春阳先生表示衷心的感谢。</p>
+</blockquote>
+
   </div>
   
   
@@ -2550,10 +2639,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2024-04-02T21:48:34+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2024-04-05T03:27:39+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2024年4月2日</p>
+    <p>更新于：2024年4月5日</p>
   </a>
 </div>
 
@@ -2562,8 +2651,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           
   
-  <div class="new-meta-item meta-tags"><a class="tag" href="/xinonria.github.io/tags/Leetcode/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>Leetcode</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/xinonria.github.io/tags/%E4%BA%8C%E5%8F%89%E6%A0%91/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>二叉树</p></a></div>
-  <span hidden itemprop="keywords">Leetcode 二叉树</span>
+  <div class="new-meta-item meta-tags"><a class="tag" href="/xinonria.github.io/tags/%E5%89%8D%E7%AB%AF/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>前端</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/xinonria.github.io/tags/vue/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>vue</p></a></div>
+  <span hidden itemprop="keywords">前端 vue</span>
 
 
         
@@ -2576,7 +2665,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://xinonria.top/posts/f61fb787/&title=关于二叉树中序遍历 - Xinon's Blog&summary="
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://xinonria.top/posts/8feee3db/&title=手把手带你实现一个响应式系统 - Xinon's Blog&summary=本文探究了Vue.js中响应式系统的实现，通过介绍副作用函数与响应式数据，利用Proxy实现了一个相对完善的响应系统，同时讨论了分支切换导致冗余副作用的清理问题。"
           
           >
           
@@ -2588,7 +2677,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://xinonria.top/posts/f61fb787/&title=关于二叉树中序遍历 - Xinon's Blog&summary="
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://xinonria.top/posts/8feee3db/&title=手把手带你实现一个响应式系统 - Xinon's Blog&summary=本文探究了Vue.js中响应式系统的实现，通过介绍副作用函数与响应式数据，利用Proxy实现了一个相对完善的响应系统，同时讨论了分支切换导致冗余副作用的清理问题。"
           
           >
           
@@ -2600,7 +2689,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://service.weibo.com/share/share.php?url=https://xinonria.top/posts/f61fb787/&title=关于二叉树中序遍历 - Xinon's Blog&summary="
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://xinonria.top/posts/8feee3db/&title=手把手带你实现一个响应式系统 - Xinon's Blog&summary=本文探究了Vue.js中响应式系统的实现，通过介绍副作用函数与响应式数据，利用Proxy实现了一个相对完善的响应系统，同时讨论了分支切换导致冗余副作用的清理问题。"
           
           >
           
@@ -2633,26 +2722,17 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     <div class="prev-next">
       
-        <a class='prev' href='/xinonria.github.io/posts/aca79b6/'>
-          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>判断相同二叉树</p>
-          <p class='content'>一道较简单的Leetcode题，判断两个二叉树是否相同。
- 原题链接
-
- 数据范围
-
-两棵树上的节点数目都在范围 [0, 100] 内
--104 &lt;= Node.val &lt;= 104...</p>
-        </a>
       
-      
-        <a class='next' href='/xinonria.github.io/posts/119aaba8/'>
-          <p class='title'>hexo配置成功<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>花了两天时间终于成功把hexo+github托管的个人博客网站做完了。
-中途遇到了好多问题和障碍(哭
+        <a class='next' href='/xinonria.github.io/posts/c2eb3971/'>
+          <p class='title'>记一次痛苦流配置环境过程<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'> 对象
+GNN4EEG
+ 官方搭建过程
 
+Install Anaconda with Python &gt;= 3.5
+Clone the repository
 
-npm install安装时一直卡住
-参考了CSDN的解决办法，发现没用。后来发现淘宝源...</p>
+1git clone http...</p>
         </a>
       
     </div>
@@ -2668,7 +2748,7 @@ npm install安装时一直卡住
 
   <article class="post white-box shadow floatable blur" id="comments">
     <span hidden>
-      <meta itemprop="discussionUrl" content="/xinonria.github.io/posts/f61fb787/index.html#comments">
+      <meta itemprop="discussionUrl" content="/xinonria.github.io/posts/8feee3db/index.html#comments">
     </span>
     <p ct><i class='fa-solid fa-comments'></i> 评论</p>
     
@@ -2710,7 +2790,7 @@ npm install安装时一直卡住
 
 
     <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%AD%E5%BA%8F%E9%81%8D%E5%8E%86"><span class="toc-text"> 中序遍历</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%A0%88"><span class="toc-text"> 栈</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%80%9D%E8%B7%AF"><span class="toc-text"> 思路</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81-c"><span class="toc-text"> 代码 (C++)</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%B4%E7%B4%A0%E5%81%9A%E6%B3%95"><span class="toc-text"> 朴素做法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E5%AE%9E%E7%8E%B0%E5%93%8D%E5%BA%94%E5%BC%8F%E6%95%B0%E6%8D%AE"><span class="toc-text"> 基本实现响应式数据</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#proxy%E4%BB%A3%E7%90%86%E5%AF%B9%E8%B1%A1"><span class="toc-text"> Proxy代理对象</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%AF%AD%E6%B3%95"><span class="toc-text"> 语法</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#weakmap"><span class="toc-text"> weakMap</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BC%98%E5%8C%96%E5%88%86%E6%94%AF%E5%88%87%E6%8D%A2"><span class="toc-text"> 优化分支切换</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%86%E6%94%AF%E5%88%87%E6%8D%A2"><span class="toc-text"> 分支切换</span></a></li></ol></li></ol>
     </div>
   </section>
 
@@ -3900,7 +3980,7 @@ npm install安装时一直卡住
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Xinon's Blog","url":"https://xinonria.top/xinonria.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Xinon Zhang","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://xinonria.top/xinonria.github.io/","sameAs":["https://github.com/volantis-x"],"description":"一个用于学习记录的个人博客"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://xinonria.top/xinonria.github.io/","name":"Xinon's Blog"}},{"@type":"ListItem","position":3,"item":{"@id":"https://xinonria.top/xinonria.github.io/posts/f61fb787/","name":"关于二叉树中序遍历"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Xinon's Blog","url":"https://xinonria.top/xinonria.github.io/","keywords":null,"description":"一个用于学习记录的个人博客","author":{"@type":"Person","name":"Xinon Zhang","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://xinonria.top/xinonria.github.io/","description":"一个用于学习记录的个人博客"},"publisher":{"@type":"Organization","name":"Xinon's Blog","url":"https://xinonria.top/xinonria.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://xinonria.top?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"关于二叉树中序遍历","description":"一个用于学习记录的个人博客","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://xinonria.top/posts/f61fb787/"},"author":{"@type":"Person","name":"Xinon Zhang","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://xinonria.top/xinonria.github.io/"},"publisher":{"@type":"Organization","name":"Xinon's Blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://xinonria.top/posts/f61fb787/","wordCount":0,"datePublished":"2023-08-12T10:27:49.000Z","dateModified":"2024-04-02T13:48:34.841Z","keywords":"Leetcode,二叉树","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Xinon's Blog","url":"https://xinonria.top/xinonria.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Xinon Zhang","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://xinonria.top/xinonria.github.io/","sameAs":["https://github.com/volantis-x"],"description":"一个用于学习记录的个人博客"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://xinonria.top/xinonria.github.io/","name":"Xinon's Blog"}},{"@type":"ListItem","position":3,"item":{"@id":"https://xinonria.top/xinonria.github.io/posts/8feee3db/","name":"手把手带你实现一个响应式系统"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Xinon's Blog","url":"https://xinonria.top/xinonria.github.io/","keywords":null,"description":"一个用于学习记录的个人博客","author":{"@type":"Person","name":"Xinon Zhang","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://xinonria.top/xinonria.github.io/","description":"一个用于学习记录的个人博客"},"publisher":{"@type":"Organization","name":"Xinon's Blog","url":"https://xinonria.top/xinonria.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://xinonria.top?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"手把手带你实现一个响应式系统","description":"本文探究了Vue.js中响应式系统的实现，通过介绍副作用函数与响应式数据，利用Proxy实现了一个相对完善的响应系统，同时讨论了分支切换导致冗余副作用的清理问题。","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://xinonria.top/posts/8feee3db/"},"author":{"@type":"Person","name":"Xinon Zhang","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://xinonria.top/xinonria.github.io/"},"publisher":{"@type":"Organization","name":"Xinon's Blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://xinonria.top/posts/8feee3db/","wordCount":81,"datePublished":"2024-04-03T02:51:45.000Z","dateModified":"2024-04-04T19:27:39.083Z","keywords":"前端,vue","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 

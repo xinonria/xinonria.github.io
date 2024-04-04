@@ -5,8 +5,8 @@
   <meta name="Volantis" content="5.8.0">
   <meta charset="utf-8">
   <!-- SEO相关 -->
-  
-  <link rel="canonical" href="https://xinonria.top/posts/f61fb787/"/>
+  <meta name="robots" content="noindex,follow">
+  <link rel="canonical" href="https://xinonria.top/archives/2024/04/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -33,22 +33,18 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>关于二叉树中序遍历 - Xinon's Blog</title>
-  <meta name="keywords" content="Leetcode,二叉树,null">
+  <title>归档：2024/4 - Xinon's Blog</title>
+  <meta name="keywords" content="null">
   <meta desc name="description" content="一个用于学习记录的个人博客 - Xinon Zhang - Xinon's Blog">
   
-<meta property="og:type" content="article">
-<meta property="og:title" content="关于二叉树中序遍历">
-<meta property="og:url" content="https://xinonria.top/posts/f61fb787/index.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Xinon&#39;s Blog">
+<meta property="og:url" content="https://xinonria.top/archives/2024/04/index.html">
 <meta property="og:site_name" content="Xinon&#39;s Blog">
-<meta property="og:description" content="今天日常刷Leetcode刷到了一个二叉树中序遍历的题。原题链接  通过示例可以很明显了解到何为中序遍历，同时打算用栈结构来实现。  中序遍历 可以看作将节点投影到一个水平坐标轴上，从原点开始向右遍历。  如图顺序为:H-&gt;D-&gt;I-&gt;B-&gt;E-&gt;J-&gt;A-&gt;F-&gt;K-&gt;C-&gt;G  栈  栈遵循先进后出的原则。 把栈想象成一个桶：a1先入">
+<meta property="og:description" content="一个用于学习记录的个人博客">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-<meta property="article:published_time" content="2023-08-12T10:27:49.000Z">
-<meta property="article:modified_time" content="2024-04-02T13:48:34.841Z">
 <meta property="article:author" content="Xinon Zhang">
-<meta property="article:tag" content="Leetcode">
-<meta property="article:tag" content="二叉树">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
   <style>
@@ -2196,7 +2192,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <!-- Custom Files bodyBegin end-->
     <!-- front-matter body_begin begin -->
     <!-- front-matter body_begin end -->
-    <header itemscope itemtype="http://schema.org/WPHeader" id="l_header" class="l_header auto shadow floatable blur show" style='opacity: 0' >
+    <header itemscope itemtype="http://schema.org/WPHeader" id="l_header" class="l_header auto shadow floatable blur " style='opacity: 0' >
   <div class='container'>
   <div id='wrapper'>
     <div class='nav-sub'>
@@ -2363,7 +2359,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
-      <div id="none" class='cover-wrapper post dock' style="display: none;">
+      <div id="half" class='cover-wrapper  dock' style="display: ;">
         
   <div class='cover-bg lazyload placeholder' data-bg="https://gcore.jsdelivr.net/gh/MHG-LAB/cron@gh-pages/bing/bing.jpg"></div>
 
@@ -2419,8 +2415,22 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <div class="body-wrapper">
           
 <div id="l_main" class=''>
-  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
-  <link itemprop="mainEntityOfPage" href="https://xinonria.top/posts/f61fb787/">
+	
+		
+  <section class="post-list">
+    
+      
+        
+          
+        
+      
+    
+    
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="https://xinonria.top/posts/8feee3db/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Xinon's Blog">
   </span>
@@ -2429,259 +2439,55 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <meta itemprop="description" content="一个用于学习记录的个人博客">
   </span>
   
-
-
+  
   
     <span hidden>
       <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
     </span>
   
-  <div class="article-meta" id="top">
+  
     
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/xinonria.github.io/posts/8feee3db/"  itemprop="url">
+        手把手带你实现一个响应式系统
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
     
+      <p>本文探究了Vue.js中响应式系统的实现，通过介绍副作用函数与响应式数据，利用Proxy实现了一个相对完善的响应系统，同时讨论了分支切换导致冗余副作用的清理问题。</p>
     
-      <h1 class="title" itemprop="name headline">
-        关于二叉树中序遍历
-      </h1>
-      <div class='new-meta-box'>
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
         
-          
-            
-<div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
-  <a itemprop="url" class='author' href="/" rel="nofollow">
-    <img itemprop="image" src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/apple-touch-icon.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/apple-touch-icon.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
-    <p itemprop="name">请设置文章作者</p>
-  </a>
-</div>
-
-          
+        <time itemprop="dateCreated datePublished" datetime="2024-04-03T10:51:45+08:00">2024-04-03</time>
         
-          
-            
-
-          
-        
-          
-            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2023-08-12T18:27:49+08:00">
-  <a class='notlink'>
-    <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
-    <p>发布于：2023年8月12日</p>
-  </a>
-</div>
-
-          
-        
-          
-            
-
-
-<div class="new-meta-item browse">
-  <a class='notlink'>
-    <p>
-      <i class="fa-solid fa-eye fa-fw" aria-hidden="true"></i>
-      
-      <span data-path="/xinonria.github.io/posts/f61fb787/" class="waline-pageview-count">
-        <i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i>
-      </span>
-      
-      <span>次浏览</span>
-    </p>
-  </a>
-</div>
-
-
-          
-        
-        <!-- Custom Files topMeta begin-->
-        
-        <!-- Custom Files topMeta end-->
       </div>
-    
-  </div>
-
-
-  <div id="layoutHelper-page-plugins"></div>
-  <div id="post-body" itemprop="articleBody">
-    <p>今天日常刷Leetcode刷到了一个二叉树中序遍历的题。<a target="_blank" rel="noopener" href="https://leetcode.cn/problems/binary-tree-inorder-traversal/description/">原题链接</a></p>
-<p><img src="https://www.z4a.net/images/2023/08/12/image969eeb0431acff42.png" class="lazyload" data-srcset="https://www.z4a.net/images/2023/08/12/image969eeb0431acff42.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image.png" /></p>
-<p>通过示例可以很明显了解到何为中序遍历，同时打算用栈结构来实现。</p>
-<h4 id="中序遍历"><a class="markdownIt-Anchor" href="#中序遍历"></a> 中序遍历</h4>
-<p>可以看作将节点投影到一个水平坐标轴上，从原点开始向右遍历。<br />
-<img src="https://www.z4a.net/images/2023/08/12/image194664320ff4e02f.png" class="lazyload" data-srcset="https://www.z4a.net/images/2023/08/12/image194664320ff4e02f.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image.gif" /><br />
-如图顺序为:H-&gt;D-&gt;I-&gt;B-&gt;E-&gt;J-&gt;A-&gt;F-&gt;K-&gt;C-&gt;G</p>
-<h4 id="栈"><a class="markdownIt-Anchor" href="#栈"></a> 栈</h4>
-<p><img src="https://www.z4a.net/images/2023/08/12/image528190e58558130f.png" class="lazyload" data-srcset="https://www.z4a.net/images/2023/08/12/image528190e58558130f.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image.png" /></p>
-<p>栈遵循先进后出的原则。</p>
-<p>把栈想象成一个桶：a1先入栈，被压在最底下；然后a2再入栈，压在a1的上面……</p>
-<p>如何取出里面的数据呢？拿走最上面的元素，也就是出栈。被压在最底下的元素最后才能被拿出来。</p>
-<p>例如： 入栈顺序 = 1, 2, 3, 4<br />
-出栈顺序 = 4, 3, 2, 1</p>
-<p>明白概念之后就到了实现这个操作了。</p>
-<h4 id="思路"><a class="markdownIt-Anchor" href="#思路"></a> 思路</h4>
-<p>我使用了栈结构以及访问标记来实现。每个节点都附带一个名为visited的bool值（默认false)。</p>
-<p>先让根节点入栈（栈里面没元素怎么出栈）</p>
-<p>然后一直循环直到栈内元素全部出来。</p>
-<p>中途如果发现是空节点就continue回到循环开始的地方。</p>
-<p>如果这个节点没被访问过，那么就先标记一下已被访问<code>visited=true</code>。</p>
-<p>然后分别按顺序让右节点-&gt;当前节点-&gt;左节点入栈。（因为要中序遍历，所以如此入栈后出栈的顺序就是左节点-&gt;当前节点-&gt;右节点）</p>
-<p>如果当前节点已经访问过了，那么就直接返回当前节点的值。</p>
-<h4 id="代码-c"><a class="markdownIt-Anchor" href="#代码-c"></a> 代码 (C++)</h4>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;vector&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stack&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;unordered_map&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="comment">//二叉树定义</span></span><br><span class="line"><span class="keyword">struct</span> <span class="title class_">TreeNode</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="type">int</span> val;</span><br><span class="line">	TreeNode* left;</span><br><span class="line">	TreeNode* right;</span><br><span class="line">	<span class="built_in">TreeNode</span>() : <span class="built_in">val</span>(<span class="number">0</span>), <span class="built_in">left</span>(<span class="literal">nullptr</span>), <span class="built_in">right</span>(<span class="literal">nullptr</span>) &#123;&#125;</span><br><span class="line">	<span class="built_in">TreeNode</span>(<span class="type">int</span> x) : <span class="built_in">val</span>(x), <span class="built_in">left</span>(<span class="literal">nullptr</span>), <span class="built_in">right</span>(<span class="literal">nullptr</span>) &#123;&#125;</span><br><span class="line">	<span class="built_in">TreeNode</span>(<span class="type">int</span> x, TreeNode* left, TreeNode* right) : <span class="built_in">val</span>(x), <span class="built_in">left</span>(left), <span class="built_in">right</span>(right) &#123;&#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span></span><br><span class="line">&#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">	<span class="function">vector&lt;<span class="type">int</span>&gt; <span class="title">inorderTraversal</span><span class="params">(TreeNode* root)</span></span></span><br><span class="line"><span class="function">	</span>&#123;</span><br><span class="line">		stack&lt;TreeNode*&gt; s;   <span class="comment">//栈，存储每个节点的地址</span></span><br><span class="line">		unordered_map&lt;TreeNode*, <span class="type">bool</span>&gt; umap&#123;&#123;<span class="literal">nullptr</span>, <span class="literal">false</span>&#125;&#125;;  <span class="comment">//visited表，判断当前节点是否访问过，初始化全为false</span></span><br><span class="line">		vector&lt;<span class="type">int</span>&gt; res;   <span class="comment">//答案结果</span></span><br><span class="line">		s.<span class="built_in">push</span>(root);   <span class="comment">//根节点入栈</span></span><br><span class="line">		TreeNode* temp;   <span class="comment">//当前节点</span></span><br><span class="line">		<span class="keyword">while</span> (!s.<span class="built_in">empty</span>())</span><br><span class="line">		&#123;</span><br><span class="line">			temp = s.<span class="built_in">top</span>();</span><br><span class="line">			s.<span class="built_in">pop</span>();            <span class="comment">//取得栈顶的元素</span></span><br><span class="line">			<span class="keyword">if</span> (!temp) <span class="keyword">continue</span>;  <span class="comment">//节点为空就continue</span></span><br><span class="line">			<span class="keyword">if</span> (umap[temp]) res.<span class="built_in">push_back</span>(temp-&gt;val);     <span class="comment">//当前节点已被访问过，返回节点的值</span></span><br><span class="line">			<span class="keyword">else</span></span><br><span class="line">			&#123;</span><br><span class="line">				umap[temp] = <span class="literal">true</span>;      <span class="comment">//标记已被访问</span></span><br><span class="line">				s.<span class="built_in">push</span>(temp-&gt;right);</span><br><span class="line">				s.<span class="built_in">push</span>(temp);</span><br><span class="line">				s.<span class="built_in">push</span>(temp-&gt;left);</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">return</span> res;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-  </div>
-  
-  
-    
-    <div class='footer'>
-       <!-- 参考资料、相关资料等 -->
       
-       <!-- 相关文章 -->
-      
-      <!-- 版权声明组件 -->
-      
-      <!-- 打赏组件 -->
+        <div>
+          <a class='readmore' href='/xinonria.github.io/posts/8feee3db/' itemprop="url">
+            阅读全文
+          </a>
+        </div>
       
     </div>
   
-  
-    
 
-
-  <div class='article-meta' id="bottom">
-    <div class='new-meta-box'>
-      
-        
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2024-04-02T21:48:34+08:00">
-  <a class='notlink'>
-    <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2024年4月2日</p>
-  </a>
 </div>
 
+          </div>
         
       
-        
-          
+    
+  </section>
   
-  <div class="new-meta-item meta-tags"><a class="tag" href="/xinonria.github.io/tags/Leetcode/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>Leetcode</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/xinonria.github.io/tags/%E4%BA%8C%E5%8F%89%E6%A0%91/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>二叉树</p></a></div>
-  <span hidden itemprop="keywords">Leetcode 二叉树</span>
-
-
-        
-      
-        
-          
-  <div class="new-meta-item share -mob-share-list">
-  <div class="-mob-share-list share-body">
     
-      
-        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
-          
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://xinonria.top/posts/f61fb787/&title=关于二叉树中序遍历 - Xinon's Blog&summary="
-          
-          >
-          
-            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qq.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qq.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
-          
-        </a>
-      
-    
-      
-        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
-          
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://xinonria.top/posts/f61fb787/&title=关于二叉树中序遍历 - Xinon's Blog&summary="
-          
-          >
-          
-            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qzone.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qzone.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
-          
-        </a>
-      
-    
-      
-        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
-          
-          target="_blank" href="http://service.weibo.com/share/share.php?url=https://xinonria.top/posts/f61fb787/&title=关于二叉树中序遍历 - Xinon's Blog&summary="
-          
-          >
-          
-            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/weibo.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/weibo.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
-          
-        </a>
-      
-    
-      
-    
-      
-    
-  </div>
-</div>
-
-
-
-        
-      
-    </div>
-    <!-- Custom Files bottomMeta begin -->
-    
-    <!-- Custom Files bottomMeta end -->
-  </div>
-
-
-  
-  
-
-  
-    <div class="prev-next">
-      
-        <a class='prev' href='/xinonria.github.io/posts/aca79b6/'>
-          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>判断相同二叉树</p>
-          <p class='content'>一道较简单的Leetcode题，判断两个二叉树是否相同。
- 原题链接
-
- 数据范围
-
-两棵树上的节点数目都在范围 [0, 100] 内
--104 &lt;= Node.val &lt;= 104...</p>
-        </a>
-      
-      
-        <a class='next' href='/xinonria.github.io/posts/119aaba8/'>
-          <p class='title'>hexo配置成功<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>花了两天时间终于成功把hexo+github托管的个人博客网站做完了。
-中途遇到了好多问题和障碍(哭
-
-
-npm install安装时一直卡住
-参考了CSDN的解决办法，发现没用。后来发现淘宝源...</p>
-        </a>
-      
-    </div>
-  
-  <!-- Custom Files postEnd begin-->
-  
-  <!-- Custom Files postEnd end-->
-</article>
-
-
   
 
 
-  <article class="post white-box shadow floatable blur" id="comments">
-    <span hidden>
-      <meta itemprop="discussionUrl" content="/xinonria.github.io/posts/f61fb787/index.html#comments">
-    </span>
-    <p ct><i class='fa-solid fa-comments'></i> 评论</p>
-    
-
-    <div id="layoutHelper-comments"></div>
-
-  </article>
-
-
-
-
-
-
+	
 </div>
 <aside id='l_side' itemscope itemtype="http://schema.org/WPSideBar">
   
@@ -2690,48 +2496,103 @@ npm install安装时一直卡住
     
     
       
+<section class="widget blogger desktop mobile pjax">
+  <div class='content'>
+    
+      
+        <a class='avatar flat-box rectangle' href='/xinonria.github.io/about/'>
+          <img no-lazy src='/images/logo.png'/>
+        </a>
+      
+    
+    
+      <div class='text'>
+        
+        
+        
+          <p><span id="jinrishici-sentence">Xinon's Blog</span></p>
+          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+        
+      </div>
+    
+    
+      <div class="social-wrapper">
+        
+          
+            <a href="mailto:znysg@outlook.com"
+              class="social fa-solid fa-envelope flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+              
+            </a>
+          
+        
+          
+            <a href="https://github.com/xinonria"
+              class="social fab fa-github flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+              
+            </a>
+          
+        
+          
+            <a href="/xinonria.github.io/"
+              class="social fa-solid fa-headphones-alt flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+              
+            </a>
+          
+        
+      </div>
+    
+  </div>
+</section>
+
     
   
 
+  
+    
+    
+      
 
-<div class="widget-sticky pjax">
+    
+  
 
   
+    
+    
+      
   
-
-
-  <section class="widget toc-wrapper desktop mobile " id="toc-div" >
+  <section class="widget tagcloud desktop mobile pjax">
     
   <header>
     
-      <i class="fa-solid fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+      <a href='/blog/tags/'><i class="fa-solid fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
     
   </header>
 
 
     <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%AD%E5%BA%8F%E9%81%8D%E5%8E%86"><span class="toc-text"> 中序遍历</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%A0%88"><span class="toc-text"> 栈</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%80%9D%E8%B7%AF"><span class="toc-text"> 思路</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81-c"><span class="toc-text"> 代码 (C++)</span></a></li></ol>
+      <a href="/xinonria.github.io/tags/Blog/" style="font-size: 16px; color: #8b8b8b">Blog</a> <a href="/xinonria.github.io/tags/C/" style="font-size: 20px; color: #707070">C#</a> <a href="/xinonria.github.io/tags/Leetcode/" style="font-size: 22px; color: #636363">Leetcode</a> <a href="/xinonria.github.io/tags/MATLAB/" style="font-size: 16px; color: #8b8b8b">MATLAB</a> <a href="/xinonria.github.io/tags/codeforces/" style="font-size: 16px; color: #8b8b8b">codeforces</a> <a href="/xinonria.github.io/tags/hexo/" style="font-size: 14px; color: #999">hexo</a> <a href="/xinonria.github.io/tags/machine-learning/" style="font-size: 14px; color: #999">machine_learning</a> <a href="/xinonria.github.io/tags/python/" style="font-size: 16px; color: #8b8b8b">python</a> <a href="/xinonria.github.io/tags/react/" style="font-size: 16px; color: #8b8b8b">react</a> <a href="/xinonria.github.io/tags/vscode/" style="font-size: 14px; color: #999">vscode</a> <a href="/xinonria.github.io/tags/vue/" style="font-size: 14px; color: #999">vue</a> <a href="/xinonria.github.io/tags/%E4%BA%8C%E5%8F%89%E6%A0%91/" style="font-size: 22px; color: #636363">二叉树</a> <a href="/xinonria.github.io/tags/%E4%BA%8C%E8%BF%9B%E5%88%B6/" style="font-size: 14px; color: #999">二进制</a> <a href="/xinonria.github.io/tags/%E4%BD%8D%E6%93%8D%E4%BD%9C/" style="font-size: 18px; color: #7e7e7e">位操作</a> <a href="/xinonria.github.io/tags/%E5%89%8D%E7%AB%AF/" style="font-size: 16px; color: #8b8b8b">前端</a> <a href="/xinonria.github.io/tags/%E5%89%8D%E7%BC%80%E5%92%8C/" style="font-size: 14px; color: #999">前缀和</a> <a href="/xinonria.github.io/tags/%E5%91%A8%E8%B5%9B/" style="font-size: 14px; color: #999">周赛</a> <a href="/xinonria.github.io/tags/%E5%93%88%E5%B8%8C%E8%A1%A8/" style="font-size: 14px; color: #999">哈希表</a> <a href="/xinonria.github.io/tags/%E5%B0%8F%E5%B7%A5%E5%85%B7/" style="font-size: 14px; color: #999">小工具</a> <a href="/xinonria.github.io/tags/%E5%B7%A5%E5%85%B7/" style="font-size: 14px; color: #999">工具</a> <a href="/xinonria.github.io/tags/%E6%8C%87%E9%92%88/" style="font-size: 14px; color: #999">指针</a> <a href="/xinonria.github.io/tags/%E6%95%B0%E5%AD%A6/" style="font-size: 14px; color: #999">数学</a> <a href="/xinonria.github.io/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" style="font-size: 24px; color: #555">数据结构</a> <a href="/xinonria.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%8E%9F%E7%90%86/" style="font-size: 14px; color: #999">计算机原理</a> <a href="/xinonria.github.io/tags/%E9%80%92%E5%BD%92/" style="font-size: 14px; color: #999">递归</a> <a href="/xinonria.github.io/tags/%E9%93%BE%E8%A1%A8/" style="font-size: 14px; color: #999">链表</a> <a href="/xinonria.github.io/tags/%E9%AB%98%E7%B2%BE%E5%BA%A6/" style="font-size: 14px; color: #999">高精度</a>
     </div>
   </section>
 
+
+    
   
+
+  
+
+
+<div class="widget-sticky pjax">
 
 </div>
 
 
 <!-- 没有 pjax 占位会报错 万恶的 pjax -->
-
-  <div class="pjax">
-    <!-- pjax占位 -->
-  </div>
-
-  <div class="pjax">
-    <!-- pjax占位 -->
-  </div>
-
-  <div class="pjax">
-    <!-- pjax占位 -->
-  </div>
 
   <div class="pjax">
     <!-- pjax占位 -->
@@ -2759,14 +2620,13 @@ npm install安装时一直卡住
 </aside>
 
 
-
           <!--此文件用来存放一些不方便取值的变量-->
 <!--思路大概是将值藏到重加载的区域内-->
 
 <pjax>
 <script>
   window.pdata={}
-  pdata.ispage=true;
+  pdata.ispage=false;
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};
@@ -2775,14 +2635,14 @@ npm install安装时一直卡住
     // header
     var l_header=document.getElementById("l_header");
     
-    l_header.classList.add("show");
+    l_header.classList.remove("show");
     
     
       // cover
       var cover_wrapper=document.querySelector('#l_cover .cover-wrapper');
       var scroll_down=document.getElementById('scroll-down');
-      cover_wrapper.id="none";
-      cover_wrapper.style.display="none";
+      cover_wrapper.id="half";
+      cover_wrapper.style.display="";
       scroll_down.style.display="none";
     
   
@@ -3900,7 +3760,7 @@ npm install安装时一直卡住
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Xinon's Blog","url":"https://xinonria.top/xinonria.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Xinon Zhang","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://xinonria.top/xinonria.github.io/","sameAs":["https://github.com/volantis-x"],"description":"一个用于学习记录的个人博客"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://xinonria.top/xinonria.github.io/","name":"Xinon's Blog"}},{"@type":"ListItem","position":3,"item":{"@id":"https://xinonria.top/xinonria.github.io/posts/f61fb787/","name":"关于二叉树中序遍历"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Xinon's Blog","url":"https://xinonria.top/xinonria.github.io/","keywords":null,"description":"一个用于学习记录的个人博客","author":{"@type":"Person","name":"Xinon Zhang","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://xinonria.top/xinonria.github.io/","description":"一个用于学习记录的个人博客"},"publisher":{"@type":"Organization","name":"Xinon's Blog","url":"https://xinonria.top/xinonria.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://xinonria.top?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"关于二叉树中序遍历","description":"一个用于学习记录的个人博客","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://xinonria.top/posts/f61fb787/"},"author":{"@type":"Person","name":"Xinon Zhang","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://xinonria.top/xinonria.github.io/"},"publisher":{"@type":"Organization","name":"Xinon's Blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://xinonria.top/posts/f61fb787/","wordCount":0,"datePublished":"2023-08-12T10:27:49.000Z","dateModified":"2024-04-02T13:48:34.841Z","keywords":"Leetcode,二叉树","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Xinon's Blog","url":"https://xinonria.top/xinonria.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Xinon Zhang","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://xinonria.top/xinonria.github.io/","sameAs":["https://github.com/volantis-x"],"description":"一个用于学习记录的个人博客"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://xinonria.top/xinonria.github.io/","name":"Xinon's Blog"}},{"@type":"ListItem","position":2,"item":{"@id":"https://xinonria.top/xinonria.github.io/archives/","name":"Archive"}},{"@type":"ListItem","position":3,"item":{"@id":"https://xinonria.top/xinonria.github.io/archives/2024/","name":"2024年"}},{"@type":"ListItem","position":4,"item":{"@id":"https://xinonria.top/xinonria.github.io/archives/2024/4/","name":"4月"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Xinon's Blog","url":"https://xinonria.top/xinonria.github.io/","keywords":null,"description":"一个用于学习记录的个人博客","author":{"@type":"Person","name":"Xinon Zhang","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://xinonria.top/xinonria.github.io/","description":"一个用于学习记录的个人博客"},"publisher":{"@type":"Organization","name":"Xinon's Blog","url":"https://xinonria.top/xinonria.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://xinonria.top?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"一个用于学习记录的个人博客","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"Xinon Zhang","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://xinonria.top/xinonria.github.io/"},"publisher":{"@type":"Organization","name":"Xinon's Blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
