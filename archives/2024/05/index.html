@@ -5,8 +5,8 @@
   <meta name="Volantis" content="5.8.0">
   <meta charset="utf-8">
   <!-- SEO相关 -->
-  
-  <link rel="canonical" href="https://xinonria.top/posts/a381a14a/"/>
+  <meta name="robots" content="noindex,follow">
+  <link rel="canonical" href="https://xinonria.top/archives/2024/05/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -33,22 +33,18 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>C++中的哈希表 - Xinon's Blog</title>
-  <meta name="keywords" content="数据结构,哈希表,null">
+  <title>归档：2024/5 - Xinon's Blog</title>
+  <meta name="keywords" content="null">
   <meta desc name="description" content="一个用于学习记录的个人博客 - Xinon Zhang - Xinon's Blog">
   
-<meta property="og:type" content="article">
-<meta property="og:title" content="C++中的哈希表">
-<meta property="og:url" content="https://xinonria.top/posts/a381a14a/index.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Xinon&#39;s Blog">
+<meta property="og:url" content="https://xinonria.top/archives/2024/05/index.html">
 <meta property="og:site_name" content="Xinon&#39;s Blog">
-<meta property="og:description" content="最近刷题经常使用到哈希表。  哈希表 官方定义:  哈希表是根据关键码的值而直接进行访问的数据结构。  数组其实就是一张最基础的哈希表。 它的下标数字作为键(key)对应一个值(value)。 比如: a[key] &#x3D; value; 键不能相同，但值可以相同。 哈希表可以用来快速检索一个元素。 比如我们拿学生的名字作为键(key)，ta所在的宿舍作为值(key)。 我们要查询一个学生在哪个宿舍，只">
+<meta property="og:description" content="一个用于学习记录的个人博客">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-<meta property="article:published_time" content="2023-08-22T10:37:11.000Z">
-<meta property="article:modified_time" content="2024-04-02T13:48:34.827Z">
 <meta property="article:author" content="Xinon Zhang">
-<meta property="article:tag" content="数据结构">
-<meta property="article:tag" content="哈希表">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
   <style>
@@ -2196,7 +2192,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <!-- Custom Files bodyBegin end-->
     <!-- front-matter body_begin begin -->
     <!-- front-matter body_begin end -->
-    <header itemscope itemtype="http://schema.org/WPHeader" id="l_header" class="l_header auto shadow floatable blur show" style='opacity: 0' >
+    <header itemscope itemtype="http://schema.org/WPHeader" id="l_header" class="l_header auto shadow floatable blur " style='opacity: 0' >
   <div class='container'>
   <div id='wrapper'>
     <div class='nav-sub'>
@@ -2363,7 +2359,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
-      <div id="none" class='cover-wrapper post dock' style="display: none;">
+      <div id="half" class='cover-wrapper  dock' style="display: ;">
         
   <div class='cover-bg lazyload placeholder' data-bg="https://gcore.jsdelivr.net/gh/MHG-LAB/cron@gh-pages/bing/bing.jpg"></div>
 
@@ -2419,8 +2415,22 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <div class="body-wrapper">
           
 <div id="l_main" class=''>
-  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
-  <link itemprop="mainEntityOfPage" href="https://xinonria.top/posts/a381a14a/">
+	
+		
+  <section class="post-list">
+    
+      
+        
+          
+        
+      
+    
+    
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="https://xinonria.top/posts/de646dc/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Xinon's Blog">
   </span>
@@ -2429,301 +2439,55 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <meta itemprop="description" content="一个用于学习记录的个人博客">
   </span>
   
-
-
+  
   
     <span hidden>
       <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
     </span>
   
-  <div class="article-meta" id="top">
+  
     
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/xinonria.github.io/posts/de646dc/"  itemprop="url">
+        vue+fastapi搭建
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
     
+      <p>本文将一个Vue框架打包的资源挂载到Fastapi上，解决了assets文件404导致Vue页面白屏问题。</p>
     
-      <h1 class="title" itemprop="name headline">
-        C++中的哈希表
-      </h1>
-      <div class='new-meta-box'>
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
         
-          
-            
-<div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
-  <a itemprop="url" class='author' href="/" rel="nofollow">
-    <img itemprop="image" src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/apple-touch-icon.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/apple-touch-icon.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
-    <p itemprop="name">请设置文章作者</p>
-  </a>
-</div>
-
-          
+        <time itemprop="dateCreated datePublished" datetime="2024-05-22T00:07:21+08:00">2024-05-22</time>
         
-          
-            
-
-          
-        
-          
-            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2023-08-22T18:37:11+08:00">
-  <a class='notlink'>
-    <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
-    <p>发布于：2023年8月22日</p>
-  </a>
-</div>
-
-          
-        
-          
-            
-
-
-<div class="new-meta-item browse">
-  <a class='notlink'>
-    <p>
-      <i class="fa-solid fa-eye fa-fw" aria-hidden="true"></i>
-      
-      <span data-path="/xinonria.github.io/posts/a381a14a/" class="waline-pageview-count">
-        <i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i>
-      </span>
-      
-      <span>次浏览</span>
-    </p>
-  </a>
-</div>
-
-
-          
-        
-        <!-- Custom Files topMeta begin-->
-        
-        <!-- Custom Files topMeta end-->
       </div>
-    
-  </div>
-
-
-  <div id="layoutHelper-page-plugins"></div>
-  <div id="post-body" itemprop="articleBody">
-    <p>最近刷题经常使用到哈希表。</p>
-<h3 id="哈希表"><a class="markdownIt-Anchor" href="#哈希表"></a> 哈希表</h3>
-<p>官方定义:</p>
-<blockquote>
-<p>哈希表是根据关键码的值而直接进行访问的数据结构。</p>
-</blockquote>
-<p>数组其实就是一张最基础的哈希表。</p>
-<p>它的下标数字作为键(key)对应一个值(value)。</p>
-<p>比如:</p>
-<p><code>a[key] = value;</code></p>
-<p>键不能相同，但值可以相同。</p>
-<p>哈希表可以用来快速检索一个元素。</p>
-<p>比如我们拿学生的名字作为键(key)，ta所在的宿舍作为值(key)。</p>
-<p>我们要查询一个学生在哪个宿舍，只需要，</p>
-<p><code>dormitory = student[name]</code></p>
-<p>但是数组的下标访问本质是编程语言的一个语法糖。(详情见<a href="https://xinonria.top/2023/08/21/%E6%95%B0%E7%BB%84%E4%B8%8E%E6%8C%87%E9%92%88/">数组与指针</a>)</p>
-<p>而<code>name</code>大部分情况下并不是数字。</p>
-<p>所以我们需要一个哈希函数，能够把任意信息变成一串数字。</p>
-<p>例如:</p>
-<p><strong>小李</strong> ----&gt; <code>0</code><br />
-<strong>小王</strong> ----&gt; <code>1</code><br />
-<strong>小张</strong> ----&gt; <code>2</code><br />
-……</p>
-<p>然后再直接操纵下标就能读取数据了。</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 存储数据</span></span><br><span class="line">student[<span class="string">&quot;小李&quot;</span>] = <span class="string">&quot;c1&quot;</span>;</span><br><span class="line"><span class="comment">// 读取数据</span></span><br><span class="line">cout &lt;&lt; student[<span class="string">&quot;小李];</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">-----</span></span><br><span class="line"><span class="string">output:</span></span><br><span class="line"><span class="string">c1</span></span><br></pre></td></tr></table></figure>
-<p>但数字是有一定范围的，由于是从无穷集映射到有限集。</p>
-<p>所以有可能会出现不同的键映射到同一个索引。</p>
-<p>这就是哈希碰撞。</p>
-<h3 id="哈希碰撞"><a class="markdownIt-Anchor" href="#哈希碰撞"></a> 哈希碰撞</h3>
-<p>有两种方法解决这个问题。</p>
-<h4 id="拉链法"><a class="markdownIt-Anchor" href="#拉链法"></a> 拉链法</h4>
-<p>如果发生了哈希碰撞，可以将冲突的数据用链表连起来。</p>
-<p>这样就可以通过遍历来找出冲突的值。</p>
-<p>不过这样查找性能可能会产生损耗。</p>
-<p><img src="https://code-thinking-1253855093.file.myqcloud.com/pics/20210104235015226.png" class="lazyload" data-srcset="https://code-thinking-1253855093.file.myqcloud.com/pics/20210104235015226.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" /></p>
-<h4 id="线性探测法"><a class="markdownIt-Anchor" href="#线性探测法"></a> 线性探测法</h4>
-<p>如果发生哈希碰撞，将冲突的数据移去空位就行了。</p>
-<p>这样在插入数据时会产生性能损耗。</p>
-<p><img src="https://code-thinking-1253855093.file.myqcloud.com/pics/20210104235109950.png" class="lazyload" data-srcset="https://code-thinking-1253855093.file.myqcloud.com/pics/20210104235109950.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" /></p>
-<h3 id="c中的哈希表"><a class="markdownIt-Anchor" href="#c中的哈希表"></a> C++中的哈希表</h3>
-<p>C++的STL标准模版库中的unordered_map就是哈希表。</p>
-<p><s>map是基于红黑树实现的</s></p>
-<h4 id="定义"><a class="markdownIt-Anchor" href="#定义"></a> 定义</h4>
-<p><code>unordered_map&lt;string, string&gt; umap;</code></p>
-<h4 id="修改"><a class="markdownIt-Anchor" href="#修改"></a> 修改</h4>
-<p><code>umap[key] = value</code></p>
-<p>如果key不存在会创建一个。</p>
-<h4 id="查找"><a class="markdownIt-Anchor" href="#查找"></a> 查找</h4>
-<p><code>umap[key]</code></p>
-<p>直接访问key对应的value值。</p>
-<p><code>umap.find(key)</code></p>
-<p>返回指向符合要求key的迭代器，若未找到会返回<code>umap.end()</code>。</p>
-<p><code>umap.count(key)</code></p>
-<p>返回umap中对应key值的个数，返回1或0。常用于判断哈希表内是否存在某个key。</p>
-<p><code>umap.empty()</code></p>
-<p>如果哈希表为空返回<code>true</code>，反之为<code>false</code>。</p>
-<h4 id="删除"><a class="markdownIt-Anchor" href="#删除"></a> 删除</h4>
-<p><code>umap.erase(key)</code></p>
-<p>移除指定位置处的元素。</p>
-<p><code>umap.clear()</code></p>
-<p>删除所有元素。</p>
-<h4 id="迭代器"><a class="markdownIt-Anchor" href="#迭代器"></a> 迭代器</h4>
-<p><code>it-&gt;first</code></p>
-<p>it指向的键。</p>
-<p><code>it-&gt;second</code></p>
-<p>it指向的值。</p>
-<p><strong>注意，若想根据值来反查对应的键需要遍历整个哈希表！</strong></p>
-<h3 id="小结"><a class="markdownIt-Anchor" href="#小结"></a> 小结</h3>
-<p>这篇博客当个笔记来看，以后要用到什么函数就查一下。</p>
-
-  </div>
-  
-  
-    
-    <div class='footer'>
-       <!-- 参考资料、相关资料等 -->
       
-       <!-- 相关文章 -->
-      
-      <!-- 版权声明组件 -->
-      
-      <!-- 打赏组件 -->
+        <div>
+          <a class='readmore' href='/xinonria.github.io/posts/de646dc/' itemprop="url">
+            阅读全文
+          </a>
+        </div>
       
     </div>
   
-  
-    
 
-
-  <div class='article-meta' id="bottom">
-    <div class='new-meta-box'>
-      
-        
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2024-04-02T21:48:34+08:00">
-  <a class='notlink'>
-    <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2024年4月2日</p>
-  </a>
 </div>
 
+          </div>
         
       
-        
-          
+    
+  </section>
   
-  <div class="new-meta-item meta-tags"><a class="tag" href="/xinonria.github.io/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>数据结构</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/xinonria.github.io/tags/%E5%93%88%E5%B8%8C%E8%A1%A8/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>哈希表</p></a></div>
-  <span hidden itemprop="keywords">数据结构 哈希表</span>
-
-
-        
-      
-        
-          
-  <div class="new-meta-item share -mob-share-list">
-  <div class="-mob-share-list share-body">
     
-      
-        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
-          
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://xinonria.top/posts/a381a14a/&title=C++中的哈希表 - Xinon's Blog&summary="
-          
-          >
-          
-            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qq.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qq.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
-          
-        </a>
-      
-    
-      
-        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
-          
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://xinonria.top/posts/a381a14a/&title=C++中的哈希表 - Xinon's Blog&summary="
-          
-          >
-          
-            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qzone.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qzone.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
-          
-        </a>
-      
-    
-      
-        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
-          
-          target="_blank" href="http://service.weibo.com/share/share.php?url=https://xinonria.top/posts/a381a14a/&title=C++中的哈希表 - Xinon's Blog&summary="
-          
-          >
-          
-            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/weibo.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/weibo.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
-          
-        </a>
-      
-    
-      
-    
-      
-    
-  </div>
-</div>
-
-
-
-        
-      
-    </div>
-    <!-- Custom Files bottomMeta begin -->
-    
-    <!-- Custom Files bottomMeta end -->
-  </div>
-
-
-  
-  
-
-  
-    <div class="prev-next">
-      
-        <a class='prev' href='/xinonria.github.io/posts/71b459b6/'>
-          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>二进制下的负数</p>
-          <p class='content'>看上去越基础的题，背后越有大道理。
- 背景
-日常刷Leetcode题遇到一个很基础的题目。
-原题链接
-给你一个整数 n，请你判断该整数是否是 2 的幂次方。如果是，返回 true ；否则，返回 ...</p>
-        </a>
-      
-      
-        <a class='next' href='/xinonria.github.io/posts/e8ea023c/'>
-          <p class='title'>数组与指针<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'> 数组
-
-我们都知道访问数组的一个元素可以通过下标访问。
-例如
-123456int a[5] = &#123; 1,2,3,4,5 &#125;; //初始化printf(&quot;%d %d...</p>
-        </a>
-      
-    </div>
-  
-  <!-- Custom Files postEnd begin-->
-  
-  <!-- Custom Files postEnd end-->
-</article>
-
-
   
 
 
-  <article class="post white-box shadow floatable blur" id="comments">
-    <span hidden>
-      <meta itemprop="discussionUrl" content="/xinonria.github.io/posts/a381a14a/index.html#comments">
-    </span>
-    <p ct><i class='fa-solid fa-comments'></i> 评论</p>
-    
-
-    <div id="layoutHelper-comments"></div>
-
-  </article>
-
-
-
-
-
-
+	
 </div>
 <aside id='l_side' itemscope itemtype="http://schema.org/WPSideBar">
   
@@ -2732,48 +2496,103 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       
+<section class="widget blogger desktop mobile pjax">
+  <div class='content'>
+    
+      
+        <a class='avatar flat-box rectangle' href='/xinonria.github.io/about/'>
+          <img no-lazy src='/images/logo.png'/>
+        </a>
+      
+    
+    
+      <div class='text'>
+        
+        
+        
+          <p><span id="jinrishici-sentence">Xinon's Blog</span></p>
+          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+        
+      </div>
+    
+    
+      <div class="social-wrapper">
+        
+          
+            <a href="mailto:znysg@outlook.com"
+              class="social fa-solid fa-envelope flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+              
+            </a>
+          
+        
+          
+            <a href="https://github.com/xinonria"
+              class="social fab fa-github flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+              
+            </a>
+          
+        
+          
+            <a href="/xinonria.github.io/"
+              class="social fa-solid fa-headphones-alt flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+              
+            </a>
+          
+        
+      </div>
+    
+  </div>
+</section>
+
     
   
 
+  
+    
+    
+      
 
-<div class="widget-sticky pjax">
+    
+  
 
   
+    
+    
+      
   
-
-
-  <section class="widget toc-wrapper desktop mobile " id="toc-div" >
+  <section class="widget tagcloud desktop mobile pjax">
     
   <header>
     
-      <i class="fa-solid fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+      <a href='/blog/tags/'><i class="fa-solid fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
     
   </header>
 
 
     <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%93%88%E5%B8%8C%E8%A1%A8"><span class="toc-text"> 哈希表</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%93%88%E5%B8%8C%E7%A2%B0%E6%92%9E"><span class="toc-text"> 哈希碰撞</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%8B%89%E9%93%BE%E6%B3%95"><span class="toc-text"> 拉链法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%BA%BF%E6%80%A7%E6%8E%A2%E6%B5%8B%E6%B3%95"><span class="toc-text"> 线性探测法</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#c%E4%B8%AD%E7%9A%84%E5%93%88%E5%B8%8C%E8%A1%A8"><span class="toc-text"> C++中的哈希表</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%9A%E4%B9%89"><span class="toc-text"> 定义</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BF%AE%E6%94%B9"><span class="toc-text"> 修改</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9F%A5%E6%89%BE"><span class="toc-text"> 查找</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%88%A0%E9%99%A4"><span class="toc-text"> 删除</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%BF%AD%E4%BB%A3%E5%99%A8"><span class="toc-text"> 迭代器</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B0%8F%E7%BB%93"><span class="toc-text"> 小结</span></a></li></ol>
+      <a href="/xinonria.github.io/tags/Blog/" style="font-size: 16px; color: #8b8b8b">Blog</a> <a href="/xinonria.github.io/tags/C/" style="font-size: 20px; color: #707070">C#</a> <a href="/xinonria.github.io/tags/Leetcode/" style="font-size: 22px; color: #636363">Leetcode</a> <a href="/xinonria.github.io/tags/MATLAB/" style="font-size: 16px; color: #8b8b8b">MATLAB</a> <a href="/xinonria.github.io/tags/codeforces/" style="font-size: 16px; color: #8b8b8b">codeforces</a> <a href="/xinonria.github.io/tags/fastapi/" style="font-size: 14px; color: #999">fastapi</a> <a href="/xinonria.github.io/tags/hexo/" style="font-size: 14px; color: #999">hexo</a> <a href="/xinonria.github.io/tags/machine-learning/" style="font-size: 14px; color: #999">machine_learning</a> <a href="/xinonria.github.io/tags/python/" style="font-size: 16px; color: #8b8b8b">python</a> <a href="/xinonria.github.io/tags/react/" style="font-size: 16px; color: #8b8b8b">react</a> <a href="/xinonria.github.io/tags/vscode/" style="font-size: 14px; color: #999">vscode</a> <a href="/xinonria.github.io/tags/vue/" style="font-size: 16px; color: #8b8b8b">vue</a> <a href="/xinonria.github.io/tags/%E4%BA%8C%E5%8F%89%E6%A0%91/" style="font-size: 22px; color: #636363">二叉树</a> <a href="/xinonria.github.io/tags/%E4%BA%8C%E8%BF%9B%E5%88%B6/" style="font-size: 14px; color: #999">二进制</a> <a href="/xinonria.github.io/tags/%E4%BD%8D%E6%93%8D%E4%BD%9C/" style="font-size: 18px; color: #7e7e7e">位操作</a> <a href="/xinonria.github.io/tags/%E5%89%8D%E7%AB%AF/" style="font-size: 16px; color: #8b8b8b">前端</a> <a href="/xinonria.github.io/tags/%E5%89%8D%E7%BC%80%E5%92%8C/" style="font-size: 14px; color: #999">前缀和</a> <a href="/xinonria.github.io/tags/%E5%91%A8%E8%B5%9B/" style="font-size: 14px; color: #999">周赛</a> <a href="/xinonria.github.io/tags/%E5%93%88%E5%B8%8C%E8%A1%A8/" style="font-size: 14px; color: #999">哈希表</a> <a href="/xinonria.github.io/tags/%E5%B0%8F%E5%B7%A5%E5%85%B7/" style="font-size: 14px; color: #999">小工具</a> <a href="/xinonria.github.io/tags/%E5%B7%A5%E5%85%B7/" style="font-size: 14px; color: #999">工具</a> <a href="/xinonria.github.io/tags/%E6%8C%87%E9%92%88/" style="font-size: 14px; color: #999">指针</a> <a href="/xinonria.github.io/tags/%E6%95%B0%E5%AD%A6/" style="font-size: 14px; color: #999">数学</a> <a href="/xinonria.github.io/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" style="font-size: 24px; color: #555">数据结构</a> <a href="/xinonria.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%8E%9F%E7%90%86/" style="font-size: 14px; color: #999">计算机原理</a> <a href="/xinonria.github.io/tags/%E9%80%92%E5%BD%92/" style="font-size: 14px; color: #999">递归</a> <a href="/xinonria.github.io/tags/%E9%93%BE%E8%A1%A8/" style="font-size: 14px; color: #999">链表</a> <a href="/xinonria.github.io/tags/%E9%AB%98%E7%B2%BE%E5%BA%A6/" style="font-size: 14px; color: #999">高精度</a>
     </div>
   </section>
 
+
+    
   
+
+  
+
+
+<div class="widget-sticky pjax">
 
 </div>
 
 
 <!-- 没有 pjax 占位会报错 万恶的 pjax -->
-
-  <div class="pjax">
-    <!-- pjax占位 -->
-  </div>
-
-  <div class="pjax">
-    <!-- pjax占位 -->
-  </div>
-
-  <div class="pjax">
-    <!-- pjax占位 -->
-  </div>
 
   <div class="pjax">
     <!-- pjax占位 -->
@@ -2801,14 +2620,13 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </aside>
 
 
-
           <!--此文件用来存放一些不方便取值的变量-->
 <!--思路大概是将值藏到重加载的区域内-->
 
 <pjax>
 <script>
   window.pdata={}
-  pdata.ispage=true;
+  pdata.ispage=false;
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};
@@ -2817,14 +2635,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     // header
     var l_header=document.getElementById("l_header");
     
-    l_header.classList.add("show");
+    l_header.classList.remove("show");
     
     
       // cover
       var cover_wrapper=document.querySelector('#l_cover .cover-wrapper');
       var scroll_down=document.getElementById('scroll-down');
-      cover_wrapper.id="none";
-      cover_wrapper.style.display="none";
+      cover_wrapper.id="half";
+      cover_wrapper.style.display="";
       scroll_down.style.display="none";
     
   
@@ -3942,7 +3760,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Xinon's Blog","url":"https://xinonria.top/xinonria.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Xinon Zhang","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://xinonria.top/xinonria.github.io/","sameAs":["https://github.com/volantis-x"],"description":"一个用于学习记录的个人博客"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://xinonria.top/xinonria.github.io/","name":"Xinon's Blog"}},{"@type":"ListItem","position":3,"item":{"@id":"https://xinonria.top/xinonria.github.io/posts/a381a14a/","name":"C++中的哈希表"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Xinon's Blog","url":"https://xinonria.top/xinonria.github.io/","keywords":null,"description":"一个用于学习记录的个人博客","author":{"@type":"Person","name":"Xinon Zhang","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://xinonria.top/xinonria.github.io/","description":"一个用于学习记录的个人博客"},"publisher":{"@type":"Organization","name":"Xinon's Blog","url":"https://xinonria.top/xinonria.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://xinonria.top?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"C++中的哈希表","description":"一个用于学习记录的个人博客","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://xinonria.top/posts/a381a14a/"},"author":{"@type":"Person","name":"Xinon Zhang","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://xinonria.top/xinonria.github.io/"},"publisher":{"@type":"Organization","name":"Xinon's Blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://xinonria.top/posts/a381a14a/","wordCount":0,"datePublished":"2023-08-22T10:37:11.000Z","dateModified":"2024-04-02T13:48:34.827Z","keywords":"数据结构,哈希表","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Xinon's Blog","url":"https://xinonria.top/xinonria.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Xinon Zhang","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://xinonria.top/xinonria.github.io/","sameAs":["https://github.com/volantis-x"],"description":"一个用于学习记录的个人博客"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://xinonria.top/xinonria.github.io/","name":"Xinon's Blog"}},{"@type":"ListItem","position":2,"item":{"@id":"https://xinonria.top/xinonria.github.io/archives/","name":"Archive"}},{"@type":"ListItem","position":3,"item":{"@id":"https://xinonria.top/xinonria.github.io/archives/2024/","name":"2024年"}},{"@type":"ListItem","position":4,"item":{"@id":"https://xinonria.top/xinonria.github.io/archives/2024/5/","name":"5月"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Xinon's Blog","url":"https://xinonria.top/xinonria.github.io/","keywords":null,"description":"一个用于学习记录的个人博客","author":{"@type":"Person","name":"Xinon Zhang","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://xinonria.top/xinonria.github.io/","description":"一个用于学习记录的个人博客"},"publisher":{"@type":"Organization","name":"Xinon's Blog","url":"https://xinonria.top/xinonria.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://xinonria.top?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"一个用于学习记录的个人博客","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"Xinon Zhang","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://xinonria.top/xinonria.github.io/"},"publisher":{"@type":"Organization","name":"Xinon's Blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
